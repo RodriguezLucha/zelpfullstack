@@ -1,6 +1,8 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$my-red: #d32323;
+
 
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -12,11 +14,13 @@ body {
 
 ///////////////////////HOME//////////////////////
 .home {
-  background-image: url('https://img1.cookinglight.timeinc.net/sites/default/files/styles/4_3_horizontal_-_1200x900/public/1516896485/chicken-paella-ck-1803.jpg?itok=mv3QTKp0');
+  background-image: url('https://s3-media2.fl.yelpcdn.com/assets/srv0/yelp_large_assets/52ed68f0e062/assets/img/home/hero_photos/BKlP1ebtV6kFbKnZU8Ppew.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  opacity: 0.9;
 }
+
 
 .home_nav {}
 
@@ -26,6 +30,22 @@ body {
 }
 
 #signup_button {
+  border: 2px solid white;
+  border-radius: 4px;
+}
+
+#demo_button {
+  margin: 5px;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 8px;
+  color: #fff;
+  display: block;
+  padding: 9px 12px 10px;
+  font-size: 14px;
+  line-height: 1.28571em;
+  font-weight: 700;
+  background: none;
+  text-decoration: none;
   border: 2px solid white;
   border-radius: 4px;
 }
@@ -77,6 +97,27 @@ body {
   background-color: lightgray;
 }
 
+
+////////////////////////LOGIN FORMS///////////////////
+.login-form-box {}
+
+.form_header {
+  background-color: $my-red;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.form_header h1 {
+  margin: auto;
+  font-family: 'Courgette', cursive;
+  font-size: 2em;
+  padding: 10px;
+  text-shadow: -1px 0 white,
+    0 1px white,
+    1px 0 white,
+    0 -1px white;
+}
 
 ///////////////////////TOP RESTAURNANTS//////////////////////
 .top_restaurants {

@@ -7,7 +7,7 @@ const Greeting = ({currentUser, logout, loginDemoUser}) => {
       <Link to="/login">Login</Link>
       <br></br>
       <Link id="signup_button" to="/signup">Sign up!</Link>
-      <button onClick={loginDemoUser}>Demo User</button>
+      <button id="demo_button" onClick={loginDemoUser}>Demo User</button>
     </nav>
   );
   const personalGreeting = () => (

@@ -37,6 +37,11 @@ class LoginForm extends React.Component {
   render() {
     return (
       <div className="login-form-container">
+        <div className="form_header">
+          <h1>
+            Zelp <i class="fas fa-wine-glass-alt"></i>
+          </h1>
+        </div>
         <form onSubmit={this.handleSubmit} className="login-form-box">
           Welcome to Zelp!
           <br/>
