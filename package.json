@@ -1,6 +1,10 @@
 {
   "name": "zelpfullstack",
   "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch --mode=development"
+  },
   "dependencies": {
     "@babel/core": "^7.3.3",
     "@babel/preset-env": "^7.3.1",
