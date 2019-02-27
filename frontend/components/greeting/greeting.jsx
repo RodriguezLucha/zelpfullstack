@@ -11,9 +11,11 @@ const Greeting = ({currentUser, logout, loginDemoUser}) => {
     </nav>
   );
   const personalGreeting = () => (
-    <div className='home_personal_greeting'>
-      <h2>Hi, {currentUser.email}!</h2>
-      <button onClick={logout}>Log Out</button>
+    <div className='home_session_links'>
+      <div className='home_personal_greeting'>
+        Hi, {currentUser.firstname}!
+      </div>
+      <button id="demo_button" onClick={logout}>Log Out</button>
     </div>
   );
 
