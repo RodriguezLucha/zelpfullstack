@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 class LoginForm extends React.Component {
   constructor(props) {
@@ -39,7 +40,9 @@ class LoginForm extends React.Component {
       <div className="login-form-container">
         <div className="form_header">
           <h1>
-            Zelp <i class="fas fa-wine-glass-alt"></i>
+            <Link to="/">
+              Zelp <i className="fas fa-wine-glass-alt"></i>
+            </Link>
           </h1>
         </div>
         <form onSubmit={this.handleSubmit} className="login-form-box">
