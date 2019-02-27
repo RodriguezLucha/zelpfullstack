@@ -6,14 +6,47 @@
 #root {
   background-color: lightblue;
 }
+
+.home {
+  background-color: lavender;
+}
+.home_nav {
+  background-color: lightyellow;
+}
+.home_session_links {
+  background-color: lightcoral;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.home_session_links a {
+  margin: 5px;
+}
+
+.home_banner {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.home_banner h1 {
+  margin: auto;
+}
+
+
+.home_personal_greeting {
+  background-color: lightcoral;
+}
+
+
 .login-form-box {
   background-color: lightgray;
 }
 
-.footer {
-  background-color: lightgreen;
-}
-
 .top_restaurants {
   background-color: lightsalmon;
+}
+
+.footer {
+  background-color: lightgreen;
 }
