@@ -7,14 +7,18 @@
   background-color: lightblue;
 }
 
+///////////////////////HOME//////////////////////
 .home {
-  background-color: lavender;
+  background-image: url('https://img1.cookinglight.timeinc.net/sites/default/files/styles/4_3_horizontal_-_1200x900/public/1516896485/chicken-paella-ck-1803.jpg?itok=mv3QTKp0');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .home_nav {
-  background-color: lightyellow;
+
+  
 }
 .home_session_links {
-  background-color: lightcoral;
   display: flex;
   justify-content: flex-end;
 }
@@ -27,12 +31,15 @@
   display: flex;
   align-items: center;
   align-content: center;
+  height: 400px;
 }
 
 .home_banner h1 {
   margin: auto;
+  font-family: 'Great Vibes', cursive;
+  font-size: 5em;
+  padding: 60px;
 }
-
 
 .home_personal_greeting {
   background-color: lightcoral;
@@ -43,10 +50,21 @@
   background-color: lightgray;
 }
 
+
+///////////////////////TOP RESTAURNANTS//////////////////////
 .top_restaurants {
   background-color: lightsalmon;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  height: 400px;
 }
 
+.top_restaurants h1 {
+  margin: auto;
+}
+
+///////////////////////FOOTER//////////////////////
 .footer {
   background-color: lightgreen;
 }
