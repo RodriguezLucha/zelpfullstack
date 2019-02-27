@@ -2,6 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
 
 #root {
   background-color: lightblue;
@@ -14,17 +17,34 @@
   background-position: center;
   background-size: cover;
 }
-.home_nav {
 
-  
-}
+.home_nav {}
+
 .home_session_links {
   display: flex;
   justify-content: flex-end;
 }
 
+#signup_button {
+  border: 2px solid white;
+  border-radius: 4px;
+}
+
 .home_session_links a {
   margin: 5px;
+  border-radius: 0;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 8px;
+
+  color: #fff;
+  display: block;
+  padding: 9px 12px 10px;
+  font-size: 14px;
+  line-height: 1.28571em;
+  font-weight: 700;
+  background: none;
+
+  text-decoration: none;
 }
 
 .home_banner {
@@ -36,11 +56,18 @@
 
 .home_banner h1 {
   margin: auto;
-  font-family: 'Great Vibes', cursive;
-  font-size: 5em;
+  font-family: 'Courgette', cursive;
+  font-size: 6em;
   padding: 60px;
+  text-shadow: -5px 0 white,
+    0 5px white,
+    5px 0 white,
+    0 -5px white;
 }
 
+// .fa-wine-glass-alt {
+//   text-shadow: none;
+// }
 .home_personal_greeting {
   background-color: lightcoral;
 }
