@@ -32,8 +32,20 @@ export const login = user => dispatch => (
   ))
 );
 
+const demoLogin = {
+  email: 'test@test.com',
+  password: 'password'
+};
+
+export const loginDemoUser = () => dispatch => (
+  APIUtil.login(demoLogin).then(user => (
+    dispatch(receiveCurrentUser(user))), err => (
+    dispatch(receiveErrors(err.responseJSON))
+  ))
+);
+
 export const logout = () => dispatch => (
-  APIUtil.logout().then(user => (
+  APIUtil.logout().then(() => (
     dispatch(logoutCurrentUser())
   ))
 );
