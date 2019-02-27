@@ -2,14 +2,15 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 $my-red: #d32323;
-
+$my-footer: #ccc;
+$my-body: #f5f5f5;
 
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: $my-body;
 }
 
 #root {
-  background-color: lightblue;
 }
 
 ///////////////////////HOME//////////////////////
@@ -18,7 +19,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  opacity: 0.9;
 }
 
 
@@ -89,12 +89,10 @@ body {
 //   text-shadow: none;
 // }
 .home_personal_greeting {
-  background-color: lightcoral;
 }
 
 
 .login-form-box {
-  background-color: lightgray;
 }
 
 
@@ -125,7 +123,6 @@ body {
 
 ///////////////////////TOP RESTAURNANTS//////////////////////
 .top_restaurants {
-  background-color: lightsalmon;
   display: flex;
   align-items: center;
   align-content: center;
@@ -134,9 +131,16 @@ body {
 
 .top_restaurants h1 {
   margin: auto;
+  color: $my-red;
 }
 
 ///////////////////////FOOTER//////////////////////
 .footer {
-  background-color: lightgreen;
+  background-color: $my-footer;
+  border-top: 1px solid #ccc;
+  display: flex;
+}
+
+.footer img {
+  margin: 0 auto;
 }
