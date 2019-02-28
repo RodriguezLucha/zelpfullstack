@@ -47,49 +47,65 @@ class SignupForm extends React.Component {
             </Link>
           </h1>
         </div>
-        <form onSubmit={this.handleSubmit} className="login-form-box">
-          Welcome to Zelp!
-          <br/>
-          Please {this.props.formType} or {this.props.navLink}
-          {this.renderErrors()}
-          <div className="login-form">
-            <br/>
-            <label>Email:
-              <input type="text"
-                value={this.state.email}
-                onChange={this.update('email')}
-                className="login-input"
-              />
-            </label>
-            <br/>
-            <label>Password:
-              <input type="password"
-                value={this.state.password}
-                onChange={this.update('password')}
-                className="login-input"
-              />
-            </label>
-            <br/>
-            <label>Firstname:
-              <input type="text"
-                value={this.state.firstname}
-                onChange={this.update('firstname')}
-                className="login-input"
-              />
-            </label>
-            <br />
-            <label>Lastname:
-              <input type="text"
-                value={this.state.lastname}
-                onChange={this.update('lastname')}
-                className="login-input"
-              />
-            </label>
-            <br />
-            <input className="session-submit" type="submit" value={this.props.formType} />
-          </div>
-        </form>
+        <div className='login_form_body'>
+          <form onSubmit={this.handleSubmit} className="login-form-box">
+            <h1>
+              Sign Up for Zelp
+            </h1>
+            <div>
+              <strong>Connect with great local restaurants</strong>
+            </div>
+            {this.renderErrors()}
+            <div className="login-form">
+              <label>
+                <input type="text"
+                  value={this.state.firstname}
+                  onChange={this.update('firstname')}
+                  className="login-input"
+                  placeholder="First Name"
+                />
+              </label>
+              <br />
+              <label>
+                <input type="text"
+                  value={this.state.lastname}
+                  onChange={this.update('lastname')}
+                  className="login-input"
+                  placeholder="Last Name"
+                />
+              </label>
+              <br />
+              <label>
+                <input type="text"
+                  value={this.state.email}
+                  onChange={this.update('email')}
+                  className="login-input"
+                  placeholder="Email"
+                />
+              </label>
+              <br />
+              <label>
+                <input type="password"
+                  value={this.state.password}
+                  onChange={this.update('password')}
+                  className="login-input"
+                  placeholder="Password"
+                />
+              </label>
+              <br />
+              <input className="session-submit" type="submit" value="Sign Up" />
+              <br/>
+              <div className='small'>
+                <small> Already on Zelp? &nbsp;
+                  <Link to="/login">Log In</Link>
+                </small>
+              </div>
+            </div>
+          </form>
+          <img src="https://s3-media4.fl.yelpcdn.com/assets/2/www/img/7922e77f338d/signup/signup_illustration.png"></img>
+        </div>
       </div>
+
     );
   }
 }

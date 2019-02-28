@@ -161,6 +161,16 @@ select {
 
 .login-form-box h1 {
   color: $my-red;
+  margin-bottom: 6px;
+}
+
+.login-form-box strong {
+  margin: 0;
+}
+
+.login-form-box .small {
+  text-align: right;
+  color: #999;
 }
 
 .login-form-box a {

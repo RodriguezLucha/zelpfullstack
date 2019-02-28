@@ -51,11 +51,9 @@ class LoginForm extends React.Component {
             <h1>
               Log In to Zelp
             </h1>
-            <br/>
-            <strong>New to Zelp?</strong>
-            <strong>
-              <Link to="/signup">Sign up</Link>
-            </strong>
+            <div>
+              <strong>New to Zelp?  &nbsp; <Link to="/signup">Sign up</Link></strong>
+            </div>
             {this.renderErrors()}
             <div className="login-form">
               <label>
