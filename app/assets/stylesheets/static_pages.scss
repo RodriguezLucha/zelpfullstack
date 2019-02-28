@@ -23,11 +23,27 @@ body {
 .home_session_links {
   display: flex;
   justify-content: flex-end;
+  padding-top: 10px;
 }
+
+#login_button:hover {
+  border-bottom-color: #FFF;
+}
+
 
 #signup_button {
   border: 2px solid white;
   border-radius: 4px;
+  transition: all 2s ease-in;
+  transition-property: background-color,
+    background-position,
+    background-size,
+    border-color;
+}
+
+#signup_button:hover {
+  background-color: white;
+  color: #666;
 }
 
 #demo_button {
@@ -44,6 +60,17 @@ body {
   text-decoration: none;
   border: 2px solid white;
   border-radius: 4px;
+  margin-right: 20px;
+  transition: 1.0s;
+  transition-property: background-color,
+    background-position,
+    background-size,
+    border-color;
+}
+
+#demo_button:hover {
+  background-color: white;
+  color: #666;
 }
 
 .home_session_links a {
@@ -177,6 +204,7 @@ select {
   color: blue;
   text-decoration: none;
 }
+
 .login-form-box a:hover {
   text-decoration: underline;
 }

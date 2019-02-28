@@ -4,7 +4,7 @@ import React from 'react';
 const Greeting = ({currentUser, logout, loginDemoUser}) => {
   const sessionLinks = () => (
     <nav className="home_session_links">
-      <Link to="/login">Login</Link>
+      <Link id="login_button" to="/login">Login</Link>
       <br></br>
       <Link id="signup_button" to="/signup">Sign up!</Link>
       <button id="demo_button" onClick={loginDemoUser}>Demo User</button>
