@@ -1,5 +1,5 @@
 import React from 'react';
-import GreetingContainer from './greeting/greeting_container';
+import GreetingContainer from './home_nav/home_nav_container';
 
 //<i class="fas fa-wine-glass-alt"></i>
 
