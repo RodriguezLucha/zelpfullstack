@@ -2,16 +2,15 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 $my-red: #d32323;
-$my-footer: #ccc;
-$my-body: #f5f5f5;
+$my-footer: rgb(245, 245, 245);
+$my-body: white;
 
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   background-color: $my-body;
 }
 
-#root {
-}
+#root {}
 
 ///////////////////////HOME//////////////////////
 .home {
@@ -86,26 +85,91 @@ body {
 //   text-shadow: none;
 // }
 .home_personal_greeting {
-    margin: 5px;
-    border-radius: 0;
-    border-bottom: 2px solid transparent;
-    padding-bottom: 8px;
+  margin: 5px;
+  border-radius: 0;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 8px;
 
-    color: #fff;
-    display: block;
-    padding: 9px 12px 10px;
-    font-size: 14px;
-    line-height: 1.28571em;
-    font-weight: 700;
+  color: #fff;
+  display: block;
+  padding: 9px 12px 10px;
+  font-size: 14px;
+  line-height: 1.28571em;
+  font-weight: 700;
 }
 
-
-.login-form-box {
-}
 
 
 ////////////////////////LOGIN FORMS///////////////////
-.login-form-box {}
+.login_form_body {
+  display: flex;
+  justify-content: center;
+}
+
+.login_form_body img {
+  margin: 200px 50px;
+}
+
+.login-form-box {
+  margin: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+input[type=text],
+select {
+  width: 300px;
+  height: 30px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=password],
+select {
+  width: 300px;
+  height: 30px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit],
+select {
+  width: 300px;
+  height: 43px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: white;
+  background-color: $my-red;
+  font-size: 16px;
+  line-height: 1.3125em;
+  font-weight: bold;
+}
+
+.login-form-box h1 {
+  color: $my-red;
+}
+
+.login-form-box a {
+  color: blue;
+  text-decoration: none;
+}
+.login-form-box a:hover {
+  text-decoration: underline;
+}
 
 .form_header {
   background-color: $my-red;
@@ -124,6 +188,7 @@ body {
     1px 0 white,
     0 -1px white;
 }
+
 .form_header h1 a {
   color: black;
   text-decoration: none;

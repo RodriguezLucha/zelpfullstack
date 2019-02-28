@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 
 class LoginForm extends React.Component {
@@ -42,36 +42,45 @@ class LoginForm extends React.Component {
         <div className="form_header">
           <h1>
             <Link to="/">
-              Zelp <i className="fas fa-wine-glass-alt"></i>
+                Zelp <i className="fas fa-wine-glass-alt"></i>
             </Link>
           </h1>
         </div>
-        <form onSubmit={this.handleSubmit} className="login-form-box">
-          Welcome to Zelp!
-          <br/>
-          Please {this.props.formType} or {this.props.navLink}
-          {this.renderErrors()}
-          <div className="login-form">
+        <div className='login_form_body'>
+          <form onSubmit={this.handleSubmit} className="login-form-box">
+            <h1>
+              Log In to Zelp
+            </h1>
             <br/>
-            <label>Email:
-              <input type="text"
-                value={this.state.email}
-                onChange={this.update('email')}
-                className="login-input"
-              />
-            </label>
-            <br/>
-            <label>Password:
-              <input type="password"
-                value={this.state.password}
-                onChange={this.update('password')}
-                className="login-input"
-              />
-            </label>
-            <br/>
-            <input className="session-submit" type="submit" value={this.props.formType} />
-          </div>
-        </form>
+            <strong>New to Zelp?</strong>
+            <strong>
+              <Link to="/signup">Sign up</Link>
+            </strong>
+            {this.renderErrors()}
+            <div className="login-form">
+              <label>
+                <input type="text"
+                  value={this.state.email}
+                  onChange={this.update('email')}
+                  className="login-input"
+                  placeholder="Email"
+                />
+              </label>
+              <br/>
+              <label>
+                <input type="password"
+                  value={this.state.password}
+                  onChange={this.update('password')}
+                  className="login-input"
+                  placeholder="Password"
+                />
+              </label>
+              <br/>
+              <input className="session-submit" type="submit" value="Log In" />
+            </div>
+          </form>
+          <img src="https://s3-media4.fl.yelpcdn.com/assets/2/www/img/7922e77f338d/signup/signup_illustration.png"></img>
+        </div>
       </div>
     );
   }
