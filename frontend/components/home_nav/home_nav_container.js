@@ -1,4 +1,4 @@
-import Greeting from './home_nav';
+import HomeNav from './home_nav';
 import {connect} from 'react-redux';
 import {logout, loginDemoUser} from '../../actions/session_actions';
 
@@ -14,4 +14,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Greeting);
+)(HomeNav);

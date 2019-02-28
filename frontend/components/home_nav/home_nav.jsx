@@ -1,26 +1,17 @@
-import {Link} from 'react-router-dom';
 import React from 'react';
+import LoggedOut from './logged_out';
+import LoggedIn from './logged_in';
 
-const Greeting = ({currentUser, logout, loginDemoUser}) => {
-  const sessionLinks = () => (
-    <nav className="home_session_links">
-      <Link id="login_button" to="/login">Login</Link>
-      <br></br>
-      <Link id="signup_button" to="/signup">Sign up!</Link>
-      <button id="demo_button" onClick={loginDemoUser}>Demo User</button>
-    </nav>
+const HomeNav = ({currentUser, loginDemoUser, logout}) => {
+  const loggedOut = () => (
+    <LoggedOut loginDemoUser={loginDemoUser} />
   );
-  const personalGreeting = () => (
-    <div className='home_session_links'>
-      <div className='home_personal_greeting'>
-        Hi, {currentUser.firstname}!
-      </div>
-      <button id="demo_button" onClick={logout}>Log Out</button>
-    </div>
+  const loggedIn = () => (
+    <LoggedIn currentUser={currentUser} logout={logout}/>
   );
 
-  return currentUser ? personalGreeting() : sessionLinks();
+  return currentUser ? loggedIn() : loggedOut();
 };
 
 
-export default Greeting;
+export default HomeNav;
