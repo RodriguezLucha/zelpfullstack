@@ -3,8 +3,8 @@ import Home from './home';
 
 import LoginFormContainer from './session_form/login_form_container';
 import SignupFormContainer from './session_form/signup_form_container';
-import { AuthRoute } from '../util/route_util';
-import { Switch, Route } from 'react-router-dom';
+import {AuthRoute} from '../util/route_util';
+import {Route} from 'react-router-dom';
 import TopRestaurants from './top_restaurants';
 import Footer from './footer';
 
