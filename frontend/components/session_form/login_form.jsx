@@ -35,6 +35,8 @@ class LoginForm extends React.Component {
     this.props.processForm(user);
   }
 
+
+
   renderErrors() {
     return (
       <ul>
@@ -51,6 +53,7 @@ class LoginForm extends React.Component {
     if(this.props.demoLoginSet){
       this.props.clearDemoUser();
     }
+    this.props.clearSessionErrors();
   }
 
   render() {

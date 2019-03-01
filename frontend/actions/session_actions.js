@@ -5,6 +5,7 @@ export const LOGOUT_CURRENT_USER = 'LOGOUT_CURRENT_USER';
 export const RECEIVE_SESSION_ERRORS = 'RECEIVE_SESSION_ERRORS';
 export const SET_DEMO_USER = 'SET_DEMO_USER';
 export const CLEAR_DEMO_USER = 'CLEAR_DEMO_USER';
+export const RECEIVE_CLEAR_SESSION_ERRORS = 'CLEAR_SESSION_ERRORS';
 
 export const receiveCurrentUser = user => ({
   type: RECEIVE_CURRENT_USER,
@@ -18,6 +19,10 @@ export const logoutCurrentUser = () => ({
 export const receiveErrors = errors => ({
   type: RECEIVE_SESSION_ERRORS,
   errors
+});
+
+export const receiveClearSessionErrors = () => ({
+  type: RECEIVE_CLEAR_SESSION_ERRORS
 });
 
 export const setDemoUser = () => ({

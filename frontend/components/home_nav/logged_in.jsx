@@ -13,11 +13,11 @@ export const LoggedIn = ({props}) => {
         <div className="dropdown_content">
           <div className='dropdown_top'>
             <img src="https://s3-media3.fl.yelpcdn.com/assets/srv0/yelp_styleguide/bf5ff8a79310/assets/img/default_avatars/user_medium_square.png" alt="profile" />
-            <strong id="drp_name">
+            <div id="drp_name">
               {props.currentUser.firstname}
-            </strong>
+            </div>
           </div>
-          <hr/>
+          
           <button onClick={props.logout}>Log Out</button>
         </div>
       </div>
