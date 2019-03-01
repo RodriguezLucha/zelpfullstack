@@ -5,10 +5,21 @@ import {Link} from 'react-router-dom';
 class LoginForm extends React.Component {
   constructor(props) {
     super(props);
+
     this.state = {
       email: '',
-      password: ''
+      password: '',
+      loginButtonClass: 'login_button'
     };
+
+    if (props.demoLoginSet) {
+      this.state = {
+        email: 'test@test.com',
+        password: 'password',
+        loginButtonClass: 'flash_login_button'
+      };
+    }
+
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
@@ -25,7 +36,7 @@ class LoginForm extends React.Component {
   }
 
   renderErrors() {
-    return(
+    return (
       <ul>
         {this.props.errors.map((error, i) => (
           <li key={`error-${i}`}>
@@ -37,12 +48,15 @@ class LoginForm extends React.Component {
   }
 
   render() {
+
+    const login_button_class = this.state.loginButtonClass;
+
     return (
       <div className="login_form_container">
         <div className="form_header">
           <h1>
             <Link to="/">
-                Zelp <i className="fas fa-wine-glass-alt"></i>
+              Zelp <i className="fas fa-wine-glass-alt"></i>
             </Link>
           </h1>
         </div>
@@ -63,7 +77,7 @@ class LoginForm extends React.Component {
                   placeholder="Email"
                 />
               </label>
-              <br/>
+              <br />
               <label>
                 <input type="password"
                   value={this.state.password}
@@ -71,8 +85,8 @@ class LoginForm extends React.Component {
                   placeholder="Password"
                 />
               </label>
-              <br/>
-              <input type="submit" value="Log In" />
+              <br />
+              <input className={login_button_class} type="submit" value="Log In" />
             </div>
           </form>
           <img src="https://s3-media4.fl.yelpcdn.com/assets/2/www/img/7922e77f338d/signup/signup_illustration.png"></img>

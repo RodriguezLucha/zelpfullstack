@@ -1,17 +1,18 @@
 import HomeNav from './home_nav';
 import {connect} from 'react-redux';
 import {logout, loginDemoUser} from '../../actions/session_actions';
+import {withRouter} from 'react-router-dom';
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   currentUser: state.entities.users[state.session.id]
 });
 
 const mapDispatchToProps = dispatch => ({
   logout: () => dispatch(logout()),
-  loginDemoUser: () => dispatch(loginDemoUser())
+  loginDemoUser: (history) => dispatch(loginDemoUser(history))
 });
 
-export default connect(
+export default withRouter(connect(
   mapStateToProps,
   mapDispatchToProps
-)(HomeNav);
+)(HomeNav));

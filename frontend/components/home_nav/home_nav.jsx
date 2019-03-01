@@ -2,15 +2,15 @@ import React from 'react';
 import LoggedOut from './logged_out';
 import LoggedIn from './logged_in';
 
-const HomeNav = ({currentUser, loginDemoUser, logout}) => {
+const HomeNav = (props) => {
   const loggedOut = () => (
-    <LoggedOut loginDemoUser={loginDemoUser} />
+    <LoggedOut props={props}/>
   );
   const loggedIn = () => (
-    <LoggedIn currentUser={currentUser} logout={logout}/>
+    <LoggedIn props={props}/>
   );
 
-  return currentUser ? loggedIn() : loggedOut();
+  return props.currentUser ? loggedIn() : loggedOut();
 };
 
 
