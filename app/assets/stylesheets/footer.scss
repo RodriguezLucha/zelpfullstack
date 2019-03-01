@@ -1,0 +1,11 @@
+@import 'colors.scss';
+
+.footer {
+  background-color: $my-footer;
+  border-top: 1px solid #ccc;
+  display: flex;
+}
+
+.footer img {
+  margin: 0 auto;
+}

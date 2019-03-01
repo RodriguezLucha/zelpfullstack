@@ -1,0 +1,105 @@
+@import 'colors.scss';
+
+.login_form_body {
+  display: flex;
+  justify-content: center;
+}
+
+.login_form_body img {
+  margin: 200px 50px;
+}
+
+.login-form-box {
+  margin: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+input[type=text],
+select {
+  width: 300px;
+  height: 30px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=password],
+select {
+  width: 300px;
+  height: 30px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit],
+select {
+  width: 300px;
+  height: 43px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: white;
+  background-color: $my-red;
+  font-size: 16px;
+  line-height: 1.3125em;
+  font-weight: bold;
+}
+
+.login-form-box h1 {
+  color: $my-red;
+  margin-bottom: 6px;
+}
+
+.login-form-box strong {
+  margin: 0;
+}
+
+.login-form-box .small {
+  text-align: right;
+  color: #999;
+}
+
+.login-form-box a {
+  color: blue;
+  text-decoration: none;
+}
+
+.login-form-box a:hover {
+  text-decoration: underline;
+}
+
+.form_header {
+  background-color: $my-red;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.form_header h1 {
+  margin: auto;
+  font-family: 'Courgette', cursive;
+  font-size: 2em;
+  padding: 10px;
+  text-shadow: -1px 0 white,
+    0 1px white,
+    1px 0 white,
+    0 -1px white;
+}
+
+.form_header h1 a {
+  color: black;
+  text-decoration: none;
+}

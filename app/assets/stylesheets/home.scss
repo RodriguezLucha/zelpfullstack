@@ -1,0 +1,110 @@
+@import 'colors.scss';
+
+.home {
+  background-image: url('https://s3-media2.fl.yelpcdn.com/assets/srv0/yelp_large_assets/52ed68f0e062/assets/img/home/hero_photos/BKlP1ebtV6kFbKnZU8Ppew.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.home_session_links {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 10px;
+}
+
+#login_button:hover {
+  border-bottom-color: #FFF;
+}
+
+
+#signup_button {
+  border: 2px solid white;
+  border-radius: 4px;
+  transition: all 2s ease-in;
+  transition-property: background-color,
+    background-position,
+    background-size,
+    border-color;
+}
+
+#signup_button:hover {
+  background-color: white;
+  color: #666;
+}
+
+#demo_button {
+  margin: 5px;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 8px;
+  color: #fff;
+  display: block;
+  padding: 9px 12px 10px;
+  font-size: 14px;
+  line-height: 1.28571em;
+  font-weight: 700;
+  background: none;
+  text-decoration: none;
+  border: 2px solid white;
+  border-radius: 4px;
+  margin-right: 20px;
+  transition: 1.0s;
+  transition-property: background-color,
+    background-position,
+    background-size,
+    border-color;
+}
+
+#demo_button:hover {
+  background-color: white;
+  color: #666;
+}
+
+.home_session_links a {
+  margin: 5px;
+  border-radius: 0;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 8px;
+
+  color: #fff;
+  display: block;
+  padding: 9px 12px 10px;
+  font-size: 14px;
+  line-height: 1.28571em;
+  font-weight: 700;
+  background: none;
+
+  text-decoration: none;
+}
+
+.home_banner {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  height: 400px;
+}
+
+.home_banner h1 {
+  margin: auto;
+  font-family: 'Courgette', cursive;
+  font-size: 6em;
+  padding: 60px;
+  text-shadow: -5px 0 white,
+    0 5px white,
+    5px 0 white,
+    0 -5px white;
+}
+
+.home_personal_greeting {
+  margin: 5px;
+  border-radius: 0;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 8px;
+
+  color: #fff;
+  display: block;
+  padding: 9px 12px 10px;
+  font-size: 14px;
+  line-height: 1.28571em;
+  font-weight: 700;
+}

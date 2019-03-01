@@ -1,0 +1,13 @@
+@import 'colors.scss';
+
+.top_restaurants {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  height: 400px;
+}
+
+.top_restaurants h1 {
+  margin: auto;
+  color: $my-red;
+}
