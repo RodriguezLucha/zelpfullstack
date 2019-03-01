@@ -9,7 +9,7 @@
   margin: 200px 50px;
 }
 
-.login-form-box {
+.login_form_box {
   margin: 100px;
   display: flex;
   flex-direction: column;
@@ -58,26 +58,26 @@ select {
   font-weight: bold;
 }
 
-.login-form-box h1 {
+.login_form_box h1 {
   color: $my-red;
   margin-bottom: 6px;
 }
 
-.login-form-box strong {
+.login_form_box strong {
   margin: 0;
 }
 
-.login-form-box .small {
+.login_form_box .small {
   text-align: right;
   color: #999;
 }
 
-.login-form-box a {
+.login_form_box a {
   color: blue;
   text-decoration: none;
 }
 
-.login-form-box a:hover {
+.login_form_box a:hover {
   text-decoration: underline;
 }
 
