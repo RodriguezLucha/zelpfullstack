@@ -38,7 +38,7 @@ class LoginForm extends React.Component {
 
   render() {
     return (
-      <div className="login-form-container">
+      <div className="login_form_container">
         <div className="form_header">
           <h1>
             <Link to="/">
@@ -47,7 +47,7 @@ class LoginForm extends React.Component {
           </h1>
         </div>
         <div className='login_form_body'>
-          <form onSubmit={this.handleSubmit} className="login-form-box">
+          <form onSubmit={this.handleSubmit} className="login_form_box">
             <h1>
               Log In to Zelp
             </h1>
@@ -55,12 +55,11 @@ class LoginForm extends React.Component {
               <strong>New to Zelp?  &nbsp; <Link to="/signup">Sign up</Link></strong>
             </div>
             {this.renderErrors()}
-            <div className="login-form">
+            <div>
               <label>
                 <input type="text"
                   value={this.state.email}
                   onChange={this.update('email')}
-                  className="login-input"
                   placeholder="Email"
                 />
               </label>
@@ -69,12 +68,11 @@ class LoginForm extends React.Component {
                 <input type="password"
                   value={this.state.password}
                   onChange={this.update('password')}
-                  className="login-input"
                   placeholder="Password"
                 />
               </label>
               <br/>
-              <input className="session-submit" type="submit" value="Log In" />
+              <input type="submit" value="Log In" />
             </div>
           </form>
           <img src="https://s3-media4.fl.yelpcdn.com/assets/2/www/img/7922e77f338d/signup/signup_illustration.png"></img>

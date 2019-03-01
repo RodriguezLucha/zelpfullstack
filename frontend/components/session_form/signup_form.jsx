@@ -39,7 +39,7 @@ class SignupForm extends React.Component {
 
   render() {
     return (
-      <div className="login-form-container">
+      <div className="login_form_container">
         <div className="form_header">
           <h1>
             <Link to="/">
@@ -48,7 +48,7 @@ class SignupForm extends React.Component {
           </h1>
         </div>
         <div className='login_form_body'>
-          <form onSubmit={this.handleSubmit} className="login-form-box">
+          <form onSubmit={this.handleSubmit} className="login_form_box">
             <h1>
               Sign Up for Zelp
             </h1>
@@ -56,12 +56,12 @@ class SignupForm extends React.Component {
               <strong>Connect with great local restaurants</strong>
             </div>
             {this.renderErrors()}
-            <div className="login-form">
+            <div className="login_form">
               <label>
                 <input type="text"
                   value={this.state.firstname}
                   onChange={this.update('firstname')}
-                  className="login-input"
+                  className="login_input"
                   placeholder="First Name"
                 />
               </label>
@@ -70,7 +70,7 @@ class SignupForm extends React.Component {
                 <input type="text"
                   value={this.state.lastname}
                   onChange={this.update('lastname')}
-                  className="login-input"
+                  className="login_input"
                   placeholder="Last Name"
                 />
               </label>
@@ -79,7 +79,7 @@ class SignupForm extends React.Component {
                 <input type="text"
                   value={this.state.email}
                   onChange={this.update('email')}
-                  className="login-input"
+                  className="login_input"
                   placeholder="Email"
                 />
               </label>
@@ -88,12 +88,12 @@ class SignupForm extends React.Component {
                 <input type="password"
                   value={this.state.password}
                   onChange={this.update('password')}
-                  className="login-input"
+                  className="login_input"
                   placeholder="Password"
                 />
               </label>
               <br />
-              <input className="session-submit" type="submit" value="Sign Up" />
+              <input className="session_submit" type="submit" value="Sign Up" />
               <br/>
               <div className='small'>
                 <small> Already on Zelp? &nbsp;
