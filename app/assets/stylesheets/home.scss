@@ -1,5 +1,31 @@
 @import 'colors.scss';
 
+/// Stroke font-character
+/// @param  {Integer} $stroke - Stroke width
+/// @param  {Color}   $color  - Stroke color
+/// @return {List}            - text-shadow list
+@function stroke($stroke, $color) {
+  $shadow: ();
+  $from: $stroke*-1;
+
+  @for $i from $from through $stroke {
+    @for $j from $from through $stroke {
+      $shadow: append($shadow, $i*1px $j*1px 0 $color, comma);
+    }
+  }
+
+  @return $shadow;
+}
+
+/// Stroke font-character
+/// @param  {Integer} $stroke - Stroke width
+/// @param  {Color}   $color  - Stroke color
+/// @return {Style}           - text-shadow
+@mixin stroke($stroke, $color) {
+  text-shadow: stroke($stroke, $color);
+}
+
+
 .home {
   background-image: url('https://s3-media2.fl.yelpcdn.com/assets/srv0/yelp_large_assets/52ed68f0e062/assets/img/home/hero_photos/BKlP1ebtV6kFbKnZU8Ppew.jpg');
   background-repeat: no-repeat;
@@ -89,11 +115,10 @@
   font-family: 'Courgette', cursive;
   font-size: 6em;
   padding: 60px;
-  text-shadow: -5px 0 white,
-    0 5px white,
-    5px 0 white,
-    0 -5px white;
+  text-shadow: stroke(4, white);
 }
+
+
 
 .home_personal_greeting {
   margin: 5px;
