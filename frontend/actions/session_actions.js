@@ -3,6 +3,8 @@ import * as APIUtil from '../util/session_api_util';
 export const RECEIVE_CURRENT_USER = 'RECEIVE_CURRENT_USER';
 export const LOGOUT_CURRENT_USER = 'LOGOUT_CURRENT_USER';
 export const RECEIVE_SESSION_ERRORS = 'RECEIVE_SESSION_ERRORS';
+export const SET_DEMO_USER = 'SET_DEMO_USER';
+export const CLEAR_DEMO_USER = 'CLEAR_DEMO_USER';
 
 export const receiveCurrentUser = user => ({
   type: RECEIVE_CURRENT_USER,
@@ -16,6 +18,14 @@ export const logoutCurrentUser = () => ({
 export const receiveErrors = errors => ({
   type: RECEIVE_SESSION_ERRORS,
   errors
+});
+
+export const setDemoUser = () => ({
+  type: SET_DEMO_USER,
+});
+
+export const clearDemoUser = () => ({
+  type: CLEAR_DEMO_USER,
 });
 
 export const signup = user => dispatch => (
@@ -32,17 +42,9 @@ export const login = user => dispatch => (
   ))
 );
 
-const demoLogin = {
-  email: 'test@test.com',
-  password: 'password'
-};
-
 export const loginDemoUser = (history) => dispatch => {
-  // APIUtil.login(demoLogin).then(user => (
-  //   dispatch(receiveCurrentUser(user))), err => (
-  //   dispatch(receiveErrors(err.responseJSON))
-  // ))
   history.push('/login');
+  dispatch(setDemoUser());
 };
 
 export const logout = () => dispatch => (

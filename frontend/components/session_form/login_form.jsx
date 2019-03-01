@@ -47,8 +47,13 @@ class LoginForm extends React.Component {
     );
   }
 
-  render() {
+  componentWillUnmount(){
+    if(this.props.demoLoginSet){
+      this.props.clearDemoUser();
+    }
+  }
 
+  render() {
     const login_button_class = this.state.loginButtonClass;
 
     return (
