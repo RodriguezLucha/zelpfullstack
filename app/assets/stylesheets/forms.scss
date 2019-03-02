@@ -19,13 +19,15 @@
 
 input {
   font-size: 14px;
+  height: 10px;
+  padding: 10px;
 }
 
 input[type=text],
 select {
   width: 300px;
   height: 30px;
-  padding: 12px 20px;
+  padding: 5px 9px;
   margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
@@ -37,7 +39,7 @@ input[type=password],
 select {
   width: 300px;
   height: 30px;
-  padding: 12px 20px;
+  padding: 5px 9px;
   margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
@@ -49,7 +51,7 @@ input[type=submit],
 select {
   width: 300px;
   height: 43px;
-  padding: 12px 20px;
+  padding: 5px 9px;
   margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
@@ -68,6 +70,9 @@ select {
   font-size: 22px;
 }
 
+.login_form {
+    padding: 30px 0px 20px 0px;
+}
 
 .login_form_box strong {
   margin: 0;
@@ -93,6 +98,7 @@ select {
   display: flex;
   align-items: center;
   align-content: center;
+  height: 64px;
 }
 
 .form_header h1 {
