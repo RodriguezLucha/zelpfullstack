@@ -17,6 +17,10 @@
   text-align: center;
 }
 
+input {
+  font-size: 14px;
+}
+
 input[type=text],
 select {
   width: 300px;
@@ -61,10 +65,13 @@ select {
 .login_form_box h1 {
   color: $my-red;
   margin-bottom: 6px;
+  font-size: 22px;
 }
+
 
 .login_form_box strong {
   margin: 0;
+  font-size: 14px;
 }
 
 .login_form_box .small {
