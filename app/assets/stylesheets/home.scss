@@ -76,7 +76,7 @@
   border: 2px solid white;
   border-radius: 4px;
   margin-right: 20px;
-  transition: 1.0s;
+  transition: all 2s ease-in;
   transition-property: background-color,
     background-position,
     background-size,
@@ -109,7 +109,7 @@
   display: flex;
   align-items: center;
   align-content: center;
-  height: 400px;
+  height: 600px;
 }
 
 .home_banner h1 {
