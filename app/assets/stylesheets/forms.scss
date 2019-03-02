@@ -130,6 +130,10 @@ select {
   justify-content: center;
 }
 
+.error_subcontainer {
+  display: block;
+}
+
 .error_alert {
   background-color: rgb(252, 214, 211);
   width: 918px;
@@ -141,6 +145,7 @@ select {
   padding: 18px 18px 18px 24px;
   font-size: 16px;
   border-radius: 3px;
+  margin: 10px;
 }
 
 .error_text {

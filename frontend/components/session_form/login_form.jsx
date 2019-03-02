@@ -38,14 +38,16 @@ class LoginForm extends React.Component {
   renderErrors() {
     return (
       <ul className='error_container' >
-        {this.props.errors.map((error, i) => (
-          <li className='error_alert' key={`error-${i}`}>
-            <div className='error_text'>
-              {error}
-            </div>
-            <button className='error_cancel' onClick={() => this.props.clearSessionErrors()}>×</button>
-          </li>
-        ))}
+        <div className='error_subcontainer'>
+          {this.props.errors.map((error, i) => (
+            <li className='error_alert' key={`error-${i}`}>
+              <div className='error_text'>
+                {error}
+              </div>
+              <button className='error_cancel' onClick={() => this.props.clearSessionErrors()}>×</button>
+            </li>
+          ))}
+        </div>
       </ul>
     );
   }
