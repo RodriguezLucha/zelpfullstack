@@ -1,8 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 
-export const LoggedOut = ({ props }) => (
+export const LoggedOut = ({props}) => (
   <div className="home_session_links">
     <Link id="login_button" to="/login">Log In</Link>
     <br></br>
