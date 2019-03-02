@@ -124,3 +124,44 @@ select {
     box-shadow: 0 0 0px $my-red;
   }
 }
+
+.error_container {
+  display: flex;
+  justify-content: center;
+}
+
+.error_alert {
+  background-color: rgb(252, 214, 211);
+  width: 918px;
+  display: flex;
+  list-style: none;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 18px 18px 24px;
+  font-size: 16px;
+  border-radius: 3px;
+}
+
+.error_text {
+  padding-left: 21px;
+}
+
+.error_cancel {
+  padding-right: 21px;
+}
+
+.error_alert button {
+  background: transparent;
+  opacity: 0.5;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+  border-style: none;
+  position: relative;
+  float: right;
+  top: -3px;
+  width: 14px;
+  height: 24px;
+
+}

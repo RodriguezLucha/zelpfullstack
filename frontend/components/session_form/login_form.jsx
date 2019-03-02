@@ -35,14 +35,15 @@ class LoginForm extends React.Component {
     this.props.processForm(user);
   }
 
-
-
   renderErrors() {
     return (
-      <ul>
+      <ul className='error_container' >
         {this.props.errors.map((error, i) => (
-          <li key={`error-${i}`}>
-            {error}
+          <li className='error_alert' key={`error-${i}`}>
+            <div className='error_text'>
+              {error}
+            </div>
+            <button className='error_cancel'>×</button>
           </li>
         ))}
       </ul>
@@ -68,6 +69,7 @@ class LoginForm extends React.Component {
             </Link>
           </h1>
         </div>
+        {this.renderErrors()}
         <div className='login_form_body'>
           <form onSubmit={this.handleSubmit} className="login_form_box">
             <h1>
@@ -76,7 +78,7 @@ class LoginForm extends React.Component {
             <div>
               <strong>New to Zelp?  &nbsp; <Link to="/signup">Sign up</Link></strong>
             </div>
-            {this.renderErrors()}
+            
             <div>
               <label>
                 <input type="text"

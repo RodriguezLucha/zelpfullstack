@@ -31,10 +31,13 @@ class SignupForm extends React.Component {
 
   renderErrors() {
     return(
-      <ul>
+      <ul className='error_container' >
         {this.props.errors.map((error, i) => (
-          <li key={`error-${i}`}>
-            {error}
+          <li className='error_alert' key={`error-${i}`}>
+            <div className='error_text'>
+              {error}
+            </div>
+            <button className='error_cancel'>×</button>
           </li>
         ))}
       </ul>
