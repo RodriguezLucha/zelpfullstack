@@ -37,7 +37,7 @@ class SignupForm extends React.Component {
             <div className='error_text'>
               {error}
             </div>
-            <button className='error_cancel'>×</button>
+            <button className='error_cancel' onClick={() => this.props.clearSessionErrors()}>×</button>
           </li>
         ))}
       </ul>
@@ -54,6 +54,7 @@ class SignupForm extends React.Component {
             </Link>
           </h1>
         </div>
+        {this.renderErrors()}
         <div className='login_form_body'>
           <form onSubmit={this.handleSubmit} className="login_form_box">
             <h1>
@@ -62,7 +63,6 @@ class SignupForm extends React.Component {
             <div>
               <strong>Connect with great local restaurants</strong>
             </div>
-            {this.renderErrors()}
             <div className="login_form">
               <label>
                 <input type="text"

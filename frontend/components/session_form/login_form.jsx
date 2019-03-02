@@ -43,7 +43,7 @@ class LoginForm extends React.Component {
             <div className='error_text'>
               {error}
             </div>
-            <button className='error_cancel'>×</button>
+            <button className='error_cancel' onClick={() => this.props.clearSessionErrors()}>×</button>
           </li>
         ))}
       </ul>
