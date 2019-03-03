@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.delete_all
-Restaurant.delete_all
+# Restaurant.delete_all
 
 User.create!(
   firstname: 'Test',
