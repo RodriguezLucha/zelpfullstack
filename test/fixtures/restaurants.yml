@@ -1,0 +1,41 @@
+# == Schema Information
+#
+# Table name: restaurants
+#
+#  id          :bigint(8)        not null, primary key
+#  name        :string           not null
+#  state       :string           not null
+#  zip         :string           not null
+#  address     :string           not null
+#  city        :string           not null
+#  website     :string
+#  price_range :float            not null
+#  lat         :float            not null
+#  lng         :float            not null
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  state: MyString
+  zip: MyString
+  address: MyString
+  city: MyString
+  website: MyString
+  price_range: 1.5
+  lat: 1.5
+  lng: 1.5
+
+two:
+  name: MyString
+  state: MyString
+  zip: MyString
+  address: MyString
+  city: MyString
+  website: MyString
+  price_range: 1.5
+  lat: 1.5
+  lng: 1.5
