@@ -1,14 +1,14 @@
-import { connect } from 'react-redux';
-//import { login, clearDemoUser, receiveClearSessionErrors } from '../../actions/session_actions';
+import {connect} from 'react-redux';
+import {fetchSingleRestaurant} from '../../actions/restaurant_actions';
 import ResturantView from './restaurant_view';
 
-const mapStateToProps = (state) => ({
-  //errors: errors.session,
-  //demoLoginSet: ui.demo
-});
+const mapStateToProps = (state, ownProps) => {
+  const singleRestaurant = state.entities.restaurants[ownProps.match.params.id];
+  return ({singleRestaurant});
+};
 
 const mapDispatchToProps = dispatch => ({
-//  clearSessionErrors: () => dispatch(receiveClearSessionErrors())
+  fetchSingleRestaurant: (id) => dispatch(fetchSingleRestaurant(id))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(ResturantView);
