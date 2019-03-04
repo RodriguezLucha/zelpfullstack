@@ -1,0 +1,1 @@
+export const selectAllRestaurants = state => Object.values(state.entities.restaurants);

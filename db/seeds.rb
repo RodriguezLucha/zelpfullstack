@@ -53,7 +53,7 @@ lucky_13.photos.attach(io: File.open('./app/assets/images/lucky_13/cat.jpg'), fi
 # San Francisco, CA 94107
 # 37.764803, -122.402847
 steep_brew = Restaurant.create!(
-  name: 'Noodle Time',
+  name: 'Whole Foods Market Steep Brew',
   state: 'California',
   zip: '94111',
   address: '605 Battery St',

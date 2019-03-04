@@ -4,10 +4,26 @@
   display: flex;
   align-items: center;
   align-content: center;
+  flex-direction: column;
   height: 400px;
 }
 
 .top_restaurants h1 {
   margin: auto;
   color: $my-red;
+}
+
+.top_restaurant_container {
+  display: flex;
+}
+.top_restaurant {
+  margin: 20px;
+  padding: 20px;
+}
+
+.top_restaurant img {
+  width: 300px;
+  height: 180px;
+  object-fit: cover;
+
 }
