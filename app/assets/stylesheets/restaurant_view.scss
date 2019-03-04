@@ -1,7 +1,68 @@
 @import 'colors.scss';
 
-.restaurant_view img {
-  width: 300px;
-  height: 300px;
+.single_restaurant {
+  width: 960;
+  height: 443;
+  background-color: $my-gray;
+  display: grid;
+  grid-template-areas:
+    "left info review right"
+    "left map  images right";
+  grid-template-columns: 1fr auto auto 1fr;
+  grid-template-rows: auto auto;
+
+}
+
+.single_restaurant .left {
+  grid-area: left;
+}
+
+.single_restaurant .right {
+  grid-area: right;
+}
+
+.single_restaurant .info {
+  grid-area: info;
+  width: 555px;
+  height: 112px;
+}
+
+.single_restaurant .map {
+  grid-area: map;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  width: 330px;
+  height: 336px;
+
+}
+
+.single_restaurant .images {
+  grid-area: images;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  width: 660px;
+  height: 336px;
+}
+
+.single_restaurant .review {
+  grid-area: review;
+  width: 405px;
+  height: 112px;
+}
+
+.single_restaurant img {
+  width: 220px;
+  height: 220px;
   object-fit: cover;
+}
+
+.single_restaurant h1 {
+  font-size: 36px;
+}
+
+.single_restaurant address {
+  font-size: 14px;
+  font-weight: 700;
 }

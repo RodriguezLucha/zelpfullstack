@@ -12,7 +12,6 @@ const Home = ({props}) => (
       <h1>Zelp</h1>
     </div>
   </div>
-
 );
 
 export default Home;
