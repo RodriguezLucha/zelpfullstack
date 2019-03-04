@@ -52,10 +52,20 @@
   height: 112px;
 }
 
+//https: //css-tricks.com/snippets/css/scale-on-hover-with-webkit-transition/
 .single_restaurant img {
   width: 220px;
   height: 220px;
   object-fit: cover;
+  transition: all .2s ease-in-out;
+}
+
+.single_restaurant img:hover {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  z-index: 3;
+  transform: scale(1.1);
 }
 
 .single_restaurant h1 {
