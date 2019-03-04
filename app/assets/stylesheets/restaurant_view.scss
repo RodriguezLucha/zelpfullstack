@@ -60,11 +60,21 @@
   transition: all .2s ease-in-out;
 }
 
-.single_restaurant img:hover {
-  position: relative;
+.single_restaurant img:nth-child(2) {
   width: 250px;
   height: 250px;
-  z-index: 3;
+}
+
+//Change the middle div back to small on hover of other images
+//https: //stackoverflow.com/questions/6910049/on-a-css-hover-event-can-i-change-another-divs-styling?answertab=oldest#tab-top
+.single_restaurant img:nth-child(odd):hover ~ img:nth-child(2) {
+  width: 220px;
+  height: 220px;
+}
+
+.single_restaurant img:hover {
+  width: 250px;
+  height: 250px;
   transform: scale(1.1);
 }
 
