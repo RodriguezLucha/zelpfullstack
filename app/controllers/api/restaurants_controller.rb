@@ -1,21 +1,18 @@
 class Api::RestaurantsController < ApplicationController
   def index
-    if !query_set
+    if !term_set
       @restaurants = Restaurant.with_attached_photos.includes(:styles)
     else
       condition = []
       args = []
 
-      if style_query
-        condition.push('style ILIKE ?')
-        args.push("%#{style_query}%")
-      end
-
-      if name_query
-        condition.push('name ILIKE ?')
-        args.push("%#{name_query}%")
-      end
+      #TODO: Implement category buttons
+      condition.push('style ILIKE ?')
+      args.push("%#{term_query}%")
+      condition.push('name ILIKE ?')
+      args.push("%#{term_query}%")
       @restaurants = Restaurant.with_attached_photos.joins(:styles).where(condition.join(' OR '), *args)
+      
     end
 
     render :index
@@ -28,19 +25,16 @@ class Api::RestaurantsController < ApplicationController
 
   private
 
-  def query_set
-    if style_query || name_query
+  def term_set
+    if  term_query
       return true
     else
       return false
     end
   end
 
-  def style_query
-    params[:style]
+  def term_query
+    params[:term]
   end
 
-  def name_query
-    params[:name]
-  end
 end

@@ -1,5 +1,6 @@
 import React from 'react';
 import HomeNav from './home_nav/home_nav_container';
+import SearchBarContainer from './restaurant/search_bar_container';
 
 const Home = ({props}) => (
   <div className="home">
@@ -10,6 +11,7 @@ const Home = ({props}) => (
     </div>
     <div className="home_banner">
       <h1>Zelp</h1>
+      <SearchBarContainer/>
     </div>
   </div>
 );

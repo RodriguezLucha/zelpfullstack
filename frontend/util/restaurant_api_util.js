@@ -7,11 +7,11 @@ export const fetchAll = () => (
   })
 );
 
-export const searchAll = (style) => (
+export const searchAll = (term) => (
   $.ajax({
     method: 'GET',
-    url: `api/restaurants/?style=${style}`,
-    style
+    url: `api/restaurants/?term=${term}`,
+    term
   })
 );
 

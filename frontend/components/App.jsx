@@ -7,7 +7,7 @@ import {AuthRoute} from '../util/route_util';
 import {Route} from 'react-router-dom';
 import TopRestaurantsContainer from './top_restaurants/top_restaurant_container';
 import RestaurantViewContainer from './restaurant/restaurant_view_container';
-import SearchViewContainer from './restaurant/restaurant_search_container';
+import SearchResultContainer from './restaurant/search_result_container';
 import Footer from './footer';
 
 const App = () => (
@@ -15,7 +15,7 @@ const App = () => (
     <Route exact path="/" component={Home} />
     <Route exact path="/" component={TopRestaurantsContainer} />
     <Route exact path="/restaurant/:id" component={RestaurantViewContainer} />
-    <Route exact path="/search" component={SearchViewContainer} />
+    <Route exact path="/search" component={SearchResultContainer} />
     <AuthRoute exact path="/login" component={LoginFormContainer} />
     <AuthRoute exact path="/signup" component={SignupFormContainer} />
     <Footer/>
