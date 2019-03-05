@@ -17,45 +17,74 @@ class RestaurantView extends React.Component {
     if (!this.props.singleRestaurant) return null;
     if (!this.props.singleRestaurant.photoUrl) return null;
 
-    let address = `${this.props.singleRestaurant.address}`;
-    address += ` ${this.props.singleRestaurant.city}`;
-    address += `  ${this.props.singleRestaurant.state}`;
+    const singleRestaurant = this.props.singleRestaurant;
+
+    let address1 = `${singleRestaurant.address}`;
+    let address2 = `${singleRestaurant.city},`;
+    address2 += `  ${singleRestaurant.state}`;
+    address2 += `  ${singleRestaurant.zip}`;
+
     return (
       <div className="restaurant_view">
-        <div className="form_header">
-
-          <div className="nav_container_outer">
-            <h1>
-              <Link to="/">
-                Zelp <i className="fas fa-wine-glass-alt"></i>
-              </Link>
-            </h1>
-            <div className="nav_container_inner">
+        <div className="header">
+          <div className="nav_content">
+            <div className="logo">
+              <h1>
+                <Link to="/">
+                  Zelp
+                  <i className="fas fa-wine-glass-alt"></i>
+                </Link>
+              </h1>
+            </div>
+            <div className="search">
+              
+            </div>
+            <div className="links">
               <HomeNav props={this.props} />
             </div>
           </div>
+          <div className="right"></div>
+          <div className="left"></div>
         </div>
+
         <div className="single_restaurant">
           <div className="info">
-            <h1>{this.props.singleRestaurant.name}</h1>
-            <address>
-              {address}
-            </address>
+            <h1>{singleRestaurant.name}</h1>
+            <div className="price">
+              {singleRestaurant.priceRange}
+            </div>
           </div>
           <div className="review">
-            <h1>Write a Review</h1>
+            <button>
+              <i className="fas fa-star"></i>
+              &nbsp;
+              Write a Review
+            </button>
           </div>
           <div className="map">
-            <div>Map</div>
+            <address>
+              {address1}
+              <br />
+              {address2}
+            </address>
+            <div>
+              <a href={singleRestaurant.website}>{singleRestaurant.website}</a>
+            </div>
+
           </div>
           <div className="images">
-              {this.props.singleRestaurant.photoUrl.map(url => (
+            {singleRestaurant.photoUrl.map(url => (
               <img src={url} alt="" key={url} />
             ))}
           </div>
-
           <div className="right"></div>
           <div className="left"></div>
+
+          <div className="reviews">
+            <h1>
+              Reviews coming soon!
+            </h1>
+          </div>
 
         </div>
 

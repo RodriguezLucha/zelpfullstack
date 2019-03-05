@@ -8,3 +8,12 @@ body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   background-color: $my-body;
 }
+
+a {
+  color: $my-blue;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

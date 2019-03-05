@@ -1,17 +1,59 @@
 @import 'colors.scss';
 
+.restaurant_view .header {
+  display: grid;
+  grid-template-areas:
+    "nav_left  nav_content   nav_right";
+  background-color: $my-red;
+  grid-template-columns: 1fr 960px 1fr;
+  height: 64px;
+
+}
+.restaurant_view .header .nav_left {
+  grid-area: nav_left;
+}
+.restaurant_view .header .nav_right {
+  grid-area: nav_right;
+}
+
+.restaurant_view .header .nav_content {
+  grid-area: nav_content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.restaurant_view .header .nav_content h1 {
+  margin: auto;
+  font-family: 'Courgette',
+  cursive;
+  font-size: 2em;
+  padding: 10px;
+  text-shadow: -1px 0 white,
+  0 1px white,
+  1px 0 white,
+  0 -1px white;
+}
+.restaurant_view .header .nav_content h1 a {
+  color: black;
+  text-decoration: none;
+}
+
 .single_restaurant {
   width: 960;
   height: 443;
   background-color: $my-gray;
   display: grid;
   grid-template-areas:
-    "left info review right"
-    "left map  images right";
-  grid-template-columns: 1fr auto auto 1fr;
-  grid-template-rows: auto auto;
+    "left  info     info     review   right"
+    "left  map      images   images   right"
+    "left  reviews  reviews  reviews  right";
 
+  grid-template-columns: 1fr auto auto auto 1fr;
+  grid-template-rows: auto auto auto;
 }
+
 
 .single_restaurant .left {
   grid-area: left;
@@ -25,16 +67,25 @@
   grid-area: info;
   width: 555px;
   height: 112px;
+  padding: 10px;
 }
 
 .single_restaurant .map {
   grid-area: map;
   display: flex;
-  justify-items: center;
-  align-items: center;
-  width: 330px;
-  height: 336px;
+  justify-content: flex-end;
+  flex-direction: column;
+  max-width: 330px;
+  background-color: $my-white;
+  border: solid;
+  border-width: 1px;
+  position: relative;
+  top: 30px;
+  padding: 20px;
+}
 
+.single_restaurant .map address {
+  font-style: normal;
 }
 
 .single_restaurant .images {
@@ -50,7 +101,31 @@
   grid-area: review;
   width: 405px;
   height: 112px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
 }
+
+.single_restaurant .review button {
+  color: #fff;
+  background: #d32323;
+  border: 1px solid #d32323;
+  transition: all 0.5s ease-in-out;
+
+  font-size: 14px;
+  line-height: 1.28571em;
+  padding: 8px 19px 9px;
+  border-radius: 3px;
+  font-family: $my-font;
+  font-weight: 700;
+  font-stretch: 100%;
+  cursor: not-allowed;
+}
+
+.single_restaurant .review button:hover {
+  opacity: 0.6;
+}
+
 
 //https: //css-tricks.com/snippets/css/scale-on-hover-with-webkit-transition/
 .single_restaurant img {
@@ -58,6 +133,8 @@
   height: 220px;
   object-fit: cover;
   transition: all .2s ease-in-out;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .single_restaurant img:nth-child(2) {
@@ -67,7 +144,7 @@
 
 //Change the middle div back to small on hover of other images
 //https: //stackoverflow.com/questions/6910049/on-a-css-hover-event-can-i-change-another-divs-styling?answertab=oldest#tab-top
-.single_restaurant img:nth-child(odd):hover ~ img:nth-child(2) {
+.single_restaurant img:nth-child(odd):hover~img:nth-child(2) {
   width: 220px;
   height: 220px;
 }
@@ -85,4 +162,13 @@
 .single_restaurant address {
   font-size: 14px;
   font-weight: 700;
+}
+
+.reviews {
+  grid-area: reviews;
+  padding: 200px 20px;
+  background-color: $my-white;
+  color: $my-red;
+  display: flex;
+  justify-content: center;
 }
