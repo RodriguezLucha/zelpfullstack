@@ -26,4 +26,5 @@ class Restaurant < ApplicationRecord
   has_many :styles,
     through: :restaurant_styles,
     source: :style
+
 end
