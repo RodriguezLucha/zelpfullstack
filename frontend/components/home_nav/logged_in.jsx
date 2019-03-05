@@ -17,11 +17,9 @@ export const LoggedIn = ({props}) => {
               {props.currentUser.firstname}
             </div>
           </div>
-          
           <button onClick={props.logout}>Log Out</button>
         </div>
       </div>
-
     </div>
   )
 };

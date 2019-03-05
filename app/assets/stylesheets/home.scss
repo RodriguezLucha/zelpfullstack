@@ -46,10 +46,17 @@
 }
 
 
-.home_session_links {
+.nav_container_inner .home_session_links {
   display: flex;
   justify-content: flex-end;
   padding-top: 10px;
+  align-content: center;
+  align-items: center;
+}
+
+.home_session_links {
+  display: flex;
+  justify-content: flex-end;
   align-content: center;
   align-items: center;
 }
@@ -102,7 +109,7 @@
   color: #666;
 }
 
-.home_session_links a {
+.home .home_session_links a {
   margin: 15px;
   border-radius: 0;
   border-bottom: 2px solid transparent;
