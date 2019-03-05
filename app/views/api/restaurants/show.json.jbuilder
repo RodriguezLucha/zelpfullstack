@@ -1,5 +1,7 @@
 json.extract! @restaurant, :id, :name, :state, :zip, :address, :city, :website, :price_range, :lat, :lng
+json.styles @restaurant.styles.map { |style| style.style }
 
+#TODO: extract to partial
 case @restaurant.price_range
 when 0..1
   json.price_range "$"

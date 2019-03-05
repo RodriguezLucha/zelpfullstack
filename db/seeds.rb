@@ -36,7 +36,7 @@ noodle_time = Restaurant.create!(
 noodle_time.photos.attach(io: File.open('./app/assets/images/noodle_time/menu.jpg'), filename: 'menu.jpg')
 noodle_time.photos.attach(io: File.open('./app/assets/images/noodle_time/garlic_noodles.jpg'), filename: 'garlic_noodles.jpg')
 noodle_time.photos.attach(io: File.open('./app/assets/images/noodle_time/shrimp_salad.jpg'), filename: 'shrip_salad.jpg')
-RestaurantStyle.create!(restuarant_id: noodle_time.id, style_id: vietnamese.id)
+RestaurantStyle.create!(restaurant_id: noodle_time.id, style_id: vietnamese.id)
 
 
 
@@ -58,7 +58,7 @@ lucky_13 = Restaurant.create!(
 lucky_13.photos.attach(io: File.open('./app/assets/images/lucky_13/bar.jpg'), filename: 'bar.jpg')
 lucky_13.photos.attach(io: File.open('./app/assets/images/lucky_13/cash_only.jpg'), filename: 'cash_only.jpg')
 lucky_13.photos.attach(io: File.open('./app/assets/images/lucky_13/cat.jpg'), filename: 'cat.jpg')
-RestaurantStyle.create!(restuarant_id: lucky_13.id, style_id: dive_bars.id)
+RestaurantStyle.create!(restaurant_id: lucky_13.id, style_id: dive_bars.id)
 
 # Whole Foods Market Steep Brew
 # 450 Rhode Island St
@@ -78,5 +78,5 @@ steep_brew = Restaurant.create!(
 steep_brew.photos.attach(io: File.open('./app/assets/images/steep_brew/burger.jpg'), filename: 'burger.jpg')
 steep_brew.photos.attach(io: File.open('./app/assets/images/steep_brew/game.jpg'), filename: 'game.jpg')
 steep_brew.photos.attach(io: File.open('./app/assets/images/steep_brew/menu.jpg'), filename: 'menu.jpg')
-RestaurantStyle.create!(restuarant_id: steep_brew.id, style_id: oraganic_stores.id)
-RestaurantStyle.create!(restuarant_id: steep_brew.id, style_id: grocery.id)
+RestaurantStyle.create!(restaurant_id: steep_brew.id, style_id: oraganic_stores.id)
+RestaurantStyle.create!(restaurant_id: steep_brew.id, style_id: grocery.id)
