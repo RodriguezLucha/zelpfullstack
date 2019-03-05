@@ -1,6 +1,8 @@
-# frozen_string_literal: true
-
 User.delete_all
+Restaurant.delete_all
+Style.delete_all
+RestaurantStyle.delete_all
+
 # Demo user
 User.create!(
   firstname: 'Test',
@@ -9,7 +11,13 @@ User.create!(
   password: 'password'
 )
 
-Restaurant.delete_all
+# Styles
+vietnamese = Style.create!(style: 'Vietnamese')
+dive_bars = Style.create!(style: 'Dive Bars')
+grocery = Style.create!(style: 'Grocery')
+oraganic_stores = Style.create!(style: 'Organic Stores')
+
+
 # Noodle time
 # 605 Battery St
 # San Francisco, CA 94111
@@ -28,6 +36,9 @@ noodle_time = Restaurant.create!(
 noodle_time.photos.attach(io: File.open('./app/assets/images/noodle_time/menu.jpg'), filename: 'menu.jpg')
 noodle_time.photos.attach(io: File.open('./app/assets/images/noodle_time/garlic_noodles.jpg'), filename: 'garlic_noodles.jpg')
 noodle_time.photos.attach(io: File.open('./app/assets/images/noodle_time/shrimp_salad.jpg'), filename: 'shrip_salad.jpg')
+RestaurantStyle.create!(restuarant_id: noodle_time.id, style_id: vietnamese.id)
+
+
 
 # Lucky 13
 # 2140 Market St
@@ -47,6 +58,7 @@ lucky_13 = Restaurant.create!(
 lucky_13.photos.attach(io: File.open('./app/assets/images/lucky_13/bar.jpg'), filename: 'bar.jpg')
 lucky_13.photos.attach(io: File.open('./app/assets/images/lucky_13/cash_only.jpg'), filename: 'cash_only.jpg')
 lucky_13.photos.attach(io: File.open('./app/assets/images/lucky_13/cat.jpg'), filename: 'cat.jpg')
+RestaurantStyle.create!(restuarant_id: lucky_13.id, style_id: dive_bars.id)
 
 # Whole Foods Market Steep Brew
 # 450 Rhode Island St
@@ -66,3 +78,5 @@ steep_brew = Restaurant.create!(
 steep_brew.photos.attach(io: File.open('./app/assets/images/steep_brew/burger.jpg'), filename: 'burger.jpg')
 steep_brew.photos.attach(io: File.open('./app/assets/images/steep_brew/game.jpg'), filename: 'game.jpg')
 steep_brew.photos.attach(io: File.open('./app/assets/images/steep_brew/menu.jpg'), filename: 'menu.jpg')
+RestaurantStyle.create!(restuarant_id: steep_brew.id, style_id: oraganic_stores.id)
+RestaurantStyle.create!(restuarant_id: steep_brew.id, style_id: grocery.id)

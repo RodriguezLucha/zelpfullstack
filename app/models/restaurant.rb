@@ -20,4 +20,10 @@ class Restaurant < ApplicationRecord
   validates :name, :state, :zip, :address, :city, :price_range, :lat, :lng, presence: true
 
   has_many_attached :photos
+
+  has_many :restaurant_styles
+
+  has_many :styles,
+    through: :restaurant_styles,
+    source: :style
 end

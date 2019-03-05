@@ -1,0 +1,17 @@
+# == Schema Information
+#
+# Table name: styles
+#
+#  id         :bigint(8)        not null, primary key
+#  style      :string           not null
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  style: MyString
+
+two:
+  style: MyString
