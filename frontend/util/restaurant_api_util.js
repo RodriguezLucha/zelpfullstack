@@ -1,10 +1,17 @@
 
 
-//Hit index of all restaurants
 export const fetchAll = () => (
   $.ajax({
     method: 'GET',
     url: 'api/restaurants'
+  })
+);
+
+export const searchAll = (style) => (
+  $.ajax({
+    method: 'GET',
+    url: `api/restaurants/?style=${style}`,
+    style
   })
 );
 

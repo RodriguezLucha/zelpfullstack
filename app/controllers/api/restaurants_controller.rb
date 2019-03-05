@@ -1,14 +1,9 @@
 class Api::RestaurantsController < ApplicationController
   def index
-
-    puts "The style is: >>>>>>#{style_name}<<<<<<<"
-    if style_name.nil?
+    if style_query.nil?
       @restaurants = Restaurant.with_attached_photos.includes(:styles)
     else
-      #@restaurants = Restaurant.with_attached_photos.joins(:styles).where(:styles => {style: style})
-      @restaurants = Restaurant.with_attached_photos.joins(:styles).where('style ILIKE ?', "%#{style_name}%")
-      #where(title.matches("%#{query}%"))
-      #Foo.where("bar ILIKE ?", "%#{query}%") 
+      @restaurants = Restaurant.with_attached_photos.joins(:styles).where('style ILIKE ?', "%#{style_query}%")
     end
 
     render :index
@@ -19,7 +14,7 @@ class Api::RestaurantsController < ApplicationController
     render :show
   end
 
-  def style_name
-    params[:style_name]
+  def style_query
+    params[:style]
   end
 end
