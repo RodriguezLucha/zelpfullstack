@@ -10,8 +10,7 @@ export const fetchAll = () => (
 export const searchAll = (term) => (
   $.ajax({
     method: 'GET',
-    url: `api/restaurants/?term=${term}`,
-    term
+    url: `api/restaurants/?term=${term}`
   })
 );
 
