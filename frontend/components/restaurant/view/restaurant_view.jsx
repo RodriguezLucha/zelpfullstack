@@ -1,6 +1,6 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import HomeNav from '../../home_nav/home_nav_container';
+import Logo from '../../logo';
 
 class RestaurantView extends React.Component {
   constructor(props) {
@@ -28,14 +28,7 @@ class RestaurantView extends React.Component {
       <div className="restaurant_view">
         <div className="header">
           <div className="nav_content">
-            <div className="logo">
-              <h1>
-                <Link to="/">
-                  Zelp
-                  <i className="fas fa-wine-glass-alt"></i>
-                </Link>
-              </h1>
-            </div>
+            <Logo/>
             <div className="search">
 
             </div>

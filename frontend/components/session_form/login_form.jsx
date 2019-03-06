@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import Logo from '../logo';
 
 
 class LoginForm extends React.Component {
@@ -65,11 +66,7 @@ class LoginForm extends React.Component {
     return (
       <div className="login_form_container">
         <div className="form_header">
-          <h1>
-            <Link to="/">
-              Zelp <i className="fas fa-wine-glass-alt"></i>
-            </Link>
-          </h1>
+          <Logo/>
         </div>
         {this.renderErrors()}
         <div className='login_form_body'>

@@ -3,7 +3,7 @@
 .restaurant_view .header {
   display: grid;
   grid-template-areas:
-    "nav_left  nav_content   nav_right";
+    "nav_left  nav_center   nav_right";
   background-color: $my-red;
   grid-template-columns: 1fr 960px 1fr;
   grid-template-rows: 68px;
@@ -18,86 +18,6 @@
   grid-area: nav_right;
 }
 
-.restaurant_view .header .nav_content {
-  grid-area: nav_content;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.restaurant_view .header .home_session_links {
-  min-width: auto;
-  line-height: 11px;
-
-  height: 11px;
-  margin: 0px;
-}
-
-.restaurant_view .home_session_links a {
-  margin: 0px 3px;
-  border-radius: 0;
-  border-bottom: 3px solid transparent;
-  padding: 6px 18px;
-  border: solid 1px #c41314;
-
-  color: #fff;
-  display: block;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 700;
-  background: none;
-  vertical-align: baseline;
-  border-radius: 3px;
-
-  text-decoration: none;
-}
-
-.restaurant_view #signup_button {
-  border-radius: 4px;
-  background-color: white;
-  color: black;
-  font-size: 14px;
-  font-weight: bold;
-  font-family: "Helvetica Neue",
-    Helvetica,
-    Arial,
-    sans-serif;
-  font-size: 15px;
-  font-weight: 700;
-}
-
-.restaurant_view #demo_button {
-  padding: 9px 15px;
-  border-radius: 4px;
-  background-color: white;
-  color: black;
-  font-size: 14px;
-  font-weight: bold;
-  font-family: "Helvetica Neue",
-    Helvetica,
-    Arial,
-    sans-serif;
-  font-size: 15px;
-  font-weight: 700;
-  border: 2px solid white;
-}
-
-.restaurant_view .header .nav_content h1 {
-  margin: auto;
-  font-family: 'Courgette',
-    cursive;
-  font-size: 2em;
-  padding: 10px;
-  text-shadow: -1px 0 white,
-    0 1px white,
-    1px 0 white,
-    0 -1px white;
-}
-
-.restaurant_view .header .nav_content h1 a {
-  color: black;
-  text-decoration: none;
-}
 
 .single_restaurant {
   width: 960;
