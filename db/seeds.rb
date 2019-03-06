@@ -52,7 +52,7 @@ noodle_time.photos.attach(io: File.open('./app/assets/images/noodle_time/garlic_
 noodle_time.photos.attach(io: File.open('./app/assets/images/noodle_time/shrimp_salad.jpg'), filename: 'shrip_salad.jpg')
 RestaurantStyle.create!(restaurant_id: noodle_time.id, style_id: vietnamese.id)
 Review.create!(restaurant_id: noodle_time.id, user_id: billy_user.id, num_stars: 5, content: 'I ordered Pho Noodle soup. It was the amazing noodle soup with affordable price. Definitely, I will come back again!')
-Review.create!(restaurant_id: noodle_time.id, user_id: willy_user.id, num_stars: 3, content: 'Amazing shrimp garlic noodles! Recommend! The food that I got was good for the price I paid!')
+Review.create!(restaurant_id: noodle_time.id, user_id: willy_user.id, num_stars: 5, content: 'Amazing shrimp garlic noodles! Recommend! The food that I got was good for the price I paid!')
 
 # Lucky 13
 # 2140 Market St
