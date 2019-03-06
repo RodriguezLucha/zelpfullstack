@@ -27,4 +27,5 @@ class Restaurant < ApplicationRecord
     through: :restaurant_styles,
     source: :style
 
+  has_many :reviews
 end

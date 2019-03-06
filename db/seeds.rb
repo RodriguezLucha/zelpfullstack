@@ -1,13 +1,28 @@
+# frozen_string_literal: true
+
 User.delete_all
 Restaurant.delete_all
 Style.delete_all
 RestaurantStyle.delete_all
+Review.delete_all
 
 # Demo user
-User.create!(
+demo_user = User.create!(
   firstname: 'Test',
   lastname: 'Tester',
   email: 'test@test.com',
+  password: 'password'
+)
+billy_user = User.create!(
+  firstname: 'Billy',
+  lastname: 'Smith',
+  email: 'billy@gmail.com',
+  password: 'password'
+)
+willy_user = User.create!(
+  firstname: 'Willy',
+  lastname: 'Johnson',
+  email: 'willy@gmail.com',
   password: 'password'
 )
 
@@ -16,7 +31,6 @@ vietnamese = Style.create!(style: 'Vietnamese')
 dive_bars = Style.create!(style: 'Dive Bars')
 grocery = Style.create!(style: 'Grocery')
 oraganic_stores = Style.create!(style: 'Organic Stores')
-
 
 # Noodle time
 # 605 Battery St
@@ -37,8 +51,8 @@ noodle_time.photos.attach(io: File.open('./app/assets/images/noodle_time/menu.jp
 noodle_time.photos.attach(io: File.open('./app/assets/images/noodle_time/garlic_noodles.jpg'), filename: 'garlic_noodles.jpg')
 noodle_time.photos.attach(io: File.open('./app/assets/images/noodle_time/shrimp_salad.jpg'), filename: 'shrip_salad.jpg')
 RestaurantStyle.create!(restaurant_id: noodle_time.id, style_id: vietnamese.id)
-
-
+Review.create!(restaurant_id: noodle_time.id, user_id: billy_user.id, num_stars: 5, content: 'I ordered Pho Noodle soup. It was the amazing noodle soup with affordable price. Definitely, I will come back again!')
+Review.create!(restaurant_id: noodle_time.id, user_id: willy_user.id, num_stars: 3, content: 'Amazing shrimp garlic noodles! Recommend! The food that I got was good for the price I paid!')
 
 # Lucky 13
 # 2140 Market St
@@ -59,6 +73,7 @@ lucky_13.photos.attach(io: File.open('./app/assets/images/lucky_13/bar.jpg'), fi
 lucky_13.photos.attach(io: File.open('./app/assets/images/lucky_13/cash_only.jpg'), filename: 'cash_only.jpg')
 lucky_13.photos.attach(io: File.open('./app/assets/images/lucky_13/cat.jpg'), filename: 'cat.jpg')
 RestaurantStyle.create!(restaurant_id: lucky_13.id, style_id: dive_bars.id)
+Review.create!(restaurant_id: lucky_13.id, user_id: billy_user.id, num_stars: 4, content: "My favorite dive bar -- It's like the SF I remember from when I moved here in the early 90's, before both tech booms, before rampant gentrification.  Great beer selection, people and the occasional dog.")
 
 # Whole Foods Market Steep Brew
 # 450 Rhode Island St
@@ -80,3 +95,4 @@ steep_brew.photos.attach(io: File.open('./app/assets/images/steep_brew/game.jpg'
 steep_brew.photos.attach(io: File.open('./app/assets/images/steep_brew/menu.jpg'), filename: 'menu.jpg')
 RestaurantStyle.create!(restaurant_id: steep_brew.id, style_id: oraganic_stores.id)
 RestaurantStyle.create!(restaurant_id: steep_brew.id, style_id: grocery.id)
+Review.create!(restaurant_id: lucky_13.id, user_id: willy_user.id, num_stars: 2, content: "Food is great and tons of space. Not a bad place to do work either with their free WiFi. However, the set up of ordering and receiving food is bad. Your order food from one room and pick it up from another. It's hard to hear when you're food is ready. Especially when wait times for food can take up to 30+ minutes. Great quality food tho.")
