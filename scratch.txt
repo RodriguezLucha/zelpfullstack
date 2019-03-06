@@ -1,42 +1,38 @@
-My full state..:
+Scratch pad for random notes.
 
-{
-  1: {
-        id: 1,
-        name: 'Steaks R Us',
-        address: '823 Steak Drive',
-        city: 'San Francisco',
-        priceRange: '3.4',
-  }
-}
+            {
+              this.props.restaurants.map(r =>
+                <div className="search_single_restaurant" key={r.id}>
+                  <img src={r.photo} alt="photo" />
+                  <div className="">
 
-What I want to show:
-Mr Szechuan
-4.0 star rating 18 reviews
-$$  Chinese
-Parkside
-1 Image...
+                  </div>
+                  <Link to={`restaurant/${r.id}`}>{r.name}</Link>
+                  <div>{r.address}</div>
+                  <div>{r.city}</div>
+                  <div>
+                    {
+                      r.styles.map((style) => (
+                        <button key={style} onClick={() => searchRestaurants(style)}>
+                          {style}
+                        </button>
+                      ))
+                    }
+                  </div>
 
+                </div>
+              )
+            }
 
-What I have now:
-[
-  {
-    "restaurant": {
-      "id": 1,
-      "name": "Noodle Time",
-      "state": "California",
-      "zip": "94111",
-      "address": "605 Battery St",
-      "city": "San Francisco",
-      "website": "https://noodletimesf.com/",
-      "price_range": 1,
-      "lat": 37.796996,
-      "lng": -122.400881,
-      "created_at": "2019-03-03T02:05:16.739Z",
-      "updated_at": "2019-03-03T02:21:07.110Z"
-    },
-    "photoUrls": [
-      "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5e244cd66713f79d3d610828a9b45ee2c3e3dbf9/1.jpg"
-    ]
-  }
-]
+            <div className="search_single_restaurant">
+              <div className="ssr_picture">Picture</div>
+              <div className="ssr_info">Info</div>
+              <div className="ssr_address">Address</div>
+              <div className="ssr_reviews">Reviews</div>
+            </div>
+            <div className="search_single_restaurant">
+              <div className="ssr_picture">Picture</div>
+              <div className="ssr_info">Info</div>
+              <div className="ssr_address">Address</div>
+              <div className="ssr_reviews">Reviews</div>
+            </div>

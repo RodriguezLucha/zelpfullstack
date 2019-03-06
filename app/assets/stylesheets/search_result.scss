@@ -27,10 +27,89 @@
 
 .search_result .con_center {
   grid-area: con_center;
+  display: grid;
   background: white;
+  grid-template-areas: 
+    "s_reviews s_reviews s_map";
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.con_center .s_reviews {
+  grid-area: s_reviews;
+  padding: 20px 0px;
+}
+
+.con_center .s_map {
+  grid-area: s_map;
 }
 
 .search_result .con_left {
   grid-area: con_left;
   background: white;
+}
+
+.con_center button {
+  background: none;
+  border: none;
+  color: $my-blue;
+  text-decoration: none;
+  padding: 0px;
+}
+
+.con_center button:hover {
+  text-decoration: underline;
+}
+
+.search_single_restaurant {
+  display: grid;
+  grid-template-areas: 
+    "ssr_picture ssr_info ssr_address"
+    "ssr_picture ssr_reviews ssr_reviews";
+  height: 250px;
+  padding: 18px;
+  border-bottom: 1px solid #ccc;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.ssr_picture {
+  grid-area: ssr_picture;
+  width: 228px;
+  height: 251px;
+
+}
+.ssr_info {
+  grid-area: ssr_info;
+  flex-direction: column;
+  display: flex;
+  
+}
+.ssr_info a {
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+.ssr_address {
+  grid-area: ssr_address;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 14px;
+  line-height: 18px;
+}
+.ssr_reviews {
+  grid-area: ssr_reviews;
+  color: $my-red;
+  font-weight: bolder;
+}
+
+.search_single_restaurant img {
+  border-radius: 4px;
+  width: 210px;
+  height: 210px;
+}
+
+.dot {
+  color: rgb(153, 153, 153);
+  font-size: 10px;
+  margin: 0px 6px;
 }

@@ -7,35 +7,52 @@ import {Link} from 'react-router-dom';
 class SearchResult extends React.Component {
   componentDidMount() {
     //Debugging
-    //this.props.fetchRestaurants();
+    this.props.fetchRestaurants();
   }
 
+  //{index !== r.styles.length - 1 ? ', ' : ''}
   render() {
-    console.log(this.props.restaurants);
+    const searchRestaurants = this.props.searchRestaurants;
     return (
       <div className="search_result">
         <div className="nav_left">
         </div>
         <div className="nav_center">
-          <Logo/>
+          <Logo />
           <SearchBarContainer />
           <HomeNav props={this.props} />
         </div>
         <div className="nav_right">
         </div>
         <div className="con_center">
-          {
-            this.props.restaurants.map(r =>
-              <div className="top_restaurant" key={r.id}>
-                <img src={r.photo} alt="photo" />
-                <Link to={`restaurant/${r.id}`}>{r.name}</Link>
-                <div>{r.address}</div>
-                <div>{r.city}</div>
-                <div>
+          <div className="s_reviews">
+            {
+              this.props.restaurants.map(r =>
+                <div className="search_single_restaurant" key={r.id}>
+                  <div className="ssr_picture" >
+                    <img src={r.photo} alt="photo" />
+                  </div>
+                  <div className="ssr_info">
+                    <Link to={`restaurant/${r.id}`}>{r.name}</Link>
+                    <div>
+                      {r.priceRange}<span className="dot">•</span>
+                      {
+                        r.styles.map((style, index) => (
+                          <button key={style} onClick={() => searchRestaurants(style)}>{style}{index !== r.styles.length - 1 ? ',' : ''}</button>
+                        ))
+                      }
+                    </div>
+                  </div>
+                  <div className="ssr_address">
+                    <div>{r.address}</div>
+                    <div>{r.city}</div>
+                  </div>
+                  <div className="ssr_reviews">Reviews coming soon!</div>
                 </div>
-              </div>
-            )
-          }
+              )
+            }
+          </div>
+          <div className="s_map"></div>
         </div>
         <div className="con_left">
         </div>

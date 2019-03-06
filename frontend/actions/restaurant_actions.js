@@ -30,7 +30,9 @@ export const fetchRestaurants = () => dispatch => (
   ))
 );
 
-export const searchRestaurants = term => dispatch => (
+export const searchRestaurants = term => dispatch => {
+  console.log(term);
+  return (
   APIUtil.searchAll(term).then(
     restaurants => (
       dispatch(receiveRestaurants(restaurants))
@@ -38,7 +40,7 @@ export const searchRestaurants = term => dispatch => (
       dispatch(receiveErrors(err.responseJSON))
     )
   )
-);
+)};
 
 export const fetchSingleRestaurant = (id) => dispatch => (
   APIUtil.fetchSingleRestaurant(id).then(restaurant => (
