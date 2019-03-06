@@ -6,13 +6,11 @@ class Api::RestaurantsController < ApplicationController
       condition = []
       args = []
 
-      #TODO: Implement category buttons
       condition.push('style ILIKE ?')
       args.push("%#{term_query}%")
       condition.push('name ILIKE ?')
       args.push("%#{term_query}%")
       @restaurants = Restaurant.with_attached_photos.joins(:styles).where(condition.join(' OR '), *args)
-      
     end
 
     render :index

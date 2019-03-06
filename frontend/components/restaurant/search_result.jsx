@@ -2,9 +2,16 @@ import React from 'react';
 import SearchBarContainer from './search_bar_container';
 import HomeNav from '../home_nav/home_nav_container';
 import Logo from '../logo';
+import {Link} from 'react-router-dom';
 
 class SearchResult extends React.Component {
+  componentDidMount() {
+    //Debugging
+    //this.props.fetchRestaurants();
+  }
+
   render() {
+    console.log(this.props.restaurants);
     return (
       <div className="search_result">
         <div className="nav_left">
@@ -20,8 +27,12 @@ class SearchResult extends React.Component {
           {
             this.props.restaurants.map(r =>
               <div className="top_restaurant" key={r.id}>
-                <div>{r.city}</div>
                 <img src={r.photo} alt="photo" />
+                <Link to={`restaurant/${r.id}`}>{r.name}</Link>
+                <div>{r.address}</div>
+                <div>{r.city}</div>
+                <div>
+                </div>
               </div>
             )
           }

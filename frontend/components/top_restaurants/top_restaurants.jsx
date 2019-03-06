@@ -15,6 +15,7 @@ export default class TopRestaurants extends Component {
             this.props.restaurants.map(r =>
               <div className="top_restaurant" key={r.id}>
                 <Link to={`restaurant/${r.id}`}>{r.name}</Link>
+                <div>{r.address}</div>
                 <div>{r.city}</div>
                 <img src={r.photo} alt="photo"/>
               </div>

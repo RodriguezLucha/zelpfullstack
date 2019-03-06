@@ -29,14 +29,19 @@ class SearchBar extends React.Component {
     return (
       <div className="search_bar">
         <form onSubmit={this.handleSubmit}>
+          <div className="find_box">
+            Find
+          </div>
           <label>
             <input type="text"
               value={this.state.term}
               onChange={this.update('term')}
-              placeholder="Term"
-            />
+              placeholder="Dive Bar, Noodle Time">
+            </input>
           </label>
-          <input type="submit" value="Search" />
+          <button type="submit">
+            <i className="fas fa-search"></i>
+          </button>
         </form>
       </div >
     );
