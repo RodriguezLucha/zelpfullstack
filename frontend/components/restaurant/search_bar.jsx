@@ -19,7 +19,11 @@ class SearchBar extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    this.props.searchRestaurants(this.state.term).then(() => this.props.history.push('/search'));
+    const currentPath = this.props.location.pathname;
+    if(currentPath === '/search')
+      this.props.searchRestaurants(this.state.term);
+    else
+      this.props.searchRestaurants(this.state.term).then(() => this.props.history.push('/search'));
   }
 
   componentDidMount() {

@@ -7,10 +7,9 @@ import {Link} from 'react-router-dom';
 class SearchResult extends React.Component {
   componentDidMount() {
     //Debugging
-    this.props.fetchRestaurants();
+    //this.props.fetchRestaurants();
   }
 
-  //{index !== r.styles.length - 1 ? ', ' : ''}
   render() {
     const searchRestaurants = this.props.searchRestaurants;
     return (
