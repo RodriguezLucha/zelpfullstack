@@ -4,7 +4,8 @@ import ResturantShow from './restaurant_show';
 
 const mapStateToProps = (state, ownProps) => {
   const singleRestaurant = state.entities.restaurants[ownProps.match.params.id];
-  return ({singleRestaurant});
+  const singleRestaurantReview = state.entities.reviews;
+  return ({ singleRestaurant, singleRestaurantReview});
 };
 
 const mapDispatchToProps = dispatch => ({

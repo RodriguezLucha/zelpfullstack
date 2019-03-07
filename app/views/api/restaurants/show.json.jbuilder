@@ -23,7 +23,7 @@ end
 @restaurant.reviews.includes(:user).each do |review|
   json.reviews do
     json.set! review.id do
-      json.extract! review, :id, :content
+      json.extract! review, :id, :user_id, :user_id, :num_stars, :content, :updated_at
     end
   end
 

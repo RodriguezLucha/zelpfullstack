@@ -6,10 +6,10 @@ function StarRatings({starCount}) {
   let color = starCount <= 3 ? 'yellow' : 'red';
 
   for (let i = 0; i < starCount; i++) {
-    stars.push(<div className={`mystar fa fa-star checked ${color}`}></div>);
+    stars.push(<div key={i} className={`mystar fa fa-star checked ${color}`}></div>);
   }
   for (let i = starCount; i < 5; i++) {
-    stars.push(<div className={`mystar fa fa-star ${color}`}></div>);
+    stars.push(<div key={i} className={`mystar fa fa-star ${color}`}></div>);
   }
 
   return (

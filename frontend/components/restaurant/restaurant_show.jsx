@@ -25,6 +25,8 @@ class RestaurantShow extends React.Component {
     address2 += `  ${singleRestaurant.state}`;
     address2 += `  ${singleRestaurant.zip}`;
 
+    console.log(this.props);
+
     return (
       <div className="restaurant_show">
         <div className="header">

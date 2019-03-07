@@ -22,7 +22,7 @@ export default class TopRestaurants extends Component {
                   <div>
                     {
                       r.styles.map((style, index) => (
-                        <>{ style }{ index !== r.styles.length - 1 ? ', ' : ''}</>
+                        <div key={style}>{ style }{ index !== r.styles.length - 1 ? ', ' : ''}</div>
                       ))
                     }</div>
                   <div>{r.city}</div>
