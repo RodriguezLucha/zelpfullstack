@@ -6,6 +6,10 @@
   background-color: rgb(255, 89, 83);
   color: white;
 }
+.mystar.checked.yellow {
+  background-color: rgb(255, 143, 78);
+  color: white;
+}
 
 .mystar {
   background-color: rgb(204, 204, 204);
@@ -13,7 +17,7 @@
 }
 
 .mystar {
-  padding: 3px;
+  padding: 2px 2px 3px 2px;
   margin: 1px;
   border-radius: 4px;
 }
