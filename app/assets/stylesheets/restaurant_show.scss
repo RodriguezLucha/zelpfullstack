@@ -1,6 +1,6 @@
 @import 'colors.scss';
 
-.restaurant_view .header {
+.restaurant_show .header {
   display: grid;
   grid-template-areas:
     "nav_left  nav_center   nav_right";
@@ -9,11 +9,11 @@
   grid-template-rows: 68px;
 }
 
-.restaurant_view .header .nav_left {
+.restaurant_show .header .nav_left {
   grid-area: nav_left;
 }
 
-.restaurant_view .header .nav_right {
+.restaurant_show .header .nav_right {
   grid-area: nav_right;
 }
 

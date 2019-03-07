@@ -1,8 +1,9 @@
 import React from 'react';
-import HomeNav from '../../home_nav/home_nav_container';
-import Logo from '../../logo';
+import HomeNav from '../home_nav/home_nav_container';
+import SearchBarContainer from './search_bar_container';
+import Logo from '../logo';
 
-class RestaurantView extends React.Component {
+class RestaurantShow extends React.Component {
   constructor(props) {
     super(props);
     let restaurantId = props.match.params.id;
@@ -25,16 +26,12 @@ class RestaurantView extends React.Component {
     address2 += `  ${singleRestaurant.zip}`;
 
     return (
-      <div className="restaurant_view">
+      <div className="restaurant_show">
         <div className="header">
-          <div className="nav_content">
+          <div className="nav_center">
             <Logo/>
-            <div className="search">
-
-            </div>
-            <div className="links">
-              <HomeNav props={this.props} />
-            </div>
+            <SearchBarContainer />
+            <HomeNav props={this.props} />
           </div>
           <div className="right"></div>
           <div className="left"></div>
@@ -86,6 +83,6 @@ class RestaurantView extends React.Component {
   }
 }
 
-export default RestaurantView;
+export default RestaurantShow;
 
 
