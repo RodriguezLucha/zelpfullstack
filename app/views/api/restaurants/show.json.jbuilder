@@ -1,8 +1,6 @@
-# frozen_string_literal: true
-
 json.extract! @restaurant, :id, :name, :state, :zip, :address, :city, :website, :price_range, :lat, :lng
 json.styles @restaurant.styles.map(&:style)
-json.reviewIds @restaurant.reviews.pluck(:id)
+json.review_ids @restaurant.reviews.pluck(:id)
 
 # TODO: extract to partial
 case @restaurant.price_range

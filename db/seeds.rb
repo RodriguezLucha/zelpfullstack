@@ -25,6 +25,12 @@ willy_user = User.create!(
   email: 'willy@gmail.com',
   password: 'password'
 )
+nelly_user = User.create!(
+  firstname: 'Nelly',
+  lastname: 'Williams',
+  email: 'nelly@gmail.com',
+  password: 'password'
+)
 
 # Styles
 vietnamese = Style.create!(style: 'Vietnamese')
@@ -95,4 +101,5 @@ steep_brew.photos.attach(io: File.open('./app/assets/images/steep_brew/game.jpg'
 steep_brew.photos.attach(io: File.open('./app/assets/images/steep_brew/menu.jpg'), filename: 'menu.jpg')
 RestaurantStyle.create!(restaurant_id: steep_brew.id, style_id: oraganic_stores.id)
 RestaurantStyle.create!(restaurant_id: steep_brew.id, style_id: grocery.id)
-Review.create!(restaurant_id: lucky_13.id, user_id: willy_user.id, num_stars: 2, content: "Food is great and tons of space. Not a bad place to do work either with their free WiFi. However, the set up of ordering and receiving food is bad. Your order food from one room and pick it up from another. It's hard to hear when you're food is ready. Especially when wait times for food can take up to 30+ minutes. Great quality food tho.")
+Review.create!(restaurant_id: steep_brew.id, user_id: willy_user.id, num_stars: 5, content: "Food is great and tons of space. Not a bad place to do work either with their free WiFi. However, the set up of ordering and receiving food is bad. Your order food from one room and pick it up from another. It's hard to hear when you're food is ready. Especially when wait times for food can take up to 30+ minutes. Great quality food tho.")
+Review.create!(restaurant_id: steep_brew.id, user_id: nelly_user.id, num_stars: 1, content: "I was not a fan.")
