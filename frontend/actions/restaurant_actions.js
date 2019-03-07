@@ -9,9 +9,9 @@ export const receiveRestaurants = payload => ({
   type: RECEIVE_RESTAURANTS,
   payload
 });
-export const receiveRestaurant = restaurant => ({
+export const receiveRestaurant = payload => ({
   type: RECEIVE_RESTAURANT,
-  restaurant
+  payload
 });
 
 export const receiveErrors = errors => ({
@@ -30,9 +30,7 @@ export const fetchRestaurants = () => dispatch => (
   ))
 );
 
-export const searchRestaurants = term => dispatch => {
-  console.log(term);
-  return (
+export const searchRestaurants = term => dispatch => (
   APIUtil.searchAll(term).then(
     restaurants => (
       dispatch(receiveRestaurants(restaurants))
@@ -40,7 +38,7 @@ export const searchRestaurants = term => dispatch => {
       dispatch(receiveErrors(err.responseJSON))
     )
   )
-)};
+);
 
 export const fetchSingleRestaurant = (id) => dispatch => (
   APIUtil.fetchSingleRestaurant(id).then(restaurant => (
