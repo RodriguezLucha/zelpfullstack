@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
+import RatingGroup from '../restaurant/rating_group';
 
 export default class TopRestaurants extends Component {
   componentDidMount() {
@@ -14,10 +15,18 @@ export default class TopRestaurants extends Component {
           {
             this.props.restaurants.map(r =>
               <div className="top_restaurant" key={r.id}>
-                <Link to={`restaurant/${r.id}`}>{r.name}</Link>
-                <div>{r.address}</div>
-                <div>{r.city}</div>
                 <img src={r.photo} alt="photo"/>
+                <div className="details">
+                  <Link to={`restaurant/${r.id}`}>{r.name}</Link>
+                  <RatingGroup totalReviews={r.totalReviews} averageStars={r.averageStars} />
+                  <div>
+                    {
+                      r.styles.map((style, index) => (
+                        <>{ style }{ index !== r.styles.length - 1 ? ', ' : ''}</>
+                      ))
+                    }</div>
+                  <div>{r.city}</div>
+                </div>
               </div>
             )
           }

@@ -3,7 +3,7 @@ import SearchBarContainer from './search_bar_container';
 import HomeNav from '../home_nav/home_nav_container';
 import Logo from '../logo';
 import {Link} from 'react-router-dom';
-import StarRatings from './star_ratings';
+import RatingGroup from './rating_group';
 
 class SearchResult extends React.Component {
   componentDidMount() {
@@ -35,14 +35,7 @@ class SearchResult extends React.Component {
                   <div className="ssr_info">
                     <Link to={`restaurant/${r.id}`}>{r.name}</Link>
                     <div>
-                      <div className="rating_group">
-                        <div>
-                          <StarRatings starCount={r.averageStars}/>
-                        </div>
-                        <div className="num_reviews">
-                          {r.totalReviews} reviews
-                        </div>
-                      </div>
+                      <RatingGroup totalReviews={r.totalReviews} averageStars={r.averageStars}/>
 
                       {r.priceRange}<span className="dot">•</span>
                       {
