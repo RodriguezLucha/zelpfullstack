@@ -144,9 +144,50 @@
 
 .reviews {
   grid-area: reviews;
-  padding: 200px 20px;
+  margin-top: 50px;
   background-color: $my-white;
-  color: $my-red;
-  display: flex;
-  justify-content: center;
+  background-color: purple;
+  display: grid;
+  grid-template-areas:
+    "rssr_review_holder rssr_info_holder";
+    grid-template-columns: 1fr 300px;
+}
+
+.rssr_review_holder {
+  background-color: lightgreen;
+}
+
+.rssr_info_holder {
+  background-color: lightseagreen;
+}
+
+.single_review {
+  display: grid;
+  grid-template-areas: 
+    "rssr_user rssr_rating"
+    "rssr_user rssr_review"
+    "rssr_user rssr_feedback";
+  margin: 17px 0px;
+  grid-template-columns: 240px 1fr;
+}
+
+.rssr_user {
+  grid-area: rssr_user;
+  background-color: orange;
+}
+
+.rssr_rating {
+  grid-area: rssr_rating;
+  background-color: green;
+}
+
+.rssr_review {
+  grid-area: rssr_review;
+  background-color: blue;
+}
+
+.rssr_feedback {
+  grid-area: rssr_feedback;
+  background-color: yellow;
+
 }

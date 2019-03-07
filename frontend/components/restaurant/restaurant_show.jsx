@@ -71,11 +71,38 @@ class RestaurantShow extends React.Component {
           <div className="left"></div>
 
           <div className="reviews">
-            <h1>
-              Reviews coming soon!
-            </h1>
+            <div className="rssr_review_holder">
+              <div className="single_review">
+                <div className="rssr_user">
+                    User1
+                </div>
+                <div className="rssr_rating">
+                    Rating1
+                </div>
+                <div className="rssr_review">
+                    Review1
+                </div>
+                <div className="rssr_feedback">
+                    Feedback1
+                </div>
+              </div>
+              <div className="single_review">
+                <div className="rssr_user">
+                    User2
+                </div>
+                <div className="rssr_rating">
+                    Rating
+                </div>
+                <div className="rssr_review">
+                    Review
+                </div>
+                <div className="rssr_feedback">
+                    Feedback
+                </div>
+              </div>
+            </div>
+            <div className="rssr_info_holder"></div>
           </div>
-
         </div>
 
       </div>
