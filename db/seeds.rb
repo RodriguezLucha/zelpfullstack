@@ -19,18 +19,23 @@ billy_user = User.create!(
   email: 'billy@gmail.com',
   password: 'password'
 )
+billy_user.photo.attach(io: File.open('./app/assets/images/users/billy.jpg'), filename: 'billy.jpg')
+
 willy_user = User.create!(
   firstname: 'Willy',
   lastname: 'Johnson',
   email: 'willy@gmail.com',
   password: 'password'
 )
+willy_user.photo.attach(io: File.open('./app/assets/images/users/willy.jpg'), filename: 'willy.jpg')
+
 nelly_user = User.create!(
   firstname: 'Nelly',
   lastname: 'Williams',
   email: 'nelly@gmail.com',
   password: 'password'
 )
+nelly_user.photo.attach(io: File.open('./app/assets/images/users/nelly.jpg'), filename: 'nelly.jpg')
 
 # Styles
 vietnamese = Style.create!(style: 'Vietnamese')

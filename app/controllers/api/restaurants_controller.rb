@@ -1,7 +1,7 @@
 class Api::RestaurantsController < ApplicationController
   def index
     if !term_set
-      @restaurants = Restaurant.with_attached_photos.includes(:styles)
+      @restaurants = Restaurant.with_attached_photos.includes(:styles, reviews: [:user])
     else
       condition = []
       args = []

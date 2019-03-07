@@ -55,6 +55,7 @@ group :development do
   gem 'pry-rails'
   gem 'annotate'
   gem 'guard-livereload', '~> 2.5', require: false
+  gem 'bullet'
 end
 
 group :test do

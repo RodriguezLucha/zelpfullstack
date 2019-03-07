@@ -20,6 +20,7 @@ class User < ApplicationRecord
   validates :password, length: { minimum: 6, allow_nil: true }
 
   has_many :reviews
+  has_one_attached :photo
 
   attr_reader :password
 

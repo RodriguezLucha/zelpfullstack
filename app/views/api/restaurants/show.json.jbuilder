@@ -20,7 +20,7 @@ json.restaurant do
   json.photo_url @restaurant.photos.map { |file| url_for(file) }
 end
 
-@restaurant.reviews.includes(:user).each do |review|
+@restaurant.reviews.includes(:user, user: [photo_attachment: [:blob] ] ).each do |review|
   json.reviews do
     json.set! review.id do
       json.extract! review, :id, :user_id, :user_id, :num_stars, :content, :updated_at
@@ -29,7 +29,8 @@ end
 
   json.users do
     json.set! review.user.id do
-      json.extract! review.user, :id, :email
+      json.extract! review.user, :id, :email, :firstname, :lastname
+      json.photo url_for(review.user.photo)
     end
   end
 end
