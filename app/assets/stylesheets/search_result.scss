@@ -31,7 +31,7 @@
   background: white;
   grid-template-areas: 
     "s_reviews s_reviews s_map";
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
 }
 .con_center .s_reviews {
   grid-area: s_reviews;
@@ -99,8 +99,6 @@
 }
 .ssr_reviews {
   grid-area: ssr_reviews;
-  color: $my-red;
-  font-weight: bolder;
 }
 
 .search_single_restaurant img {
@@ -113,4 +111,9 @@
   color: rgb(153, 153, 153);
   font-size: 10px;
   margin: 0px 6px;
+}
+
+.rating_group {
+  display: flex;
+  justify-content: space-around;
 }

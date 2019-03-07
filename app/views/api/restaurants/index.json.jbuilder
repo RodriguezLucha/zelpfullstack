@@ -22,5 +22,6 @@
       json.author restaurant.reviews.first.user.firstname
     end
     json.average_stars restaurant.reviews.average(:num_stars)
+    json.total_reviews restaurant.reviews.count
   end
 end

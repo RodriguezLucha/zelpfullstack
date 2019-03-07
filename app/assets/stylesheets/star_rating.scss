@@ -1,0 +1,19 @@
+.star_rating {
+  width: 130px;
+}
+
+.mystar.checked {
+  background-color: rgb(255, 89, 83);
+  color: white;
+}
+
+.mystar {
+  background-color: rgb(204, 204, 204);
+  color: white;
+}
+
+.mystar {
+  padding: 3px;
+  margin: 1px;
+  border-radius: 4px;
+}
