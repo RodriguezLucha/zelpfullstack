@@ -15,7 +15,9 @@ Clone of [Yelp](https://www.yelp.com/), for demonstration purposes only.
 ## Key features
 
 * User authentication. Sign up, Log in, Log out, demo user.
-
+[[https://github.com/username/repository/blob/master/img/octocat.png|alt=octocat]]
+![search](https://raw.githubusercontent.com/RodriguezLucha/zelpfullstack/raw/master/screenshots/search.png)
+![search]https://github.com/RodriguezLucha/zelpfullstack/raw/master/screenshots/search.png
 * Viewing information about a specific Restaurant, including reviews.
 
 * Searching for a restaurant based on name or category.
