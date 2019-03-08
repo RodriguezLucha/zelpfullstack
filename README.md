@@ -1,9 +1,13 @@
 # Zelp
+
 Clone of [Yelp](https://www.yelp.com/), for demonstration purposes only.
 
 
 ## Live
+
 * [Live](https://rudyzelp.herokuapp.com/#/)
+
+## Wiki
 
 * [Wiki](https://github.com/RodriguezLucha/zelpfullstack/wiki)
 
@@ -27,7 +31,7 @@ Clone of [Yelp](https://www.yelp.com/), for demonstration purposes only.
 
 ## Fun Code Snippets
 
-I really liked the declarative style of CSS grid! Here is a small snippet to show off how easy it is to work with grid-template areas. Inside of `restaurant_show.scss`:
+I really liked the declarative style of CSS grid! Here is a small snippet to show off how easy it is to work with `grid-template areas`. Inside of `restaurant_show.scss`:
 
 ```css
 .single_restaurant {
