@@ -17,7 +17,6 @@
   grid-area: nav_right;
 }
 
-
 .single_restaurant {
   width: 960;
   height: 443;
@@ -35,6 +34,7 @@
 .left_reviews {
   background-color: $my-white;
 }
+
 .right_reviews {
   background-color: $my-white;
 }
@@ -53,6 +53,18 @@
   width: 555px;
   height: 112px;
   padding: 10px;
+}
+
+.price button {
+  background: none;
+  border: none;
+  color: $my-blue;
+  text-decoration: none;
+  padding: 0px;
+}
+
+.price button:hover {
+  text-decoration: underline;
 }
 
 .single_restaurant .map {
@@ -156,18 +168,16 @@
   display: grid;
   grid-template-areas:
     "rssr_review_holder rssr_info_holder";
-    grid-template-columns: 1fr 300px;
+  grid-template-columns: 1fr 300px;
 }
 
-.rssr_review_holder {
-}
+.rssr_review_holder {}
 
-.rssr_info_holder {
-}
+.rssr_info_holder {}
 
 .single_review {
   display: grid;
-  grid-template-areas: 
+  grid-template-areas:
     "rssr_user rssr_rating"
     "rssr_user rssr_review"
     "rssr_user rssr_feedback";
@@ -211,6 +221,4 @@
   padding: 10px;
 }
 
-.reviews {
-  
-}
+.reviews {}

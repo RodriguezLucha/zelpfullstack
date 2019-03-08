@@ -10,7 +10,7 @@ export default class TopRestaurants extends Component {
   render() {
     return (
       <div className="top_restaurants">
-        <h1>Top Restaurants</h1>
+        <h1>Top Rated Restaurants</h1>
         <div className="top_restaurant_container">
           {
             this.props.restaurants.sort((a, b) => {

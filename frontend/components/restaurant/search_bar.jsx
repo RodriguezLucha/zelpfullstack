@@ -40,7 +40,7 @@ class SearchBar extends React.Component {
             <input type="text"
               value={this.state.term}
               onChange={this.update('term')}
-              placeholder="Dive Bar, Noodle Time">
+              placeholder="Bars, Noodle Time">
             </input>
           </label>
           <button type="submit">

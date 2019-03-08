@@ -8,7 +8,7 @@ import RatingGroup from './rating_group';
 class SearchResult extends React.Component {
   componentDidMount() {
     //Debugging
-    this.props.fetchRestaurants();
+    //this.props.fetchRestaurants();
   }
 
   render() {

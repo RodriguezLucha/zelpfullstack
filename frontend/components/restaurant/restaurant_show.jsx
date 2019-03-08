@@ -32,7 +32,7 @@ class RestaurantShow extends React.Component {
       <div className="restaurant_show">
         <div className="header">
           <div className="nav_center">
-            <Logo/>
+            <Logo />
             <SearchBarContainer />
             <HomeNav props={this.props} />
           </div>
@@ -46,7 +46,19 @@ class RestaurantShow extends React.Component {
             <RatingGroup totalReviews={singleRestaurant.totalReviews} averageStars={singleRestaurant.averageStars} />
             <div className="price">
               {singleRestaurant.priceRange}
+              <span className="dot">•</span>
+              {
+                singleRestaurant.styles.map((style, index) => (
+                  <span key={style}>
+                    <button key={style} onClick={() => this.props.searchRestaurants(style).then(() => this.props.history.push('/search'))}>
+                      {style}
+                    </button>
+                    {index !== singleRestaurant.styles.length - 1 ? ', ' : ''}
+                  </span>
+                ))
+              }
             </div>
+
           </div>
           <div className="review">
             <button>
@@ -85,7 +97,7 @@ class RestaurantShow extends React.Component {
                   return (
                     <div key={reviewId} className="single_review">
                       <div className="rssr_user">
-                        <img className="user_profile_pic" src={user.photo} alt=""/>
+                        <img className="user_profile_pic" src={user.photo} alt="" />
                         <div className="user_firstname">
                           {user.firstname}
                         </div>
