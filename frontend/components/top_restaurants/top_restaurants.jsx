@@ -13,7 +13,11 @@ export default class TopRestaurants extends Component {
         <h1>Top Restaurants</h1>
         <div className="top_restaurant_container">
           {
-            this.props.restaurants.map(r =>
+            this.props.restaurants.sort((a, b) => {
+              const l = a.averageStars;
+              const r = b.averageStars;
+              return l < r ? 1 : l > r ? -1 : 0;
+            }).slice(0, 3).map(r =>
               <div className="top_restaurant" key={r.id}>
                 <img src={r.photo} alt="photo"/>
                 <div className="details">

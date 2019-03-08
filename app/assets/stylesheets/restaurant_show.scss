@@ -24,12 +24,19 @@
   background-color: $my-gray;
   display: grid;
   grid-template-areas:
-    "left  info     info     review   right"
-    "left  map      images   images   right"
-    "left  reviews  reviews  reviews  right";
+    "left          info     info     review   right"
+    "left          map      images   images   right"
+    "left_reviews  reviews  reviews  reviews  right_reviews";
 
   grid-template-columns: 1fr auto auto auto 1fr;
   grid-template-rows: auto auto auto;
+}
+
+.left_reviews {
+  background-color: $my-white;
+}
+.right_reviews {
+  background-color: $my-white;
 }
 
 
@@ -144,9 +151,8 @@
 
 .reviews {
   grid-area: reviews;
-  margin-top: 50px;
+  padding-top: 50px;
   background-color: $my-white;
-  background-color: purple;
   display: grid;
   grid-template-areas:
     "rssr_review_holder rssr_info_holder";
@@ -154,11 +160,9 @@
 }
 
 .rssr_review_holder {
-  background-color: lightgreen;
 }
 
 .rssr_info_holder {
-  background-color: lightseagreen;
 }
 
 .single_review {
@@ -168,26 +172,45 @@
     "rssr_user rssr_review"
     "rssr_user rssr_feedback";
   margin: 17px 0px;
-  grid-template-columns: 240px 1fr;
+  grid-template-columns: 240px 412px;
+  border-bottom: 1px solid #ccc;
 }
 
 .rssr_user {
   grid-area: rssr_user;
-  background-color: orange;
+  display: flex;
+  padding: 10px;
 }
 
 .rssr_rating {
   grid-area: rssr_rating;
-  background-color: green;
 }
 
 .rssr_review {
   grid-area: rssr_review;
-  background-color: blue;
+  padding: 10px 0px;
 }
 
 .rssr_feedback {
   grid-area: rssr_feedback;
-  background-color: yellow;
+}
 
+.rssr_user img {
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+}
+
+.rssr_user img:hover {
+  width: 60px;
+  height: 60px;
+  transform: none;
+}
+
+.user_firstname {
+  padding: 10px;
+}
+
+.reviews {
+  
 }

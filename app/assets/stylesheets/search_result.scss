@@ -59,7 +59,6 @@
   text-decoration: underline;
 }
 
-
 .search_single_restaurant {
   display: grid;
   grid-template-areas: 
@@ -76,19 +75,20 @@
   grid-area: ssr_picture;
   width: 228px;
   height: 251px;
-
 }
+
 .ssr_info {
   grid-area: ssr_info;
   flex-direction: column;
   display: flex;
-  
 }
+
 .ssr_info a {
   font-size: 16px;
   font-weight: bold;
   padding-bottom: 5px;
 }
+
 .ssr_address {
   grid-area: ssr_address;
   display: flex;
@@ -97,6 +97,7 @@
   font-size: 14px;
   line-height: 18px;
 }
+
 .ssr_reviews {
   grid-area: ssr_reviews;
 }

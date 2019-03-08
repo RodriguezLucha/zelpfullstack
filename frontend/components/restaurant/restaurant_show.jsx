@@ -1,7 +1,10 @@
 import React from 'react';
 import HomeNav from '../home_nav/home_nav_container';
-import SearchBarContainer from './search_bar_container';
 import Logo from '../logo';
+import SearchBarContainer from './search_bar_container';
+import StarRatings from './star_ratings';
+import RatingGroup from './rating_group';
+
 
 class RestaurantShow extends React.Component {
   constructor(props) {
@@ -25,8 +28,6 @@ class RestaurantShow extends React.Component {
     address2 += `  ${singleRestaurant.state}`;
     address2 += `  ${singleRestaurant.zip}`;
 
-    console.log(this.props);
-
     return (
       <div className="restaurant_show">
         <div className="header">
@@ -42,6 +43,7 @@ class RestaurantShow extends React.Component {
         <div className="single_restaurant">
           <div className="info">
             <h1>{singleRestaurant.name}</h1>
+            <RatingGroup totalReviews={singleRestaurant.totalReviews} averageStars={singleRestaurant.averageStars} />
             <div className="price">
               {singleRestaurant.priceRange}
             </div>
@@ -74,37 +76,37 @@ class RestaurantShow extends React.Component {
 
           <div className="reviews">
             <div className="rssr_review_holder">
-              <div className="single_review">
-                <div className="rssr_user">
-                    User1
-                </div>
-                <div className="rssr_rating">
-                    Rating1
-                </div>
-                <div className="rssr_review">
-                    Review1
-                </div>
-                <div className="rssr_feedback">
-                    Feedback1
-                </div>
-              </div>
-              <div className="single_review">
-                <div className="rssr_user">
-                    User2
-                </div>
-                <div className="rssr_rating">
-                    Rating
-                </div>
-                <div className="rssr_review">
-                    Review
-                </div>
-                <div className="rssr_feedback">
-                    Feedback
-                </div>
-              </div>
+              {
+                singleRestaurant.reviewIds.map(reviewId => {
+                  const review = this.props.reviews[reviewId];
+                  const userId = review.userId;
+                  const user = this.props.users[userId];
+
+                  return (
+                    <div key={reviewId} className="single_review">
+                      <div className="rssr_user">
+                        <img className="user_profile_pic" src={user.photo} alt=""/>
+                        <div className="user_firstname">
+                          {user.firstname}
+                        </div>
+                      </div>
+                      <div className="rssr_rating">
+                        <StarRatings starCount={review.numStars} />
+                      </div>
+                      <div className="rssr_review">
+                        {review.content}
+                      </div>
+                      <div className="rssr_feedback">
+                      </div>
+                    </div>
+                  );
+                })
+              }
             </div>
             <div className="rssr_info_holder"></div>
           </div>
+          <div className="left_reviews"></div>
+          <div className="right_reviews"></div>
         </div>
 
       </div>

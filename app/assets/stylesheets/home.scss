@@ -137,9 +137,17 @@
 .home_banner h1 {
   font-family: 'Courgette', cursive;
   margin: 10px;
-  font-size: 6em;
+  font-size: 5em;
   padding: 10px;
   text-shadow: stroke(4, white);
+}
+
+.home_banner .search_bar input[type=text]{
+  width: 820px;
+  font-size: 18px;
+}
+.home_banner .search_bar {
+  font-size: 18px;
 }
 
 .home_personal_greeting {

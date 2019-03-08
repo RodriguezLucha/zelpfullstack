@@ -3,6 +3,7 @@ import React from 'react';
 function StarRatings({starCount}) {
   let stars = [];
 
+  starCount = Math.floor(starCount);
   let color = starCount <= 3 ? 'yellow' : 'red';
 
   for (let i = 0; i < starCount; i++) {

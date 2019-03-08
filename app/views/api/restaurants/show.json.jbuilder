@@ -18,6 +18,8 @@ json.restaurant do
   end
 
   json.photo_url @restaurant.photos.map { |file| url_for(file) }
+  json.average_stars @restaurant.reviews.average(:num_stars)
+  json.total_reviews @restaurant.reviews.count
 end
 
 @restaurant.reviews.includes(:user, user: [photo_attachment: [:blob] ] ).each do |review|
