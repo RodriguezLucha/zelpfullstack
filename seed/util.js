@@ -1,7 +1,12 @@
 const YelpAPI = require('./scrape_yelp');
+const downloadImage = require('./image_downloader');
+const fs = require('fs');
+
 
 async function extractBusinessData(business) {
   let name = business.name;
+
+
   let state = business.location.state;
   let zip = business.location.zip_code;
   let city = business.location.city;
@@ -10,15 +15,23 @@ async function extractBusinessData(business) {
   let lat = business.coordinates.latitude;
   let lng = business.coordinates.longitude;
   let categories = business.categories.map(c => c.title);
+  let alias = business.alias;
 
-  // let liveUrl = `https://www.yelp.com/biz/${business.alias}`;
-  // let website = await YelpAPI.getWebsite(liveUrl);
+  if (alias === 'la-mar-cebichería-peruana-san-francisco-4'
+    || alias === 'seapot-海中锅-san-mateo'
+    || alias === 'café-capistrano-half-moon-bay-2'
+    || alias === 'caffé-mezzaluna-half-moon-bay'
+  ) {
+    return '';
+  }
 
   // let apiUrl = `https://api.yelp.com/v3/businesses/${business.alias}`;
   // let photos = await YelpAPI.getPhotos(apiUrl);
+  // savePhotos(alias, photos);
 
-  // let liveUrl = `https://www.yelp.com/biz/${business.alias}`;
-  // let reviews = await YelpAPI.getReviews(liveUrl);
+  let liveUrl = `https://www.yelp.com/biz/${business.alias}`;
+  let [website, reviews] = await YelpAPI.getWebsiteAndReviews(liveUrl);
+
 
   return {
     name,
@@ -26,14 +39,27 @@ async function extractBusinessData(business) {
     zip,
     address,
     city,
-    // website,
+    website,
     price,
     lat,
     lng,
     // photos,
-    categories
-    // reviews
+    categories,
+    reviews
   };
+}
+
+async function savePhotos(alias, photos) {
+  for (let i = 0; i < photos.length; i++) {
+    const photoUrl = photos[i];
+
+    let dir = `restaurant_images/${alias}`;
+    if (!fs.existsSync(dir)) {
+      fs.mkdirSync(dir);
+    }
+    let image_path = `${dir}/${i}.jpg`.toLowerCase();
+    downloadImage(photoUrl, image_path);
+  }
 }
 
 module.exports = extractBusinessData;
@@ -48,7 +74,7 @@ module.exports = extractBusinessData;
 //  Website                       //DONE
 //  Price Range                   //DONE
 //  Lat                           //DONE
-//  Lng                           //DONE                         
+//  Lng                           //DONE
 //  Photo 1                       //DONE
 //  Photo 2                       //DONE
 //  Photo 3                       //DONE

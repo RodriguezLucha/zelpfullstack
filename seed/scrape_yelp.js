@@ -2,7 +2,7 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 const keys = require('../config/yelp_app');
 
-const parseWebsite = html =>{
+const parseWebsite = html => {
   let websiteUrl = '';
   const $ = cheerio.load(html);
   $('.biz-website a').each((i, elem) => {
@@ -26,7 +26,8 @@ async function getPhotos(url) {
       Authorization: `Bearer ${keys.APIkey}`
     }
   })
-    .then(response => response.data.photos);
+    .then(response => response.data.photos)
+    .catch(() => console.log('Failed:', url));
   return result;
 }
 
@@ -50,6 +51,19 @@ async function getReviews(url) {
   return result;
 }
 
+async function getWebsiteAndReviews(url) {
+  let result = await axios.get(url)
+    .then(response => {
+      let reviews = parseReviews(response.data);
+      let website = parseWebsite(response.data);
+      return [website, reviews];
+    });
+  return result;
+}
+
 module.exports.getWebsite = getWebsite;
 module.exports.getPhotos = getPhotos;
 module.exports.getReviews = getReviews;
+module.exports.getWebsiteAndReviews = getWebsiteAndReviews;
+
+
