@@ -1,0 +1,2197 @@
+{
+  "businesses": [
+      {
+          "id": "kvNUHPQFxNaVK5gkjhTHWQ",
+          "alias": "duartes-tavern-pescadero",
+          "name": "Duarte's Tavern",
+          "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/9cV9MRlOtAeZbxdZuzrMHw/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/duartes-tavern-pescadero?adjust_creative=F_NG8ZaNVriV_hujoOejIA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=F_NG8ZaNVriV_hujoOejIA",
+          "review_count": 1135,
+          "categories": [
+              {
+                  "alias": "tradamerican",
+                  "title": "American (Traditional)"
+              },
+              {
+                  "alias": "soup",
+                  "title": "Soup"
+              },
+              {
+                  "alias": "sandwiches",
+                  "title": "Sandwiches"
+              }
+          ],
+          "rating": 3.5,
+          "coordinates": {
+              "latitude": 37.252154087912,
+              "longitude": -122.382809568943
+          },
+          "transactions": [],
+          "price": "$$",
+          "location": {
+              "address1": "202 Stage Rd",
+              "address2": "",
+              "address3": "",
+              "city": "Pescadero",
+              "zip_code": "94060",
+              "country": "US",
+              "state": "CA",
+              "display_address": [
+                  "202 Stage Rd",
+                  "Pescadero, CA 94060"
+              ]
+          },
+          "phone": "+16508790464",
+          "display_phone": "(650) 879-0464",
+          "distance": 50742.13259027073
+      },
+      {
+          "id": "2KCAreZ359rtOJZTf5vzDA",
+          "alias": "arcangeli-grocery-co-norms-market-pescadero",
+          "name": "Arcangeli Grocery Co - Norm's Market",
+          "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/rFHIs2NsHqwY3GJqNPxoNA/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/arcangeli-grocery-co-norms-market-pescadero?adjust_creative=F_NG8ZaNVriV_hujoOejIA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=F_NG8ZaNVriV_hujoOejIA",
+          "review_count": 491,
+          "categories": [
+              {
+                  "alias": "bakeries",
+                  "title": "Bakeries"
+              },
+              {
+                  "alias": "grocery",
+                  "title": "Grocery"
+              },
+              {
+                  "alias": "delis",
+                  "title": "Delis"
+              }
+          ],
+          "rating": 4.5,
+          "coordinates": {
+              "latitude": 37.2533699,
+              "longitude": -122.38366
+          },
+          "transactions": [],
+          "price": "$",
+          "location": {
+              "address1": "287 Stage Rd",
+              "address2": null,
+              "address3": "",
+              "city": "Pescadero",
+              "zip_code": "94060",
+              "country": "US",
+              "state": "CA",
+              "display_address": [
+                  "287 Stage Rd",
+                  "Pescadero, CA 94060"
+              ]
+          },
+          "phone": "+16508790147",
+          "display_phone": "(650) 879-0147",
+          "distance": 50671.63161856376
+      },
+      {
+          "id": "dzL-i6c3QZcjB3yBYKmRfg",
+          "alias": "navio-half-moon-bay-3",
+          "name": "Navio",
+          "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/pe20tdxL6bX49zaMzPD-7g/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/navio-half-moon-bay-3?adjust_creative=F_NG8ZaNVriV_hujoOejIA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=F_NG8ZaNVriV_hujoOejIA",
+          "review_count": 679,
+          "categories": [
+              {
+                  "alias": "newamerican",
+                  "title": "American (New)"
+              },
+              {
+                  "alias": "seafood",
+                  "title": "Seafood"
+              }
+          ],
+          "rating": 4,
+          "coordinates": {
+              "latitude": 37.4338454703479,
+              "longitude": -122.441443076057
+          },
+          "transactions": [],
+          "price": "$$$$",
+          "location": {
+              "address1": "1 Miramontes Point Rd",
+              "address2": "",
+              "address3": "",
+              "city": "Half Moon Bay",
+              "zip_code": "94019",
+              "country": "US",
+              "state": "CA",
+              "display_address": [
+                  "1 Miramontes Point Rd",
+                  "Half Moon Bay, CA 94019"
+              ]
+          },
+          "phone": "+16507127040",
+          "display_phone": "(650) 712-7040",
+          "distance": 46706.12801575066
+      },
+      {
+          "id": "XxEjDVlodKzLKFXWPSJnQg",
+          "alias": "barbaras-fishtrap-half-moon-bay",
+          "name": "Barbara's Fishtrap",
+          "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/mPnabYpvD3e4j2jlcK9TEw/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/barbaras-fishtrap-half-moon-bay?adjust_creative=F_NG8ZaNVriV_hujoOejIA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=F_NG8ZaNVriV_hujoOejIA",
+          "review_count": 1941,
+          "categories": [
+              {
+                  "alias": "seafood",
+                  "title": "Seafood"
+              }
+          ],
+          "rating": 4,
+          "coordinates": {
+              "latitude": 37.503461742363,
+              "longitude": -122.485284805298
+          },
+          "transactions": [],
+          "price": "$$",
+          "location": {
+              "address1": "281 Capistrano Road",
+              "address2": "",
+              "address3": "",
+              "city": "Half Moon Bay",
+              "zip_code": "94019",
+              "country": "US",
+              "state": "CA",
+              "display_address": [
+                  "281 Capistrano Road",
+                  "Half Moon Bay, CA 94019"
+              ]
+          },
+          "phone": "+16507287049",
+          "display_phone": "(650) 728-7049",
+          "distance": 45862.34157687776
+      },
+      {
+          "id": "sYTDdeMnp8u6_XEWXZddfA",
+          "alias": "highway-1-brewing-company-pescadero",
+          "name": "Highway 1 Brewing Company",
+          "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/woB65-b3nm2Y24BdLnc30w/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/highway-1-brewing-company-pescadero?adjust_creative=F_NG8ZaNVriV_hujoOejIA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=F_NG8ZaNVriV_hujoOejIA",
+          "review_count": 412,
+          "categories": [
+              {
+                  "alias": "gastropubs",
+                  "title": "Gastropubs"
+              },
+              {
+                  "alias": "breweries",
+                  "title": "Breweries"
+              },
+              {
+                  "alias": "bbq",
+                  "title": "Barbeque"
+              }
+          ],
+          "rating": 3,
+          "coordinates": {
+              "latitude": 37.1653203,
+              "longitude": -122.3599673
+          },
+          "transactions": [],
+          "price": "$$",
+          "location": {
+              "address1": "5720 S Cabrillo Hwy",
+              "address2": null,
+              "address3": "",
+              "city": "Pescadero",
+              "zip_code": "94060",
+              "country": "US",
+              "state": "CA",
+              "display_address": [
+                  "5720 S Cabrillo Hwy",
+                  "Pescadero, CA 94060"
+              ]
+          },
+          "phone": "+16508799243",
+          "display_phone": "(650) 879-9243",
+          "distance": 54979.81197772497
+      },
+      {
+          "id": "dts-UTwcZ366-85BdSEuBA",
+          "alias": "sams-chowder-house-half-moon-bay",
+          "name": "Sam's Chowder House",
+          "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/DuQNZgFdcPLJIy4G7_SOZg/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/sams-chowder-house-half-moon-bay?adjust_creative=F_NG8ZaNVriV_hujoOejIA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=F_NG8ZaNVriV_hujoOejIA",
+          "review_count": 3675,
+          "categories": [
+              {
+                  "alias": "seafood",
+                  "title": "Seafood"
+              }
+          ],
+          "rating": 3.5,
+          "coordinates": {
+              "latitude": 37.5024966279369,
+              "longitude": -122.475846760164
+          },
+          "transactions": [],
+          "price": "$$",
+          "location": {
+              "address1": "4210 N Cabrillo Hwy",
+              "address2": null,
+              "address3": "",
+              "city": "Half Moon Bay",
+              "zip_code": "94019",
+              "country": "US",
+              "state": "CA",
+              "display_address": [
+                  "4210 N Cabrillo Hwy",
+                  "Half Moon Bay, CA 94019"
+              ]
+          },
+          "phone": "+16507120245",
+          "display_phone": "(650) 712-0245",
+          "distance": 46563.208992156855
+      },
+      {
+          "id": "UrDkDGhS1NiV7CV0GaPs0g",
+          "alias": "downtown-local-pescadero-2",
+          "name": "Downtown Local",
+          "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/loGOVuHq4JRFW3OWLumtOQ/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/downtown-local-pescadero-2?adjust_creative=F_NG8ZaNVriV_hujoOejIA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=F_NG8ZaNVriV_hujoOejIA",
+          "review_count": 151,
+          "categories": [
+              {
+                  "alias": "cafes",
+                  "title": "Cafes"
+              },
+              {
+                  "alias": "coffee",
+                  "title": "Coffee & Tea"
+              },
+              {
+                  "alias": "vintage",
+                  "title": "Used, Vintage & Consignment"
+              }
+          ],
+          "rating": 4,
+          "coordinates": {
+              "latitude": 37.25223,
+              "longitude": -122.38345
+          },
+          "transactions": [],
+          "price": "$",
+          "location": {
+              "address1": "213 Stage Rd",
+              "address2": null,
+              "address3": "",
+              "city": "Pescadero",
+              "zip_code": "94060",
+              "country": "US",
+              "state": "CA",
+              "display_address": [
+                  "213 Stage Rd",
+                  "Pescadero, CA 94060"
+              ]
+          },
+          "phone": "+16508799155",
+          "display_phone": "(650) 879-9155",
+          "distance": 50701.28799616104
+      },
+      {
+          "id": "ozlI8JnsCs4meAh_ZsvUbg",
+          "alias": "the-barn-half-moon-bay-2",
+          "name": "The Barn",
+          "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/cbsImF0RWBxkkOMcaeWCNg/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/the-barn-half-moon-bay-2?adjust_creative=F_NG8ZaNVriV_hujoOejIA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=F_NG8ZaNVriV_hujoOejIA",
+          "review_count": 433,
+          "categories": [
+              {
+                  "alias": "burgers",
+                  "title": "Burgers"
+              }
+          ],
+          "rating": 4,
+          "coordinates": {
+              "latitude": 37.493659,
+              "longitude": -122.453976
+          },
+          "transactions": [],
+          "price": "$$",
+          "location": {
+              "address1": "3068 N Cabrillo Hwy",
+              "address2": "",
+              "address3": "",
+              "city": "Half Moon Bay",
+              "zip_code": "94019",
+              "country": "US",
+              "state": "CA",
+              "display_address": [
+                  "3068 N Cabrillo Hwy",
+                  "Half Moon Bay, CA 94019"
+              ]
+          },
+          "phone": "+16505608363",
+          "display_phone": "(650) 560-8363",
+          "distance": 47914.25439095663
+      },
+      {
+          "id": "R7960GNl4G4GC9bGcwS-og",
+          "alias": "pine-tent-bbq-and-brew-pescadero-2",
+          "name": "Pine Tent BBQ & Brew",
+          "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/dIDrW9RhXZzhEO2rOtM1Cw/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/pine-tent-bbq-and-brew-pescadero-2?adjust_creative=F_NG8ZaNVriV_hujoOejIA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=F_NG8ZaNVriV_hujoOejIA",
+          "review_count": 2,
+          "categories": [
+              {
+                  "alias": "bbq",
+                  "title": "Barbeque"
+              },
+              {
+                  "alias": "breakfast_brunch",
+                  "title": "Breakfast & Brunch"
+              }
+          ],
+          "rating": 3,
+          "coordinates": {
+              "latitude": 37.1567900104291,
+              "longitude": -122.34817659259
+          },
+          "transactions": [],
+          "location": {
+              "address1": "2001 Rossi Rd",
+              "address2": "",
+              "address3": "Costanoa Lodge",
+              "city": "Pescadero",
+              "zip_code": "94060",
+              "country": "US",
+              "state": "CA",
+              "display_address": [
+                  "2001 Rossi Rd",
+                  "Costanoa Lodge",
+                  "Pescadero, CA 94060"
+              ]
+          },
+          "phone": "+16508797307",
+          "display_phone": "(650) 879-7307",
+          "distance": 56273.11692088728
+      },
+      {
+          "id": "uCf4pXzSjMMIeERRjquzhw",
+          "alias": "flying-fish-and-grill-half-moon-bay",
+          "name": "Flying Fish & Grill",
+          "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/rL_qZ_w1kLrOHo1tLujCeQ/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/flying-fish-and-grill-half-moon-bay?adjust_creative=F_NG8ZaNVriV_hujoOejIA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=F_NG8ZaNVriV_hujoOejIA",
+          "review_count": 1300,
+          "categories": [
+              {
+                  "alias": "seafood",
+                  "title": "Seafood"
+              }
+          ],
+          "rating": 4,
+          "coordinates": {
+              "latitude": 37.4678956582,
+              "longitude": -122.429305356
+          },
+          "transactions": [
+              "pickup",
+              "delivery"
+          ],
+          "price": "$$",
+          "location": {
+              "address1": "211 San Mateo Rd",
+              "address2": "",
+              "address3": "",
+              "city": "Half Moon Bay",
+              "zip_code": "94019",
+              "country": "US",
+              "state": "CA",
+              "display_address": [
+                  "211 San Mateo Rd",
+                  "Half Moon Bay, CA 94019"
+              ]
+          },
+          "phone": "+16507121125",
+          "display_phone": "(650) 712-1125",
+          "distance": 48873.553857205836
+      },
+      {
+          "id": "x2tHVNB1f6zN_dWz5CbimA",
+          "alias": "morning-wood-san-bruno",
+          "name": "Morning Wood",
+          "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/8QaAXxgt3ggbfCSxM-yaQg/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/morning-wood-san-bruno?adjust_creative=F_NG8ZaNVriV_hujoOejIA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=F_NG8ZaNVriV_hujoOejIA",
+          "review_count": 774,
+          "categories": [
+              {
+                  "alias": "japanese",
+                  "title": "Japanese"
+              },
+              {
+                  "alias": "breakfast_brunch",
+                  "title": "Breakfast & Brunch"
+              },
+              {
+                  "alias": "hawaiian",
+                  "title": "Hawaiian"
+              }
+          ],
+          "rating": 4,
+          "coordinates": {
+              "latitude": 37.61882,
+              "longitude": -122.40924
+          },
+          "transactions": [],
+          "price": "$$",
+          "location": {
+              "address1": "260 El Camino Real",
+              "address2": "",
+              "address3": null,
+              "city": "San Bruno",
+              "zip_code": "94066",
+              "country": "US",
+              "state": "CA",
+              "display_address": [
+                  "260 El Camino Real",
+                  "San Bruno, CA 94066"
+              ]
+          },
+          "phone": "",
+          "display_phone": "",
+          "distance": 58184.69306583233
+      },
+      {
+          "id": "0i9jcPfTpqGVtss0zGGCIQ",
+          "alias": "half-moon-bay-brewing-company-half-moon-bay",
+          "name": "Half Moon Bay Brewing Company",
+          "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/mQsz9g3sxf71oFp3UK_vEg/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/half-moon-bay-brewing-company-half-moon-bay?adjust_creative=F_NG8ZaNVriV_hujoOejIA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=F_NG8ZaNVriV_hujoOejIA",
+          "review_count": 1721,
+          "categories": [
+              {
+                  "alias": "seafood",
+                  "title": "Seafood"
+              },
+              {
+                  "alias": "breweries",
+                  "title": "Breweries"
+              },
+              {
+                  "alias": "breakfast_brunch",
+                  "title": "Breakfast & Brunch"
+              }
+          ],
+          "rating": 3.5,
+          "coordinates": {
+              "latitude": 37.50395658711,
+              "longitude": -122.4855427298
+          },
+          "transactions": [],
+          "price": "$$",
+          "location": {
+              "address1": "390 Capistrano Rd",
+              "address2": "",
+              "address3": "",
+              "city": "Half Moon Bay",
+              "zip_code": "94019",
+              "country": "US",
+              "state": "CA",
+              "display_address": [
+                  "390 Capistrano Rd",
+                  "Half Moon Bay, CA 94019"
+              ]
+          },
+          "phone": "+16507282739",
+          "display_phone": "(650) 728-2739",
+          "distance": 45866.402840516246
+      },
+      {
+          "id": "-dWyLsNgHHyV2AvAvYFOnA",
+          "alias": "taste-cafe-half-moon-bay",
+          "name": "Taste Cafe",
+          "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/3TSIj5FrRlwaz_sRKFe8Pw/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/taste-cafe-half-moon-bay?adjust_creative=F_NG8ZaNVriV_hujoOejIA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=F_NG8ZaNVriV_hujoOejIA",
+          "review_count": 15,
+          "categories": [
+              {
+                  "alias": "breakfast_brunch",
+                  "title": "Breakfast & Brunch"
+              },
+              {
+                  "alias": "salad",
+                  "title": "Salad"
+              },
+              {
+                  "alias": "tradamerican",
+                  "title": "American (Traditional)"
+              }
+          ],
+          "rating": 5,
+          "coordinates": {
+              "latitude": 37.46948,
+              "longitude": -122.43423
+          },
+          "transactions": [],
+          "location": {
+              "address1": "50 Cabrillo Hwy",
+              "address2": "Ste B2",
+              "address3": null,
+              "city": "Half Moon Bay",
+              "zip_code": "94019",
+              "country": "US",
+              "state": "CA",
+              "display_address": [
+                  "50 Cabrillo Hwy",
+                  "Ste B2",
+                  "Half Moon Bay, CA 94019"
+              ]
+          },
+          "phone": "+16507121586",
+          "display_phone": "(650) 712-1586",
+          "distance": 48520.67868649984
+      },
+      {
+          "id": "QJiT5WJffZTOxOCjgNVLyA",
+          "alias": "cascade-restaurant-pescadero",
+          "name": "Cascade Restaurant",
+          "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/707h2dUCPnXKpGETyZq-BA/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/cascade-restaurant-pescadero?adjust_creative=F_NG8ZaNVriV_hujoOejIA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=F_NG8ZaNVriV_hujoOejIA",
+          "review_count": 162,
+          "categories": [
+              {
+                  "alias": "newamerican",
+                  "title": "American (New)"
+              }
+          ],
+          "rating": 3,
+          "coordinates": {
+              "latitude": 37.156611,
+              "longitude": -122.34891
+          },
+          "transactions": [],
+          "price": "$$",
+          "location": {
+              "address1": "2001 Rossi Rd",
+              "address2": "",
+              "address3": "",
+              "city": "Pescadero",
+              "zip_code": "94060",
+              "country": "US",
+              "state": "CA",
+              "display_address": [
+                  "2001 Rossi Rd",
+                  "Pescadero, CA 94060"
+              ]
+          },
+          "phone": "+16508797314",
+          "display_phone": "(650) 879-7314",
+          "distance": 56218.11754832448
+      },
+      {
+          "id": "7ZXeego__AD9HkvmvgfLtw",
+          "alias": "breakers-breakfast-brunch-and-lunch-pacifica",
+          "name": "Breakers Breakfast, Brunch & Lunch",
+          "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/_42L5EfZxV575bBcfWN6_A/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/breakers-breakfast-brunch-and-lunch-pacifica?adjust_creative=F_NG8ZaNVriV_hujoOejIA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=F_NG8ZaNVriV_hujoOejIA",
+          "review_count": 561,
+          "categories": [
+              {
+                  "alias": "breakfast_brunch",
+                  "title": "Breakfast & Brunch"
+              },
+              {
+                  "alias": "tradamerican",
+                  "title": "American (Traditional)"
+              },
+              {
+                  "alias": "burgers",
+                  "title": "Burgers"
+              }
+          ],
+          "rating": 4,
+          "coordinates": {
+              "latitude": 37.6096753031015,
+              "longitude": -122.496602386236
+          },
+          "transactions": [],
+          "price": "$$",
+          "location": {
+              "address1": "145 Rockaway Beach Ave",
+              "address2": null,
+              "address3": "",
+              "city": "Pacifica",
+              "zip_code": "94044",
+              "country": "US",
+              "state": "CA",
+              "display_address": [
+                  "145 Rockaway Beach Ave",
+                  "Pacifica, CA 94044"
+              ]
+          },
+          "phone": "+16505571274",
+          "display_phone": "(650) 557-1274",
+          "distance": 51408.61616826744
+      },
+      {
+          "id": "-rwlMmnlnQV84YGnTFyNoA",
+          "alias": "dads-luncheonette-half-moon-bay",
+          "name": "Dad's Luncheonette",
+          "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/OjcTnbIpRHh9urBxGnhhHQ/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/dads-luncheonette-half-moon-bay?adjust_creative=F_NG8ZaNVriV_hujoOejIA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=F_NG8ZaNVriV_hujoOejIA",
+          "review_count": 375,
+          "categories": [
+              {
+                  "alias": "newamerican",
+                  "title": "American (New)"
+              },
+              {
+                  "alias": "burgers",
+                  "title": "Burgers"
+              },
+              {
+                  "alias": "sandwiches",
+                  "title": "Sandwiches"
+              }
+          ],
+          "rating": 4.5,
+          "coordinates": {
+              "latitude": 37.4658269833573,
+              "longitude": -122.433389090002
+          },
+          "transactions": [],
+          "price": "$$",
+          "location": {
+              "address1": "225 Cabrillo Hwy S",
+              "address2": null,
+              "address3": "",
+              "city": "Half Moon Bay",
+              "zip_code": "94019",
+              "country": "US",
+              "state": "CA",
+              "display_address": [
+                  "225 Cabrillo Hwy S",
+                  "Half Moon Bay, CA 94019"
+              ]
+          },
+          "phone": "+16505609832",
+          "display_phone": "(650) 560-9832",
+          "distance": 48457.01086074429
+      },
+      {
+          "id": "d3trbu-A0LZ1Ppidjbr0uw",
+          "alias": "here-comes-the-sun-montara",
+          "name": "Here Comes The Sun",
+          "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/3QfPLV8W9qz1U7cgQ8NHHw/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/here-comes-the-sun-montara?adjust_creative=F_NG8ZaNVriV_hujoOejIA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=F_NG8ZaNVriV_hujoOejIA",
+          "review_count": 142,
+          "categories": [
+              {
+                  "alias": "cafes",
+                  "title": "Cafes"
+              },
+              {
+                  "alias": "coffee",
+                  "title": "Coffee & Tea"
+              }
+          ],
+          "rating": 4.5,
+          "coordinates": {
+              "latitude": 37.54117,
+              "longitude": -122.51609
+          },
+          "transactions": [],
+          "price": "$",
+          "location": {
+              "address1": "8455 N Cabrillo Hwy",
+              "address2": "",
+              "address3": "",
+              "city": "Montara",
+              "zip_code": "94037",
+              "country": "US",
+              "state": "CA",
+              "display_address": [
+                  "8455 N Cabrillo Hwy",
+                  "Montara, CA 94037"
+              ]
+          },
+          "phone": "+16504554308",
+          "display_phone": "(650) 455-4308",
+          "distance": 45557.35796426843
+      },
+      {
+          "id": "awQeZnaclsXi0MScs05o3A",
+          "alias": "pillar-point-fish-house-half-moon-bay",
+          "name": "Pillar Point Fish House",
+          "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/j6LDUeLN2A-pglmt7-t0_g/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/pillar-point-fish-house-half-moon-bay?adjust_creative=F_NG8ZaNVriV_hujoOejIA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=F_NG8ZaNVriV_hujoOejIA",
+          "review_count": 14,
+          "categories": [
+              {
+                  "alias": "raw_food",
+                  "title": "Live/Raw Food"
+              },
+              {
+                  "alias": "seafoodmarkets",
+                  "title": "Seafood Markets"
+              },
+              {
+                  "alias": "newamerican",
+                  "title": "American (New)"
+              }
+          ],
+          "rating": 3.5,
+          "coordinates": {
+              "latitude": 37.5041923,
+              "longitude": -122.4826714
+          },
+          "transactions": [],
+          "location": {
+              "address1": "260 Capistrano Rd",
+              "address2": null,
+              "address3": "",
+              "city": "Half Moon Bay",
+              "zip_code": "94019",
+              "country": "US",
+              "state": "CA",
+              "display_address": [
+                  "260 Capistrano Rd",
+                  "Half Moon Bay, CA 94019"
+              ]
+          },
+          "phone": "+16505600268",
+          "display_phone": "(650) 560-0268",
+          "distance": 46100.70443436434
+      },
+      {
+          "id": "T5dPjP-4dt9p9eYuOUxcWA",
+          "alias": "the-press-el-granada-3",
+          "name": "The Press",
+          "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/oReJXDN5x5pMW22jbpmZzg/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/the-press-el-granada-3?adjust_creative=F_NG8ZaNVriV_hujoOejIA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=F_NG8ZaNVriV_hujoOejIA",
+          "review_count": 243,
+          "categories": [
+              {
+                  "alias": "breakfast_brunch",
+                  "title": "Breakfast & Brunch"
+              },
+              {
+                  "alias": "sandwiches",
+                  "title": "Sandwiches"
+              },
+              {
+                  "alias": "coffee",
+                  "title": "Coffee & Tea"
+              }
+          ],
+          "rating": 4,
+          "coordinates": {
+              "latitude": 37.50615,
+              "longitude": -122.48109
+          },
+          "transactions": [],
+          "price": "$$",
+          "location": {
+              "address1": "107 Sevilla Ave",
+              "address2": null,
+              "address3": "",
+              "city": "El Granada",
+              "zip_code": "94018",
+              "country": "US",
+              "state": "CA",
+              "display_address": [
+                  "107 Sevilla Ave",
+                  "El Granada, CA 94018"
+              ]
+          },
+          "phone": "+16507269775",
+          "display_phone": "(650) 726-9775",
+          "distance": 46322.833548460905
+      },
+      {
+          "id": "PZCyRDzgDnWazgpyfKRIpQ",
+          "alias": "stick-and-steam-millbrae-4",
+          "name": "Stick & Steam",
+          "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/HCSJ4ef4s3hnS5rHWuHVqA/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/stick-and-steam-millbrae-4?adjust_creative=F_NG8ZaNVriV_hujoOejIA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=F_NG8ZaNVriV_hujoOejIA",
+          "review_count": 131,
+          "categories": [
+              {
+                  "alias": "chinese",
+                  "title": "Chinese"
+              },
+              {
+                  "alias": "tapasmallplates",
+                  "title": "Tapas/Small Plates"
+              },
+              {
+                  "alias": "noodles",
+                  "title": "Noodles"
+              }
+          ],
+          "rating": 4,
+          "coordinates": {
+              "latitude": 37.60033,
+              "longitude": -122.38266
+          },
+          "transactions": [
+              "restaurant_reservation"
+          ],
+          "price": "$$",
+          "location": {
+              "address1": "350 Adrian Rd",
+              "address2": null,
+              "address3": "",
+              "city": "Millbrae",
+              "zip_code": "94030",
+              "country": "US",
+              "state": "CA",
+              "display_address": [
+                  "350 Adrian Rd",
+                  "Millbrae, CA 94030"
+              ]
+          },
+          "phone": "+16502399240",
+          "display_phone": "(650) 239-9240",
+          "distance": 59082.70148640047
+      },
+      {
+          "id": "0JacLzskNQSqPgeL8dQCCg",
+          "alias": "monster-chef-half-moon-bay",
+          "name": "Monster Chef",
+          "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/HDKYPLXaBys1kgAA2wPZIQ/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/monster-chef-half-moon-bay?adjust_creative=F_NG8ZaNVriV_hujoOejIA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=F_NG8ZaNVriV_hujoOejIA",
+          "review_count": 500,
+          "categories": [
+              {
+                  "alias": "japanese",
+                  "title": "Japanese"
+              },
+              {
+                  "alias": "sushi",
+                  "title": "Sushi Bars"
+              },
+              {
+                  "alias": "asianfusion",
+                  "title": "Asian Fusion"
+              }
+          ],
+          "rating": 3.5,
+          "coordinates": {
+              "latitude": 37.5056476,
+              "longitude": -122.4811164
+          },
+          "transactions": [
+              "restaurant_reservation",
+              "pickup"
+          ],
+          "price": "$$$",
+          "location": {
+              "address1": "10151 Cabrillo Hwy N",
+              "address2": "",
+              "address3": "",
+              "city": "Half Moon Bay",
+              "zip_code": "94019",
+              "country": "US",
+              "state": "CA",
+              "display_address": [
+                  "10151 Cabrillo Hwy N",
+                  "Half Moon Bay, CA 94019"
+              ]
+          },
+          "phone": "+16507135140",
+          "display_phone": "(650) 713-5140",
+          "distance": 46299.739558888825
+      },
+      {
+          "id": "TPkz7Cs-56zW0lcgFkPv4A",
+          "alias": "eleven-bolinas-2",
+          "name": "Eleven",
+          "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/UbIiN0FgnQaPZ_ME6aZXOw/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/eleven-bolinas-2?adjust_creative=F_NG8ZaNVriV_hujoOejIA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=F_NG8ZaNVriV_hujoOejIA",
+          "review_count": 25,
+          "categories": [
+              {
+                  "alias": "hotels",
+                  "title": "Hotels"
+              },
+              {
+                  "alias": "wine_bars",
+                  "title": "Wine Bars"
+              },
+              {
+                  "alias": "italian",
+                  "title": "Italian"
+              }
+          ],
+          "rating": 4.5,
+          "coordinates": {
+              "latitude": 37.90973,
+              "longitude": -122.68608
+          },
+          "transactions": [],
+          "price": "$$",
+          "location": {
+              "address1": "11 Wharf Rd.",
+              "address2": "",
+              "address3": "",
+              "city": "Bolinas",
+              "zip_code": "94924",
+              "country": "US",
+              "state": "CA",
+              "display_address": [
+                  "11 Wharf Rd.",
+                  "Bolinas, CA 94924"
+              ]
+          },
+          "phone": "+14158681133",
+          "display_phone": "(415) 868-1133",
+          "distance": 69619.450396523
+      },
+      {
+          "id": "UdnHMMV5cWIxF9z8be65DQ",
+          "alias": "sea-bowl-pacifica",
+          "name": "Sea Bowl",
+          "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/3wTODVT0XVeJgVdscmfSrA/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/sea-bowl-pacifica?adjust_creative=F_NG8ZaNVriV_hujoOejIA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=F_NG8ZaNVriV_hujoOejIA",
+          "review_count": 376,
+          "categories": [
+              {
+                  "alias": "bowling",
+                  "title": "Bowling"
+              },
+              {
+                  "alias": "bars",
+                  "title": "Bars"
+              },
+              {
+                  "alias": "pizza",
+                  "title": "Pizza"
+              }
+          ],
+          "rating": 4,
+          "coordinates": {
+              "latitude": 37.6074919,
+              "longitude": -122.4968402
+          },
+          "transactions": [],
+          "price": "$$",
+          "location": {
+              "address1": "4625 Coast Hwy",
+              "address2": "",
+              "address3": "",
+              "city": "Pacifica",
+              "zip_code": "94044",
+              "country": "US",
+              "state": "CA",
+              "display_address": [
+                  "4625 Coast Hwy",
+                  "Pacifica, CA 94044"
+              ]
+          },
+          "phone": "+16507388190",
+          "display_phone": "(650) 738-8190",
+          "distance": 51186.89451179404
+      },
+      {
+          "id": "43dXf3so671bwFKDNR68rw",
+          "alias": "mokutanya-burlingame",
+          "name": "Mokutanya",
+          "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/I8NUTkWSbcNgchZzShDkWQ/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/mokutanya-burlingame?adjust_creative=F_NG8ZaNVriV_hujoOejIA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=F_NG8ZaNVriV_hujoOejIA",
+          "review_count": 1712,
+          "categories": [
+              {
+                  "alias": "japanese",
+                  "title": "Japanese"
+              }
+          ],
+          "rating": 4,
+          "coordinates": {
+              "latitude": 37.587033,
+              "longitude": -122.362957
+          },
+          "transactions": [
+              "pickup"
+          ],
+          "price": "$$",
+          "location": {
+              "address1": "1155 California Dr",
+              "address2": "Ste G",
+              "address3": "",
+              "city": "Burlingame",
+              "zip_code": "94010",
+              "country": "US",
+              "state": "CA",
+              "display_address": [
+                  "1155 California Dr",
+                  "Ste G",
+                  "Burlingame, CA 94010"
+              ]
+          },
+          "phone": "+16503489388",
+          "display_phone": "(650) 348-9388",
+          "distance": 59753.85724393364
+      },
+      {
+          "id": "Vai0990CS1mYd4SP3N3b8w",
+          "alias": "mezza-luna-restaurant-half-moon-bay",
+          "name": "Mezza Luna Restaurant",
+          "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/pg60RGjFEhvSCHvigus9Aw/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/mezza-luna-restaurant-half-moon-bay?adjust_creative=F_NG8ZaNVriV_hujoOejIA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=F_NG8ZaNVriV_hujoOejIA",
+          "review_count": 683,
+          "categories": [
+              {
+                  "alias": "italian",
+                  "title": "Italian"
+              },
+              {
+                  "alias": "seafood",
+                  "title": "Seafood"
+              },
+              {
+                  "alias": "pizza",
+                  "title": "Pizza"
+              }
+          ],
+          "rating": 4,
+          "coordinates": {
+              "latitude": 37.50509,
+              "longitude": -122.487
+          },
+          "transactions": [
+              "pickup",
+              "delivery"
+          ],
+          "price": "$$",
+          "location": {
+              "address1": "459 Prospect Way",
+              "address2": "",
+              "address3": "",
+              "city": "Half Moon Bay",
+              "zip_code": "94019",
+              "country": "US",
+              "state": "CA",
+              "display_address": [
+                  "459 Prospect Way",
+                  "Half Moon Bay, CA 94019"
+              ]
+          },
+          "phone": "+16507288108",
+          "display_phone": "(650) 728-8108",
+          "distance": 45820.72274884081
+      },
+      {
+          "id": "NhrRXDU6LaTf1wwwuU0Odg",
+          "alias": "seapot-海中锅-san-mateo",
+          "name": "Seapot 海中锅",
+          "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/xKaXHOTfFgH9Don6nCOwFw/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/seapot-%E6%B5%B7%E4%B8%AD%E9%94%85-san-mateo?adjust_creative=F_NG8ZaNVriV_hujoOejIA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=F_NG8ZaNVriV_hujoOejIA",
+          "review_count": 1021,
+          "categories": [
+              {
+                  "alias": "taiwanese",
+                  "title": "Taiwanese"
+              },
+              {
+                  "alias": "seafood",
+                  "title": "Seafood"
+              },
+              {
+                  "alias": "hotpot",
+                  "title": "Hot Pot"
+              }
+          ],
+          "rating": 4,
+          "coordinates": {
+              "latitude": 37.54851,
+              "longitude": -122.31128
+          },
+          "transactions": [
+              "restaurant_reservation"
+          ],
+          "price": "$$",
+          "location": {
+              "address1": "1952 S El Camino Real",
+              "address2": "",
+              "address3": null,
+              "city": "San Mateo",
+              "zip_code": "94403",
+              "country": "US",
+              "state": "CA",
+              "display_address": [
+                  "1952 S El Camino Real",
+                  "San Mateo, CA 94403"
+              ]
+          },
+          "phone": "+16503152827",
+          "display_phone": "(650) 315-2827",
+          "distance": 61898.30562104235
+      },
+      {
+          "id": "g_1RYZs2XtZ3uiyCsULijA",
+          "alias": "pasta-moon-half-moon-bay",
+          "name": "Pasta Moon",
+          "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/nZJorFoUVDuarhz66dg0gA/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/pasta-moon-half-moon-bay?adjust_creative=F_NG8ZaNVriV_hujoOejIA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=F_NG8ZaNVriV_hujoOejIA",
+          "review_count": 1098,
+          "categories": [
+              {
+                  "alias": "italian",
+                  "title": "Italian"
+              }
+          ],
+          "rating": 4,
+          "coordinates": {
+              "latitude": 37.465604,
+              "longitude": -122.428784
+          },
+          "transactions": [],
+          "price": "$$",
+          "location": {
+              "address1": "315 Main St",
+              "address2": "",
+              "address3": "",
+              "city": "Half Moon Bay",
+              "zip_code": "94019",
+              "country": "US",
+              "state": "CA",
+              "display_address": [
+                  "315 Main St",
+                  "Half Moon Bay, CA 94019"
+              ]
+          },
+          "phone": "+16507265125",
+          "display_phone": "(650) 726-5125",
+          "distance": 48832.241206938976
+      },
+      {
+          "id": "Q4tOrahHwvFOgChzBsm5yw",
+          "alias": "alices-restaurant-woodside",
+          "name": "Alice's Restaurant",
+          "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/eYOevIyuFAwjC6PPvqtw-Q/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/alices-restaurant-woodside?adjust_creative=F_NG8ZaNVriV_hujoOejIA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=F_NG8ZaNVriV_hujoOejIA",
+          "review_count": 1047,
+          "categories": [
+              {
+                  "alias": "diners",
+                  "title": "Diners"
+              },
+              {
+                  "alias": "burgers",
+                  "title": "Burgers"
+              },
+              {
+                  "alias": "breakfast_brunch",
+                  "title": "Breakfast & Brunch"
+              }
+          ],
+          "rating": 4,
+          "coordinates": {
+              "latitude": 37.38658,
+              "longitude": -122.26546
+          },
+          "transactions": [],
+          "price": "$$",
+          "location": {
+              "address1": "17288 Skyline Blvd",
+              "address2": "",
+              "address3": "",
+              "city": "Woodside",
+              "zip_code": "94062",
+              "country": "US",
+              "state": "CA",
+              "display_address": [
+                  "17288 Skyline Blvd",
+                  "Woodside, CA 94062"
+              ]
+          },
+          "phone": "+16508510303",
+          "display_phone": "(650) 851-0303",
+          "distance": 60974.00922231044
+      },
+      {
+          "id": "0JY9AeYcXfzKLK0VWJTQMg",
+          "alias": "whale-city-bakery-bar-and-grill-davenport",
+          "name": "Whale City Bakery Bar & Grill",
+          "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/x3PzEW5yTHD9MR5UzRpPAg/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/whale-city-bakery-bar-and-grill-davenport?adjust_creative=F_NG8ZaNVriV_hujoOejIA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=F_NG8ZaNVriV_hujoOejIA",
+          "review_count": 498,
+          "categories": [
+              {
+                  "alias": "bakeries",
+                  "title": "Bakeries"
+              },
+              {
+                  "alias": "tradamerican",
+                  "title": "American (Traditional)"
+              },
+              {
+                  "alias": "bars",
+                  "title": "Bars"
+              }
+          ],
+          "rating": 4,
+          "coordinates": {
+              "latitude": 37.0113880239772,
+              "longitude": -122.195188506903
+          },
+          "transactions": [],
+          "price": "$$",
+          "location": {
+              "address1": "490 Hwy 1",
+              "address2": "",
+              "address3": "",
+              "city": "Davenport",
+              "zip_code": "95017",
+              "country": "US",
+              "state": "CA",
+              "display_address": [
+                  "490 Hwy 1",
+                  "Davenport, CA 95017"
+              ]
+          },
+          "phone": "+18314239009",
+          "display_phone": "(831) 423-9009",
+          "distance": 75156.92127650368
+      },
+      {
+          "id": "IdxPbp0WPdmBhYysGRhxCQ",
+          "alias": "nicks-restaurant-pacifica",
+          "name": "Nick's Seashore Restaurant",
+          "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/v1RCZ3FOMdbag8ShJRvByg/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/nicks-restaurant-pacifica?adjust_creative=F_NG8ZaNVriV_hujoOejIA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=F_NG8ZaNVriV_hujoOejIA",
+          "review_count": 1108,
+          "categories": [
+              {
+                  "alias": "seafood",
+                  "title": "Seafood"
+              },
+              {
+                  "alias": "lounges",
+                  "title": "Lounges"
+              }
+          ],
+          "rating": 3.5,
+          "coordinates": {
+              "latitude": 37.60904,
+              "longitude": -122.49707
+          },
+          "transactions": [],
+          "price": "$$",
+          "location": {
+              "address1": "100 Rockaway Beach Ave",
+              "address2": "",
+              "address3": "",
+              "city": "Pacifica",
+              "zip_code": "94044",
+              "country": "US",
+              "state": "CA",
+              "display_address": [
+                  "100 Rockaway Beach Ave",
+                  "Pacifica, CA 94044"
+              ]
+          },
+          "phone": "+16503593900",
+          "display_phone": "(650) 359-3900",
+          "distance": 51376.9432769186
+      },
+      {
+          "id": "zrdcshFDOKM6a-VeAK1Bew",
+          "alias": "barbary-coast-pizza-and-catering-bolinas",
+          "name": "Barbary Coast Pizza and Catering",
+          "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/W21UvNuIm96M5xC8Nnk-vw/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/barbary-coast-pizza-and-catering-bolinas?adjust_creative=F_NG8ZaNVriV_hujoOejIA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=F_NG8ZaNVriV_hujoOejIA",
+          "review_count": 3,
+          "categories": [
+              {
+                  "alias": "pizza",
+                  "title": "Pizza"
+              },
+              {
+                  "alias": "personalchefs",
+                  "title": "Personal Chefs"
+              }
+          ],
+          "rating": 4.5,
+          "coordinates": {
+              "latitude": 37.90937,
+              "longitude": -122.68575
+          },
+          "transactions": [],
+          "location": {
+              "address1": "14 Wharf Rd",
+              "address2": null,
+              "address3": "",
+              "city": "Bolinas",
+              "zip_code": "94924",
+              "country": "US",
+              "state": "CA",
+              "display_address": [
+                  "14 Wharf Rd",
+                  "Bolinas, CA 94924"
+              ]
+          },
+          "phone": "+14153281066",
+          "display_phone": "(415) 328-1066",
+          "distance": 69586.2282191182
+      },
+      {
+          "id": "9N2SyYEqGTL3pZnhyiFHzg",
+          "alias": "moss-beach-distillery-moss-beach",
+          "name": "Moss Beach Distillery",
+          "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/jzch-duZRgTVVDReCcB_vw/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/moss-beach-distillery-moss-beach?adjust_creative=F_NG8ZaNVriV_hujoOejIA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=F_NG8ZaNVriV_hujoOejIA",
+          "review_count": 1217,
+          "categories": [
+              {
+                  "alias": "seafood",
+                  "title": "Seafood"
+              },
+              {
+                  "alias": "tradamerican",
+                  "title": "American (Traditional)"
+              },
+              {
+                  "alias": "venues",
+                  "title": "Venues & Event Spaces"
+              }
+          ],
+          "rating": 3.5,
+          "coordinates": {
+              "latitude": 37.51778,
+              "longitude": -122.51283
+          },
+          "transactions": [
+              "restaurant_reservation"
+          ],
+          "price": "$$$",
+          "location": {
+              "address1": "140 Beach Way",
+              "address2": "",
+              "address3": "",
+              "city": "Moss Beach",
+              "zip_code": "94038",
+              "country": "US",
+              "state": "CA",
+              "display_address": [
+                  "140 Beach Way",
+                  "Moss Beach, CA 94038"
+              ]
+          },
+          "phone": "+16507285595",
+          "display_phone": "(650) 728-5595",
+          "distance": 44457.410600481315
+      },
+      {
+          "id": "GV9hVOrNw9VmMOI00aEjwQ",
+          "alias": "sacrilege-brewery-kitchen-half-moon-bay",
+          "name": "Sacrilege Brewery + Kitchen",
+          "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/4rCdTwKjcR8p4CGImG5xAw/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/sacrilege-brewery-kitchen-half-moon-bay?adjust_creative=F_NG8ZaNVriV_hujoOejIA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=F_NG8ZaNVriV_hujoOejIA",
+          "review_count": 217,
+          "categories": [
+              {
+                  "alias": "breweries",
+                  "title": "Breweries"
+              },
+              {
+                  "alias": "beerbar",
+                  "title": "Beer Bar"
+              },
+              {
+                  "alias": "burgers",
+                  "title": "Burgers"
+              }
+          ],
+          "rating": 4,
+          "coordinates": {
+              "latitude": 37.4609296,
+              "longitude": -122.4298631
+          },
+          "transactions": [],
+          "price": "$$",
+          "location": {
+              "address1": "730 Main St",
+              "address2": null,
+              "address3": "",
+              "city": "Half Moon Bay",
+              "zip_code": "94019",
+              "country": "US",
+              "state": "CA",
+              "display_address": [
+                  "730 Main St",
+                  "Half Moon Bay, CA 94019"
+              ]
+          },
+          "phone": "+16502767029",
+          "display_phone": "(650) 276-7029",
+          "distance": 48573.00226172898
+      },
+      {
+          "id": "qCe0xFPYddI4Kg-RgPG6Zg",
+          "alias": "sam-choys-poke-to-the-max-san-bruno-2",
+          "name": "Sam Choy's Poke To The Max",
+          "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/PRFlIdgGM_sKAl6qXmq3Wg/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/sam-choys-poke-to-the-max-san-bruno-2?adjust_creative=F_NG8ZaNVriV_hujoOejIA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=F_NG8ZaNVriV_hujoOejIA",
+          "review_count": 134,
+          "categories": [
+              {
+                  "alias": "hawaiian",
+                  "title": "Hawaiian"
+              },
+              {
+                  "alias": "poke",
+                  "title": "Poke"
+              }
+          ],
+          "rating": 4,
+          "coordinates": {
+              "latitude": 37.62699,
+              "longitude": -122.41152
+          },
+          "transactions": [],
+          "price": "$$",
+          "location": {
+              "address1": "629 San Mateo Ave",
+              "address2": "",
+              "address3": null,
+              "city": "San Bruno",
+              "zip_code": "94066",
+              "country": "US",
+              "state": "CA",
+              "display_address": [
+                  "629 San Mateo Ave",
+                  "San Bruno, CA 94066"
+              ]
+          },
+          "phone": "+16507630763",
+          "display_phone": "(650) 763-0763",
+          "distance": 58541.58008762364
+      },
+      {
+          "id": "w6FjMiUTUlpBOzYNyfIWdw",
+          "alias": "maboroshi-half-moon-bay",
+          "name": "Maboroshi",
+          "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/6VY460-FI2GHoaQp0rU0Uw/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/maboroshi-half-moon-bay?adjust_creative=F_NG8ZaNVriV_hujoOejIA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=F_NG8ZaNVriV_hujoOejIA",
+          "review_count": 13,
+          "categories": [
+              {
+                  "alias": "sushi",
+                  "title": "Sushi Bars"
+              },
+              {
+                  "alias": "japanese",
+                  "title": "Japanese"
+              }
+          ],
+          "rating": 4.5,
+          "coordinates": {
+              "latitude": 37.5043654250155,
+              "longitude": -122.482787645646
+          },
+          "transactions": [],
+          "location": {
+              "address1": "260 Capistrano Rd",
+              "address2": "Ste 2F",
+              "address3": null,
+              "city": "Half Moon Bay",
+              "zip_code": "94019",
+              "country": "US",
+              "state": "CA",
+              "display_address": [
+                  "260 Capistrano Rd",
+                  "Ste 2F",
+                  "Half Moon Bay, CA 94019"
+              ]
+          },
+          "phone": "+16505600268",
+          "display_phone": "(650) 560-0268",
+          "distance": 46104.33697905254
+      },
+      {
+          "id": "s2IokPVYbvJI9IVw_Lm8yA",
+          "alias": "old-princeton-landing-public-house-and-grill-half-moon-bay-2",
+          "name": "Old Princeton Landing Public House and Grill",
+          "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/ZKNvIZPR_ryBlyJptuvudQ/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/old-princeton-landing-public-house-and-grill-half-moon-bay-2?adjust_creative=F_NG8ZaNVriV_hujoOejIA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=F_NG8ZaNVriV_hujoOejIA",
+          "review_count": 152,
+          "categories": [
+              {
+                  "alias": "pubs",
+                  "title": "Pubs"
+              },
+              {
+                  "alias": "seafood",
+                  "title": "Seafood"
+              },
+              {
+                  "alias": "burgers",
+                  "title": "Burgers"
+              }
+          ],
+          "rating": 4,
+          "coordinates": {
+              "latitude": 37.50498,
+              "longitude": -122.48617
+          },
+          "transactions": [],
+          "price": "$$",
+          "location": {
+              "address1": "460 Capistrano Rd",
+              "address2": null,
+              "address3": "",
+              "city": "Half Moon Bay",
+              "zip_code": "94019",
+              "country": "US",
+              "state": "CA",
+              "display_address": [
+                  "460 Capistrano Rd",
+                  "Half Moon Bay, CA 94019"
+              ]
+          },
+          "phone": "+16507287096",
+          "display_phone": "(650) 728-7096",
+          "distance": 45869.155720856186
+      },
+      {
+          "id": "I3g9IDrHeYsjtgMjeWZsHQ",
+          "alias": "sand-dollar-restaurant-stinson-beach",
+          "name": "Sand Dollar Restaurant",
+          "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/mWpsGBtIqAlkSCiWFg8llg/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/sand-dollar-restaurant-stinson-beach?adjust_creative=F_NG8ZaNVriV_hujoOejIA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=F_NG8ZaNVriV_hujoOejIA",
+          "review_count": 419,
+          "categories": [
+              {
+                  "alias": "seafood",
+                  "title": "Seafood"
+              }
+          ],
+          "rating": 3,
+          "coordinates": {
+              "latitude": 37.8985895877419,
+              "longitude": -122.638929916468
+          },
+          "transactions": [],
+          "price": "$$",
+          "location": {
+              "address1": "3458 Shoreline Hwy 1",
+              "address2": "",
+              "address3": "",
+              "city": "Stinson Beach",
+              "zip_code": "94970",
+              "country": "US",
+              "state": "CA",
+              "display_address": [
+                  "3458 Shoreline Hwy 1",
+                  "Stinson Beach, CA 94970"
+              ]
+          },
+          "phone": "+14158680434",
+          "display_phone": "(415) 868-0434",
+          "distance": 69976.34887729869
+      },
+      {
+          "id": "tCh_q4kkDs-glBGRuONyXg",
+          "alias": "la-costanera-montara",
+          "name": "La Costanera",
+          "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/ly4Ew-qTK1KsDoSvBH4N1w/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/la-costanera-montara?adjust_creative=F_NG8ZaNVriV_hujoOejIA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=F_NG8ZaNVriV_hujoOejIA",
+          "review_count": 1235,
+          "categories": [
+              {
+                  "alias": "latin",
+                  "title": "Latin American"
+              },
+              {
+                  "alias": "seafood",
+                  "title": "Seafood"
+              },
+              {
+                  "alias": "peruvian",
+                  "title": "Peruvian"
+              }
+          ],
+          "rating": 3.5,
+          "coordinates": {
+              "latitude": 37.5460319478939,
+              "longitude": -122.513941526413
+          },
+          "transactions": [],
+          "price": "$$$",
+          "location": {
+              "address1": "8150 Cabrillo Hwy",
+              "address2": "",
+              "address3": "",
+              "city": "Montara",
+              "zip_code": "94037",
+              "country": "US",
+              "state": "CA",
+              "display_address": [
+                  "8150 Cabrillo Hwy",
+                  "Montara, CA 94037"
+              ]
+          },
+          "phone": "+16507281600",
+          "display_phone": "(650) 728-1600",
+          "distance": 46012.18294235619
+      },
+      {
+          "id": "TRf_Aoq2Gl71GebevaRPbQ",
+          "alias": "the-siren-canteen-stinson-beach",
+          "name": "The Siren Canteen",
+          "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/uZGxhMTBzkdgqlfJVDyPFQ/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/the-siren-canteen-stinson-beach?adjust_creative=F_NG8ZaNVriV_hujoOejIA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=F_NG8ZaNVriV_hujoOejIA",
+          "review_count": 223,
+          "categories": [
+              {
+                  "alias": "burgers",
+                  "title": "Burgers"
+              },
+              {
+                  "alias": "tacos",
+                  "title": "Tacos"
+              }
+          ],
+          "rating": 4.5,
+          "coordinates": {
+              "latitude": 37.895969,
+              "longitude": -122.639562
+          },
+          "transactions": [],
+          "price": "$",
+          "location": {
+              "address1": "3201 Hwy 1",
+              "address2": "",
+              "address3": "",
+              "city": "Stinson Beach",
+              "zip_code": "94970",
+              "country": "US",
+              "state": "CA",
+              "display_address": [
+                  "3201 Hwy 1",
+                  "Stinson Beach, CA 94970"
+              ]
+          },
+          "phone": "+14158681777",
+          "display_phone": "(415) 868-1777",
+          "distance": 69686.64549162977
+      },
+      {
+          "id": "CqPPS00B-4RifpS0U34S1w",
+          "alias": "monsoon-himalayan-cuisine-half-moon-bay-2",
+          "name": "Monsoon Himalayan Cuisine",
+          "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/oN9zHbsghdhuVsCfmDZ_cg/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/monsoon-himalayan-cuisine-half-moon-bay-2?adjust_creative=F_NG8ZaNVriV_hujoOejIA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=F_NG8ZaNVriV_hujoOejIA",
+          "review_count": 297,
+          "categories": [
+              {
+                  "alias": "himalayan",
+                  "title": "Himalayan/Nepalese"
+              }
+          ],
+          "rating": 4.5,
+          "coordinates": {
+              "latitude": 37.4665,
+              "longitude": -122.4282
+          },
+          "transactions": [
+              "restaurant_reservation"
+          ],
+          "price": "$$",
+          "location": {
+              "address1": "20 Stone Pine Rd",
+              "address2": "Ste B",
+              "address3": null,
+              "city": "Half Moon Bay",
+              "zip_code": "94019",
+              "country": "US",
+              "state": "CA",
+              "display_address": [
+                  "20 Stone Pine Rd",
+                  "Ste B",
+                  "Half Moon Bay, CA 94019"
+              ]
+          },
+          "phone": "+16507130826",
+          "display_phone": "(650) 713-0826",
+          "distance": 48902.485349341856
+      },
+      {
+          "id": "FPcs4nyH7juOTHsr1kMSzg",
+          "alias": "cemitas-1-davenport",
+          "name": "Cemitas 1",
+          "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/NH0I7c9oyB84sB7MrWPBog/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/cemitas-1-davenport?adjust_creative=F_NG8ZaNVriV_hujoOejIA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=F_NG8ZaNVriV_hujoOejIA",
+          "review_count": 91,
+          "categories": [
+              {
+                  "alias": "mexican",
+                  "title": "Mexican"
+              }
+          ],
+          "rating": 4.5,
+          "coordinates": {
+              "latitude": 37.0116,
+              "longitude": -122.19545
+          },
+          "transactions": [],
+          "price": "$$",
+          "location": {
+              "address1": "500 Hwy 1",
+              "address2": null,
+              "address3": "",
+              "city": "Davenport",
+              "zip_code": "95017",
+              "country": "US",
+              "state": "CA",
+              "display_address": [
+                  "500 Hwy 1",
+                  "Davenport, CA 95017"
+              ]
+          },
+          "phone": "+18314548414",
+          "display_phone": "(831) 454-8414",
+          "distance": 75123.4207473827
+      },
+      {
+          "id": "aKUbSh_tExzYRRxk3PrYig",
+          "alias": "ebbtide-cafe-half-moon-bay",
+          "name": "Ebbtide Cafe",
+          "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/7W3HueOu7PV_zHlnzXFwrw/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/ebbtide-cafe-half-moon-bay?adjust_creative=F_NG8ZaNVriV_hujoOejIA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=F_NG8ZaNVriV_hujoOejIA",
+          "review_count": 45,
+          "categories": [
+              {
+                  "alias": "coffee",
+                  "title": "Coffee & Tea"
+              },
+              {
+                  "alias": "breakfast_brunch",
+                  "title": "Breakfast & Brunch"
+              },
+              {
+                  "alias": "bagels",
+                  "title": "Bagels"
+              }
+          ],
+          "rating": 4,
+          "coordinates": {
+              "latitude": 37.49472,
+              "longitude": -122.46119
+          },
+          "transactions": [],
+          "price": "$",
+          "location": {
+              "address1": "311 Mirada Rd",
+              "address2": null,
+              "address3": "",
+              "city": "Half Moon Bay",
+              "zip_code": "94019",
+              "country": "US",
+              "state": "CA",
+              "display_address": [
+                  "311 Mirada Rd",
+                  "Half Moon Bay, CA 94019"
+              ]
+          },
+          "phone": "",
+          "display_phone": "",
+          "distance": 47370.62599452672
+      },
+      {
+          "id": "bssqKWGWWdZyJwHEV8qqXQ",
+          "alias": "cantina-at-san-benito-house-half-moon-bay",
+          "name": "Cantina at San Benito House",
+          "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/P3qI5jJ5mJivhcnAe4KnZw/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/cantina-at-san-benito-house-half-moon-bay?adjust_creative=F_NG8ZaNVriV_hujoOejIA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=F_NG8ZaNVriV_hujoOejIA",
+          "review_count": 4,
+          "categories": [
+              {
+                  "alias": "mexican",
+                  "title": "Mexican"
+              },
+              {
+                  "alias": "pubs",
+                  "title": "Pubs"
+              }
+          ],
+          "rating": 5,
+          "coordinates": {
+              "latitude": 37.4649,
+              "longitude": -122.42932
+          },
+          "transactions": [],
+          "location": {
+              "address1": "356 Main St",
+              "address2": "",
+              "address3": null,
+              "city": "Half Moon Bay",
+              "zip_code": "94019",
+              "country": "US",
+              "state": "CA",
+              "display_address": [
+                  "356 Main St",
+                  "Half Moon Bay, CA 94019"
+              ]
+          },
+          "phone": "+16507263425",
+          "display_phone": "(650) 726-3425",
+          "distance": 48755.558562578226
+      },
+      {
+          "id": "GBviTZsh3Ec1qBXoWler9A",
+          "alias": "the-village-pub-woodside",
+          "name": "The Village Pub",
+          "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/HO4fRNjzNA6ryv0pVNqsiA/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/the-village-pub-woodside?adjust_creative=F_NG8ZaNVriV_hujoOejIA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=F_NG8ZaNVriV_hujoOejIA",
+          "review_count": 953,
+          "categories": [
+              {
+                  "alias": "tradamerican",
+                  "title": "American (Traditional)"
+              },
+              {
+                  "alias": "pubs",
+                  "title": "Pubs"
+              }
+          ],
+          "rating": 4,
+          "coordinates": {
+              "latitude": 37.42888,
+              "longitude": -122.25148
+          },
+          "transactions": [],
+          "price": "$$$",
+          "location": {
+              "address1": "2967 Woodside Rd",
+              "address2": "",
+              "address3": "",
+              "city": "Woodside",
+              "zip_code": "94062",
+              "country": "US",
+              "state": "CA",
+              "display_address": [
+                  "2967 Woodside Rd",
+                  "Woodside, CA 94062"
+              ]
+          },
+          "phone": "+16508519888",
+          "display_phone": "(650) 851-9888",
+          "distance": 62920.28181093132
+      },
+      {
+          "id": "ji1qvbV-wGyKK-Z2e8MWzg",
+          "alias": "miramar-beach-restaurant-half-moon-bay",
+          "name": "Miramar Beach Restaurant",
+          "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/JAXyZEbBUskizHFE9LS6tg/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/miramar-beach-restaurant-half-moon-bay?adjust_creative=F_NG8ZaNVriV_hujoOejIA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=F_NG8ZaNVriV_hujoOejIA",
+          "review_count": 934,
+          "categories": [
+              {
+                  "alias": "seafood",
+                  "title": "Seafood"
+              },
+              {
+                  "alias": "steak",
+                  "title": "Steakhouses"
+              }
+          ],
+          "rating": 3.5,
+          "coordinates": {
+              "latitude": 37.4956831727813,
+              "longitude": -122.462290999375
+          },
+          "transactions": [
+              "pickup",
+              "delivery"
+          ],
+          "price": "$$",
+          "location": {
+              "address1": "131 Mirada Rd",
+              "address2": "",
+              "address3": "",
+              "city": "Half Moon Bay",
+              "zip_code": "94019",
+              "country": "US",
+              "state": "CA",
+              "display_address": [
+                  "131 Mirada Rd",
+                  "Half Moon Bay, CA 94019"
+              ]
+          },
+          "phone": "+16507269053",
+          "display_phone": "(650) 726-9053",
+          "distance": 47326.31498199338
+      },
+      {
+          "id": "Z6Vc49jdi5JkCzZr6snowQ",
+          "alias": "gorilla-barbeque-pacifica",
+          "name": "Gorilla Barbeque",
+          "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/K0BVfKgq7RZ_FJRxQ8bYsg/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/gorilla-barbeque-pacifica?adjust_creative=F_NG8ZaNVriV_hujoOejIA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=F_NG8ZaNVriV_hujoOejIA",
+          "review_count": 1567,
+          "categories": [
+              {
+                  "alias": "bbq",
+                  "title": "Barbeque"
+              }
+          ],
+          "rating": 4,
+          "coordinates": {
+              "latitude": 37.613158,
+              "longitude": -122.487636
+          },
+          "transactions": [],
+          "price": "$$",
+          "location": {
+              "address1": "2145 Coast Hwy",
+              "address2": "",
+              "address3": "",
+              "city": "Pacifica",
+              "zip_code": "94044",
+              "country": "US",
+              "state": "CA",
+              "display_address": [
+                  "2145 Coast Hwy",
+                  "Pacifica, CA 94044"
+              ]
+          },
+          "phone": "+16503597427",
+          "display_phone": "(650) 359-7427",
+          "distance": 52264.231400428296
+      },
+      {
+          "id": "cJu8vzeA-F6SXFMCQ7qmWg",
+          "alias": "3-zero-cafe-half-moon-bay",
+          "name": "3-Zero Cafe",
+          "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/KwIejzSnMOwg3o9K1fl0ig/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/3-zero-cafe-half-moon-bay?adjust_creative=F_NG8ZaNVriV_hujoOejIA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=F_NG8ZaNVriV_hujoOejIA",
+          "review_count": 447,
+          "categories": [
+              {
+                  "alias": "sandwiches",
+                  "title": "Sandwiches"
+              },
+              {
+                  "alias": "burgers",
+                  "title": "Burgers"
+              },
+              {
+                  "alias": "breakfast_brunch",
+                  "title": "Breakfast & Brunch"
+              }
+          ],
+          "rating": 3.5,
+          "coordinates": {
+              "latitude": 37.5144235734164,
+              "longitude": -122.494468688965
+          },
+          "transactions": [],
+          "price": "$$",
+          "location": {
+              "address1": "9850 Cabrillo Hwy N",
+              "address2": "",
+              "address3": "Half Moon Bay Airport",
+              "city": "Half Moon Bay",
+              "zip_code": "94019",
+              "country": "US",
+              "state": "CA",
+              "display_address": [
+                  "9850 Cabrillo Hwy N",
+                  "Half Moon Bay Airport",
+                  "Half Moon Bay, CA 94019"
+              ]
+          },
+          "phone": "+16507281411",
+          "display_phone": "(650) 728-1411",
+          "distance": 45700.29387824142
+      },
+      {
+          "id": "EenEXmanrfaKSsnvnJ6JXg",
+          "alias": "café-capistrano-half-moon-bay-2",
+          "name": "Café Capistrano",
+          "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/dV2oQFp5Lkjax_RneO6PFg/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/caf%C3%A9-capistrano-half-moon-bay-2?adjust_creative=F_NG8ZaNVriV_hujoOejIA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=F_NG8ZaNVriV_hujoOejIA",
+          "review_count": 367,
+          "categories": [
+              {
+                  "alias": "mexican",
+                  "title": "Mexican"
+              },
+              {
+                  "alias": "latin",
+                  "title": "Latin American"
+              }
+          ],
+          "rating": 4,
+          "coordinates": {
+              "latitude": 37.46293,
+              "longitude": -122.43095
+          },
+          "transactions": [],
+          "price": "$$",
+          "location": {
+              "address1": "523 Church St",
+              "address2": "",
+              "address3": "",
+              "city": "Half Moon Bay",
+              "zip_code": "94019",
+              "country": "US",
+              "state": "CA",
+              "display_address": [
+                  "523 Church St",
+                  "Half Moon Bay, CA 94019"
+              ]
+          },
+          "phone": "+16507267699",
+          "display_phone": "(650) 726-7699",
+          "distance": 48550.79450423031
+      },
+      {
+          "id": "Ek21aD_bBHiEt87JBEePTw",
+          "alias": "caffé-mezzaluna-half-moon-bay",
+          "name": "Caffé Mezzaluna",
+          "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/H2NdWTAvqYnJe8rwjCkY9w/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/caff%C3%A9-mezzaluna-half-moon-bay?adjust_creative=F_NG8ZaNVriV_hujoOejIA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=F_NG8ZaNVriV_hujoOejIA",
+          "review_count": 239,
+          "categories": [
+              {
+                  "alias": "breakfast_brunch",
+                  "title": "Breakfast & Brunch"
+              },
+              {
+                  "alias": "gelato",
+                  "title": "Gelato"
+              },
+              {
+                  "alias": "italian",
+                  "title": "Italian"
+              }
+          ],
+          "rating": 3.5,
+          "coordinates": {
+              "latitude": 37.504543093953,
+              "longitude": -122.48286047174
+          },
+          "transactions": [],
+          "price": "$",
+          "location": {
+              "address1": "240 Capistrano Rd",
+              "address2": "",
+              "address3": "Harbor Village",
+              "city": "Half Moon Bay",
+              "zip_code": "94019",
+              "country": "US",
+              "state": "CA",
+              "display_address": [
+                  "240 Capistrano Rd",
+                  "Harbor Village",
+                  "Half Moon Bay, CA 94019"
+              ]
+          },
+          "phone": "+16505600137",
+          "display_phone": "(650) 560-0137",
+          "distance": 46107.345601710455
+      },
+      {
+          "id": "8Ju63z-Yb5hlp1jn6qxEcw",
+          "alias": "supreme-pot-daly-city",
+          "name": "Supreme Pot",
+          "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/k1XT3R9WKWgcKu5peE38wQ/o.jpg",
+          "is_closed": false,
+          "url": "https://www.yelp.com/biz/supreme-pot-daly-city?adjust_creative=F_NG8ZaNVriV_hujoOejIA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=F_NG8ZaNVriV_hujoOejIA",
+          "review_count": 4,
+          "categories": [
+              {
+                  "alias": "hotpot",
+                  "title": "Hot Pot"
+              },
+              {
+                  "alias": "buffets",
+                  "title": "Buffets"
+              },
+              {
+                  "alias": "karaoke",
+                  "title": "Karaoke"
+              }
+          ],
+          "rating": 4.5,
+          "coordinates": {
+              "latitude": 37.67489667,
+              "longitude": -122.47882167
+          },
+          "transactions": [],
+          "location": {
+              "address1": "3 St Francis Square",
+              "address2": null,
+              "address3": "",
+              "city": "Daly City",
+              "zip_code": "94015",
+              "country": "US",
+              "state": "CA",
+              "display_address": [
+                  "3 St Francis Square",
+                  "Daly City, CA 94015"
+              ]
+          },
+          "phone": "+16509918888",
+          "display_phone": "(650) 991-8888",
+          "distance": 57362.5952571755
+      }
+  ],
+  "total": 9400,
+  "region": {
+      "center": {
+          "longitude": -122.950077,
+          "latitude": 37.319556
+      }
+  }
+}

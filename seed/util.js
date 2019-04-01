@@ -1,6 +1,6 @@
 const YelpAPI = require('./scrape_yelp');
 
-async function extractBusinessData(business){
+async function extractBusinessData(business) {
   let name = business.name;
   let state = business.location.state;
   let zip = business.location.zip_code;
@@ -17,8 +17,8 @@ async function extractBusinessData(business){
   // let apiUrl = `https://api.yelp.com/v3/businesses/${business.alias}`;
   // let photos = await YelpAPI.getPhotos(apiUrl);
 
-  let liveUrl = `https://www.yelp.com/biz/${business.alias}`;
-  let reviews = await YelpAPI.getReviews(liveUrl);
+  // let liveUrl = `https://www.yelp.com/biz/${business.alias}`;
+  // let reviews = await YelpAPI.getReviews(liveUrl);
 
   return {
     name,
@@ -31,8 +31,8 @@ async function extractBusinessData(business){
     lat,
     lng,
     // photos,
-    categories,
-    reviews
+    categories
+    // reviews
   };
 }
 
