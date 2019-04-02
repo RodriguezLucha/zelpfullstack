@@ -13,6 +13,7 @@ class SearchResult extends React.Component {
 
   render() {
     const searchRestaurants = this.props.searchRestaurants;
+    const maxRevewLength = 500;
     return (
       <div className="search_result">
         <div className="nav_left">
@@ -35,7 +36,7 @@ class SearchResult extends React.Component {
                   <div className="ssr_info">
                     <Link to={`restaurant/${r.id}`}>{r.name}</Link>
                     <div>
-                      <RatingGroup totalReviews={r.totalReviews} averageStars={r.averageStars}/>
+                      <RatingGroup totalReviews={r.totalReviews} averageStars={r.averageStars} />
 
                       {r.priceRange}<span className="dot">•</span>
                       {
@@ -50,7 +51,7 @@ class SearchResult extends React.Component {
                     <div>{r.city}</div>
                   </div>
                   <div className="ssr_reviews">
-                    {r.review.content}
+                    {r.review.content.length > maxRevewLength ? `${r.review.content.slice(0, maxRevewLength)}...` : r.review.content}
                   </div>
                 </div>
               )

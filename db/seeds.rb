@@ -43,8 +43,8 @@ seed_json = JSON.parse(json_from_file)
 businesses = seed_json
 styles = businesses.map do |restaurant|
   categories = []
-  restaurant['categories'].map do |cat|
-    categories.push(cat['title'])
+  restaurant['categories'].map do |category|
+    categories.push(category)
   end
   categories
 end
@@ -70,6 +70,8 @@ def convert_price(dollars)
   end
 end
 
+user_counter = (1..Float::INFINITY).step(5).to_enum
+
 businesses.each do |restaurant|
 
   restaurant_alias = restaurant["alias"]
@@ -82,13 +84,13 @@ businesses.each do |restaurant|
     address: restaurant["address"],
     city: restaurant["city"],
     website: restaurant["website"],
-    price_range: convertPrice(restaurant["price"]),
+    price_range: convert_price(restaurant["price"]),
     lat: restaurant["lat"],
     lng: restaurant["lng"],
   )
 
   (0..2).each do |i|
-    restaurant_obj.photo.attach(io: File.open("./seed/restaurant_images/#{restaurant_alias}/#{i}.jpg"), filename: "#{restaurant_alias}_#{i}.jpg")
+    restaurant_obj.photos.attach(io: File.open("./seed/restaurant_images/#{restaurant_alias}/#{i}.jpg"), filename: "#{restaurant_alias}_#{i}.jpg")
   end
 
   restaurant['categories'].each do |style|
@@ -99,11 +101,11 @@ businesses.each do |restaurant|
   end
 
   restaurant['reviews'].each do |review|
-
-
-    Review.create!(restaurant_id: restaurant_obj.id, 
-      user_id: get_next_user().id, 
-      num_stars: review["rating"]
+    user_num = (user_counter.next % 100)+1
+    Review.create!(
+      restaurant_id: restaurant_obj.id, 
+      user_id: hundred_users[user_num].id,
+      num_stars: review["rating"],
       content: review["content"]
     )
   end
