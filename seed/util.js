@@ -25,6 +25,8 @@ async function extractBusinessData(business) {
     return '';
   }
 
+  console.log(name);
+
   // let apiUrl = `https://api.yelp.com/v3/businesses/${business.alias}`;
   // let photos = await YelpAPI.getPhotos(apiUrl);
   // savePhotos(alias, photos);
@@ -35,6 +37,7 @@ async function extractBusinessData(business) {
 
   return {
     name,
+    alias,
     state,
     zip,
     address,

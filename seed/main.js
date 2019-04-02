@@ -32,8 +32,8 @@ async function readRestaurantData() {
 
   let parsedObjects = [];
 
-  // for (let i = 0; i < 1; i++) {
-  for (let i = 0; i < businesses.length; i++) {
+  for (let i = 0; i < 1; i++) {
+    // for (let i = 0; i < businesses.length; i++) {
     let singleBusiness = businesses[i];
     let businessData = await extractBusinessData(singleBusiness);
     if (businessData !== '') {
