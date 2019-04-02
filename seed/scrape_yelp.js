@@ -35,9 +35,15 @@ async function getPhotos(url) {
 const parseReviews = html => {
   let reviews = [];
   const $ = cheerio.load(html);
-  $('.review-content p').slice(0, 33).each((i, elem) => {
-    const review = $(elem).text();
-    reviews.push(review);
+  $('.review-content').each((i, elem) => {
+    const date = $(elem).find('.rating-qualifier').text().trim();
+    const content = $(elem).find('p').text();
+    const rating = $(elem).find('.biz-rating > div > div').attr('title');
+    reviews.push({
+      date,
+      content,
+      rating
+    });
   });
   return reviews;
 };
