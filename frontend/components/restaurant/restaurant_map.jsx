@@ -9,7 +9,9 @@ export default class RestaurantMap extends Component {
 
     const mapOptions = {
       center: {lat: lat, lng: lng},
-      zoom: 16
+      zoom: 16,
+      draggable: true,
+      disableDefaultUI: false
     };
 
     // wrap this.mapNode in a Google Map

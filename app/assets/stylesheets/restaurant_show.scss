@@ -224,5 +224,9 @@
 #map-container {
   width: 100%;
   height: 100%;
-  background-color: grey;
+  box-shadow: none;
+}
+
+#map-container img {
+  box-shadow: none;
 }
