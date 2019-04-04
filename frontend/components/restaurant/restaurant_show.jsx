@@ -4,6 +4,7 @@ import Logo from '../logo';
 import SearchBarContainer from './search_bar_container';
 import StarRatings from './star_ratings';
 import RatingGroup from './rating_group';
+import RestaurantMap from './restaurant_map';
 
 
 class RestaurantShow extends React.Component {
@@ -58,7 +59,6 @@ class RestaurantShow extends React.Component {
                 ))
               }
             </div>
-
           </div>
           <div className="review">
             <button>
@@ -68,6 +68,7 @@ class RestaurantShow extends React.Component {
             </button>
           </div>
           <div className="map">
+            <RestaurantMap restaurant={singleRestaurant}/>
             <address>
               {address1}
               <br />
