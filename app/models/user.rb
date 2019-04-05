@@ -24,12 +24,11 @@ class User < ApplicationRecord
 
   attr_reader :password
 
-  after_initialize :ensure_session_token
+  after_initialize :ensure_session_token, :ensure_profile_picture
 
   def self.find_by_credentials(email, password)
     user = User.find_by(email: email)
-    return nil unless user&.is_password?(password)
-
+    return nil unless user.is_password?(password)
     user
   end
 
@@ -44,6 +43,12 @@ class User < ApplicationRecord
 
   def ensure_session_token
     self.session_token ||= SecureRandom.urlsafe_base64
+  end
+
+  def ensure_profile_picture
+    if !self.photo.attached?
+      self.photo.attach(io: File.open("./app/assets/images/users/default_user.png"), filename: "default_user.png")
+    end
   end
 
   def reset_session_token!

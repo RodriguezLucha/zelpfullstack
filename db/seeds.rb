@@ -26,7 +26,7 @@ female_avatars = [16, 24, 37, 38, 49, 55, 58, 64, 80, 85, 87, 89]
   email = Faker::Internet.unique.email
   password = 'password'
 
-  user = User.create!(
+  user = User.create(
     firstname: firstname,
     lastname: lastname,
     email: email,
