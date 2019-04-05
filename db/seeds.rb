@@ -70,7 +70,7 @@ def convert_price(dollars)
   end
 end
 
-user_counter = (1..Float::INFINITY).step(5).to_enum
+user_counter = (1..Float::INFINITY).to_enum
 
 businesses.each do |restaurant|
 
@@ -101,7 +101,7 @@ businesses.each do |restaurant|
   end
 
   restaurant['reviews'].each do |review|
-    user_num = (user_counter.next % 100)+1
+    user_num = (user_counter.next % 100)
     Review.create!(
       restaurant_id: restaurant_obj.id, 
       user_id: hundred_users[user_num].id,
@@ -109,9 +109,4 @@ businesses.each do |restaurant|
       content: review["content"]
     )
   end
-  
-
 end
-
-
-# Review.create!(restaurant_id: noodle_time.id, user_id: billy_user.id, num_stars: 5, content: 'I ordered Pho Noodle soup. It was the amazing noodle soup with affordable price. Definitely, I will come back again!')
