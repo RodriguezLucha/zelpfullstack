@@ -68,7 +68,7 @@ class RestaurantShow extends React.Component {
             </button>
           </div>
           <div className="map">
-            <RestaurantMap restaurant={singleRestaurant}/>
+            <RestaurantMap restaurants={[singleRestaurant]}/>
             <address>
               {address1}
               <br />

@@ -4,15 +4,17 @@ import HomeNav from '../home_nav/home_nav_container';
 import Logo from '../logo';
 import {Link} from 'react-router-dom';
 import RatingGroup from './rating_group';
+import RestaurantMapContainer from './restaurant_map_container';
 
 class SearchResult extends React.Component {
   componentDidMount() {
     //Debugging
-    //this.props.fetchRestaurants();
+    this.props.fetchRestaurants();
   }
 
   render() {
     const searchRestaurants = this.props.searchRestaurants;
+
     const maxRevewLength = 500;
     return (
       <div className="search_result">
@@ -57,7 +59,11 @@ class SearchResult extends React.Component {
               )
             }
           </div>
-          <div className="s_map"></div>
+          <div className="s_map">
+            <div className="s_map_container">
+              <RestaurantMapContainer />
+            </div>
+          </div>
         </div>
         <div className="con_left">
         </div>

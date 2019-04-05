@@ -4,24 +4,36 @@ import MarkerManager from '../../util/marker_manager';
 export default class RestaurantMap extends Component {
   componentDidMount() {
     // this is SF
-    let lat = this.props.restaurant.lat;
-    let lng = this.props.restaurant.lng;
+    let lat = 37.798002;
+    let lng = -122.404282;
+    if (this.props.restaurants.length) {
+      lat = this.props.restaurants[0].lat;
+      lng = this.props.restaurants[0].lng;
+    }
+
+    let zoom = 13;
+    if (this.props.restaurants.length !== 0) {
+      zoom = 16;
+    }
 
     const mapOptions = {
       center: {lat: lat, lng: lng},
-      zoom: 16,
+      zoom: zoom,
       draggable: true,
-      disableDefaultUI: false
+      disableDefaultUI: false,
+      maxZoom: 16,
+      mapTypeControl: false,
+      streetViewControl: false,
+      fullscreenControl: false
     };
 
-    // wrap this.mapNode in a Google Map
     this.map = new google.maps.Map(this.mapNode, mapOptions);
     this.MarketManager = new MarkerManager(this.map);
-    this.MarketManager.updateMarkers([this.props.restaurant]);
+    this.MarketManager.updateMarkers(this.props.restaurants);
   }
 
   componentDidUpdate() {
-    this.MarketManager.updateMarkers([this.props.restaurant]);
+    this.MarketManager.updateMarkers(this.props.restaurants);
   }
 
   render() {
