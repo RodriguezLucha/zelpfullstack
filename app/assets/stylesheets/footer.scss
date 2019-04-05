@@ -4,8 +4,34 @@
   background-color: $my-footer;
   border-top: 1px solid #ccc;
   display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
 }
 
 .footer img {
   margin: 0 auto;
+}
+
+.my_links {
+  margin: 20px;
+}
+
+
+.footer .my_links a {
+  font-size: 2em;
+  padding: 20px;
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+.footer .github {
+  color: black;
+}
+
+.footer .linkedin {
+  color:#0077B5;
 }
