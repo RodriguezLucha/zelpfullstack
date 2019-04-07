@@ -1,6 +1,15 @@
 class Api::ReviewsController < ApplicationController
+
+  def show
+    @review = Review.find_by(id: params[:id])
+    if @review
+       @review
+    else
+      render json: ['Could not locate review'], status: 400
+    end
+  end
+
   def create
-    #Current user and Current restaurant
     @review = Review.new(review_params)
 
     @review.user_id = current_user.id
@@ -12,14 +21,20 @@ class Api::ReviewsController < ApplicationController
   end
 
   def update
-    #Review ID and new Content
+    @review = Review.find(params[:id])
+    if @review && @review.update_attributes(review_params)
+      render :show
+    elsif !@review
+      render json: ['Could not locate review'], status: 400
+    else
+      render json: @review.errors.full_messages, status: 401
+    end
   end
 
   def destroy
-    #Review ID
-    @review = Like.find(params[:id])
+    @review = Review.find(params[:id])
     @review.destroy
-    redirect_to chirp_url(@review.restaurant_id)
+    render json: @review
   end
 
   def review_params
