@@ -1,0 +1,150 @@
+@import 'colors.scss';
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+.restaurant_create_review {
+  display: grid;
+  grid-template-areas:
+    "nav_left nav_center nav_right"
+    "rcr_con_left rcr_con_center rcr_con_right";
+
+  background-color: $my-red;
+  grid-template-columns: 1fr 960px 1fr;
+  grid-template-rows: 68px;
+}
+
+//Nav
+.nav_left {
+  grid-area: nav_left;
+}
+.nav_right {
+  grid-area: nav_right;
+}
+.nav_center {
+  grid-area: nav_center;
+
+}
+.write_a_review {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  justify-self: flex-start;
+}
+
+//Content
+.rcr_con_right {
+  grid-area: rcr_con_right;
+  background-color:white;
+}
+.rcr_con_left {
+  grid-area: rcr_con_left;
+  background-color:white;
+}
+
+.rcr_con_center {
+  grid-area: rcr_con_center;
+  background-color:white;
+  grid-template-areas:
+    "rr_title"
+    "rr_pseudo"
+    "rr_button";
+  
+}
+
+.rr_title {
+  height: 84px;
+  display: flex;
+  align-items: center;
+}
+
+.rr_pseudo {
+  border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: text;
+    padding: 18px;
+    max-width: 630px;
+}
+
+.rr_button {
+}
+
+.rcr_con_center a {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+//Center content
+.rcr_pseudo_input {
+  border: solid 1px grey;
+  width: 625px;
+  width: 384px;
+}
+
+
+//Rating Hover
+.rating { 
+  border: none;
+  float: left;
+}
+
+.rating > input { display: none; } 
+.rating > label:before { 
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label { 
+  color: #ddd; 
+ float: right; 
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+
+.rr_pseudo .clearfix {
+  clear: left;
+}
+
+.rr_pseudo textarea {
+  font-size: 18px;
+    line-height: 1.33333em;
+    line-height: 1.44em;
+    border: 0;
+    outline: none;
+    padding: 0;
+    resize: none;
+    width: 100%;
+    min-height: 258px;
+}
+
+
+.rr_button button {
+  width: 250px;
+  height: 50px;
+  padding: 5px 9px;
+  margin: 20px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: white;
+  background-color: $my-red;
+  font-size: 16px;
+  line-height: 1.3125em;
+  font-weight: bold;
+}

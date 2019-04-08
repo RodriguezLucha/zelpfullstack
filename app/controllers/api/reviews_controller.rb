@@ -21,7 +21,7 @@ class Api::ReviewsController < ApplicationController
   end
 
   def update
-    @review = Review.find(params[:id])
+    @review = Review.find_by(id: params[:id])
     if @review && @review.update_attributes(review_params)
       render :show
     elsif !@review
