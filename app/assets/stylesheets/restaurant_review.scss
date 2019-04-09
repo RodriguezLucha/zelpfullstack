@@ -1,4 +1,4 @@
-@import 'colors.scss';
+@import "colors.scss";
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 
 .restaurant_create_review {
@@ -21,7 +21,6 @@
 }
 .nav_center {
   grid-area: nav_center;
-
 }
 .write_a_review {
   color: white;
@@ -33,21 +32,20 @@
 //Content
 .rcr_con_right {
   grid-area: rcr_con_right;
-  background-color:white;
+  background-color: white;
 }
 .rcr_con_left {
   grid-area: rcr_con_left;
-  background-color:white;
+  background-color: white;
 }
 
 .rcr_con_center {
   grid-area: rcr_con_center;
-  background-color:white;
+  background-color: white;
   grid-template-areas:
     "rr_title"
     "rr_pseudo"
     "rr_button";
-  
 }
 
 .rr_title {
@@ -58,10 +56,10 @@
 
 .rr_pseudo {
   border: 1px solid #ccc;
-    border-radius: 4px;
-    cursor: text;
-    padding: 18px;
-    max-width: 630px;
+  border-radius: 4px;
+  cursor: text;
+  padding: 18px;
+  max-width: 630px;
 }
 
 .rr_button {
@@ -79,59 +77,28 @@
   width: 384px;
 }
 
-
-//Rating Hover
-.rating { 
-  border: none;
-  float: left;
+.rating_holder {
+  display: flex;
+  align-items: center;
 }
 
-.rating > input { display: none; } 
-.rating > label:before { 
-  margin: 5px;
-  font-size: 1.25em;
-  font-family: FontAwesome;
-  display: inline-block;
-  content: "\f005";
-}
-
-.rating > .half:before { 
-  content: "\f089";
-  position: absolute;
-}
-
-.rating > label { 
-  color: #ddd; 
- float: right; 
-}
-
-/***** CSS Magic to Highlight Stars on Hover *****/
-
-.rating > input:checked ~ label, /* show gold star when clicked */
-.rating:not(:checked) > label:hover, /* hover current star */
-.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
-
-.rating > input:checked + label:hover, /* hover current star when changing rating */
-.rating > input:checked ~ label:hover,
-.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
-.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
-
-.rr_pseudo .clearfix {
-  clear: left;
+.rating_text {
+  margin-left: 10px;
+  font-size: 14px;
 }
 
 .rr_pseudo textarea {
   font-size: 18px;
-    line-height: 1.33333em;
-    line-height: 1.44em;
-    border: 0;
-    outline: none;
-    padding: 0;
-    resize: none;
-    width: 100%;
-    min-height: 258px;
+  line-height: 1.33333em;
+  line-height: 1.44em;
+  border: 0;
+  outline: none;
+  padding: 0;
+  resize: none;
+  width: 100%;
+  min-height: 258px;
+  margin-top: 10px;
 }
-
 
 .rr_button button {
   width: 250px;

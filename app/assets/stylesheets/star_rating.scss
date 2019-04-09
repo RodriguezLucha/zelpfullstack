@@ -2,15 +2,30 @@
   width: 130px;
 }
 
-.mystar.checked {
-  background-color: rgb(255, 89, 83);
+.mystar.color_0 {
+  background-color: rgb(240,	180, 110);
   color: white;
 }
-.mystar.checked.yellow {
-  background-color: rgb(255, 143, 78);
+.mystar.color_1 {
+  background-color: rgb(240,	180, 110);
   color: white;
 }
-
+.mystar.color_2 {
+  background-color: rgb(254,	184,	19);
+  color: white;
+}
+.mystar.color_3 {
+  background-color: rgb(255,	135,	58);
+  color: white;
+}
+.mystar.color_4 {
+  background-color: rgb(239, 81, 70);
+  color: white;
+}
+.mystar.color_5 {
+  background-color: rgb(205, 31,32);
+  color: white;
+}
 .mystar {
   background-color: rgb(204, 204, 204);
   color: white;
@@ -20,4 +35,14 @@
   padding: 2px 2px 3px 2px;
   margin: 1px;
   border-radius: 4px;
+}
+
+.restaurant_create_review .star_selector {
+  font-size: 20px;
+  display: inline-block;
+}
+.restaurant_create_review .mystar {
+  padding: 5px 5px 6px 5px;
+  margin: 2px;
+  cursor: pointer;
 }
