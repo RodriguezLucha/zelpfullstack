@@ -50,7 +50,6 @@ class RestaurantReview extends React.Component {
     this.setState({starRating: rating});
   }
   onSubmit() {
-    console.log('submit clicked');
     this.props.createReview({
       restaurant_id: this.state.restaurantId,
       content: this.state.reviewContent,

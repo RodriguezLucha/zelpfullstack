@@ -1,9 +1,8 @@
-@import 'colors.scss';
+@import "colors.scss";
 
 .restaurant_show .header {
   display: grid;
-  grid-template-areas:
-    "nav_left  nav_center   nav_right";
+  grid-template-areas: "nav_left  nav_center   nav_right";
   background-color: $my-red;
   grid-template-columns: 1fr 960px 1fr;
   grid-template-rows: 68px;
@@ -38,7 +37,6 @@
 .right_reviews {
   background-color: $my-white;
 }
-
 
 .single_restaurant .left {
   grid-area: left;
@@ -123,15 +121,13 @@
   opacity: 0.6;
 }
 
-
 //https: //css-tricks.com/snippets/css/scale-on-hover-with-webkit-transition/
 .single_restaurant img {
   width: 220px;
   height: 220px;
   object-fit: cover;
-  transition: all .2s ease-in-out;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .single_restaurant img:nth-child(2) {
@@ -141,7 +137,7 @@
 
 //Change the middle div back to small on hover of other images
 //https: //stackoverflow.com/questions/6910049/on-a-css-hover-event-can-i-change-another-divs-styling?answertab=oldest#tab-top
-.single_restaurant img:nth-child(odd):hover~img:nth-child(2) {
+.single_restaurant img:nth-child(odd):hover ~ img:nth-child(2) {
   width: 220px;
   height: 220px;
 }
@@ -166,21 +162,24 @@
   padding-top: 50px;
   background-color: $my-white;
   display: grid;
-  grid-template-areas:
-    "rssr_review_holder rssr_info_holder";
+  grid-template-areas: "rssr_review_holder rssr_info_holder";
   grid-template-columns: 1fr 300px;
 }
 
-.rssr_review_holder {}
+.rssr_review_holder {
+}
 
-.rssr_info_holder {}
+.rssr_info_holder {
+}
 
 .single_review {
   display: grid;
   grid-template-areas:
     "rssr_user rssr_rating"
     "rssr_user rssr_review"
-    "rssr_user rssr_feedback";
+    "rssr_user rssr_feedback"
+    "rssr_user rssr_buttons";
+
   margin: 17px 0px;
   grid-template-columns: 240px 412px;
   border-bottom: 1px solid #ccc;
@@ -203,6 +202,39 @@
 
 .rssr_feedback {
   grid-area: rssr_feedback;
+}
+.rssr_buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.trash_button {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  line-height: 1.5em;
+  color: #999;
+  background: transparent;
+  box-shadow: none;
+  white-space: nowrap;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  margin: 15px;
+  padding: 7px;
+}
+
+.trash_button:hover {
+  background-color: rgb(245, 245, 245);
+}
+
+.trash_button svg {
+  color: #999;
+  fill: #999;
+  transition: all 0.8s ease;
+}
+
+.trash_button:hover svg {
+  fill: black;
 }
 
 .rssr_user img {
