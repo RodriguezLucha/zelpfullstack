@@ -2,7 +2,7 @@ import React from 'react';
 import HomeNav from '../home_nav/home_nav_container';
 import Logo from '../logo';
 import SearchBarContainer from './search_bar_container';
-import StarRatings from './star_ratings';
+import SingleReview from './single_review';
 import RatingGroup from './rating_group';
 import RestaurantMap from './restaurant_map';
 
@@ -11,20 +11,11 @@ class RestaurantShow extends React.Component {
   constructor(props) {
     super(props);
     let restaurantId = props.match.params.id;
-    this.state = { restaurantId };
+    this.state = {restaurantId};
   }
 
   componentDidMount() {
     this.props.fetchSingleRestaurant(this.state.restaurantId);
-  }
-
-  getTrashIcon() {
-    return (
-      <svg id="18x18_trash"
-        height="18"
-        viewBox="0 0 18 18"
-        width="18"><path d="M3 5V3h4V2h4v1h4v2H3zm11 9c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2V6h10v8zM8 8.5a.5.5 0 0 0-.5-.5.5.5 0 0 0-.5.5v5a.5.5 0 0 0 .5.5.5.5 0 0 0 .5-.5v-5zm3 0a.5.5 0 0 0-.5-.5.5.5 0 0 0-.5.5v5a.5.5 0 0 0 .5.5.5.5 0 0 0 .5-.5v-5z"></path></svg>
-    );
   }
 
   render() {
@@ -109,31 +100,11 @@ class RestaurantShow extends React.Component {
                   const user = this.props.users[userId];
                   const currentUserReview = userId === this.props.loggedInUserId;
 
-                  return (
-                    <div key={reviewId}
-                      className="single_review">
-                      <div className="rssr_user">
-                        <img className="user_profile_pic"
-                          src={user.photo}
-                          alt="" />
-                        <div className="user_firstname">
-                          {user.firstname}
-                        </div>
-                      </div>
-                      <div className="rssr_rating">
-                        <StarRatings starCount={review.numStars} />
-                      </div>
-                      <div className="rssr_review">
-                        {review.content}
-                      </div>
-                      <div className="rssr_feedback">
-
-                      </div>
-                      <div className="rssr_buttons">
-                        {currentUserReview ? <button className="trash_button">{this.getTrashIcon()}</button> : ''}
-                      </div>
-                    </div>
-                  );
+                  return (<SingleReview key={reviewId}
+                    review={review}
+                    userId={userId}
+                    user={user}
+                    currentUserReview={currentUserReview}/>);
                 })
               }
             </div>
