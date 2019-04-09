@@ -28,6 +28,7 @@ class RestaurantReview extends React.Component {
     this.onStarClick = this.onStarClick.bind(this);
     this.onStarHover = this.onStarHover.bind(this);
     this.onStarLeave = this.onStarLeave.bind(this);
+    this.onSubmit = this.onSubmit.bind(this);
     this.updateReviewContent = this.updateReviewContent.bind(this);
   }
 
@@ -47,6 +48,14 @@ class RestaurantReview extends React.Component {
   onStarClick(e) {
     let rating = e.currentTarget.id;
     this.setState({starRating: rating});
+  }
+  onSubmit() {
+    console.log('submit clicked');
+    this.props.createReview({
+      restaurant_id: this.state.restaurantId,
+      content: this.state.reviewContent,
+      num_stars: this.state.starRating
+    }).then(() => this.props.history.push(`/restaurant/${this.state.restaurantId}`));
   }
 
   updateReviewContent(e) {
@@ -103,7 +112,7 @@ class RestaurantReview extends React.Component {
             </textarea>
           </div>
           <div className="rr_button">
-            <button>Post Review</button>
+            <button onClick={this.onSubmit}>Post Review</button>
           </div>
         </div>
 
