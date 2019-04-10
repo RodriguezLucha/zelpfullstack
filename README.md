@@ -24,9 +24,14 @@ Clone of [Yelp](https://www.yelp.com/), for demonstration purposes only.
 
 * Viewing information about a specific Restaurant, including reviews.
 
-* Searching for a restaurant based on name or category.
+* Searching for a restaurant based on name or category. Google maps displaying locations.
 
 ![search](https://github.com/RodriguezLucha/zelpfullstack/raw/master/screenshots/search.png)
+
+* Full CRUD of user reviews
+
+![review](https://github.com/RodriguezLucha/zelpfullstack/raw/master/screenshots/review.png)
+
 
 
 ## Fun Code Snippets
@@ -84,6 +89,7 @@ texas_roadhouse.photos.attach(io: File.open('./app/assets/images/texas_roadhouse
 ```
 
 ## Future Direction
-* Full CRUD of user reviews. Currently only has the Read part implemented.
 
-* Google Maps integration. 
+* Performance enhancements and DRYing up code
+
+* Allow users to upload pictures along with the reviews
