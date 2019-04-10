@@ -1,4 +1,4 @@
-@import 'colors.scss';
+@import "colors.scss";
 
 .top_restaurants {
   display: flex;
@@ -43,4 +43,13 @@
   display: flex;
   flex-direction: column;
   padding: 10px;
+}
+
+.top_restaurant .city {
+  font-size: 14px;
+  padding-top: 5px;
+}
+
+.top_restaurant .style {
+  font-size: 14px;
 }

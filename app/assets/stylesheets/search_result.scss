@@ -1,5 +1,4 @@
-@import 'colors.scss';
-
+@import "colors.scss";
 
 .search_result {
   display: grid;
@@ -29,8 +28,7 @@
   grid-area: con_center;
   display: grid;
   background: white;
-  grid-template-areas: 
-    "s_reviews s_reviews s_map";
+  grid-template-areas: "s_reviews s_reviews s_map";
   grid-template-columns: 1fr 2fr 1fr;
 }
 .con_center .s_reviews {
@@ -53,6 +51,7 @@
   color: $my-blue;
   text-decoration: none;
   padding: 0px;
+  padding-right: 3px;
 }
 
 .con_center button:hover {
@@ -61,7 +60,7 @@
 
 .search_single_restaurant {
   display: grid;
-  grid-template-areas: 
+  grid-template-areas:
     "ssr_picture ssr_info ssr_address"
     "ssr_picture ssr_reviews ssr_reviews";
   height: 250px;

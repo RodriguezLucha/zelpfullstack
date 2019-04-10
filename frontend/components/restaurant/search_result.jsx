@@ -9,7 +9,7 @@ import RestaurantMapContainer from './restaurant_map_container';
 class SearchResult extends React.Component {
   componentDidMount() {
     //Debugging
-    this.props.fetchRestaurants();
+    //this.props.fetchRestaurants();
   }
 
   render() {
@@ -31,19 +31,23 @@ class SearchResult extends React.Component {
           <div className="s_reviews">
             {
               this.props.restaurants.map(r =>
-                <div className="search_single_restaurant" key={r.id}>
+                <div className="search_single_restaurant"
+                  key={r.id}>
                   <div className="ssr_picture" >
-                    <img src={r.photo} alt="photo" />
+                    <img src={r.photo}
+                      alt="photo" />
                   </div>
                   <div className="ssr_info">
                     <Link to={`restaurant/${r.id}`}>{r.name}</Link>
                     <div>
-                      <RatingGroup totalReviews={r.totalReviews} averageStars={r.averageStars} />
+                      <RatingGroup totalReviews={r.totalReviews}
+                        averageStars={r.averageStars} />
 
                       {r.priceRange}<span className="dot">•</span>
                       {
                         r.styles.map((style, index) => (
-                          <button key={style} onClick={() => searchRestaurants(style)}>{style}{index !== r.styles.length - 1 ? ',' : ''}</button>
+                          <button key={style}
+                            onClick={() => searchRestaurants(style)}>{style}{index !== r.styles.length - 1 ? ', ' : ''}</button>
                         ))
                       }
                     </div>

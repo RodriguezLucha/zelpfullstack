@@ -18,18 +18,23 @@ export default class TopRestaurants extends Component {
               const r = b.averageStars;
               return l < r ? 1 : l > r ? -1 : 0;
             }).slice(0, 3).map(r =>
-              <div className="top_restaurant" key={r.id}>
-                <img src={r.photo} alt="photo"/>
+              <div className="top_restaurant"
+                key={r.id}>
+                <img src={r.photo}
+                  alt="photo"/>
                 <div className="details">
                   <Link to={`restaurant/${r.id}`}>{r.name}</Link>
-                  <RatingGroup totalReviews={r.totalReviews} averageStars={r.averageStars} />
+                  <RatingGroup totalReviews={r.totalReviews}
+                    averageStars={r.averageStars} />
                   <div>
                     {
                       r.styles.map((style, index) => (
-                        <div key={style}>{ style }{ index !== r.styles.length - 1 ? ', ' : ''}</div>
+                        <span className="style"
+                          key={style}>{ style }{ index !== r.styles.length - 1 ? ', ' : ''}</span>
                       ))
-                    }</div>
-                  <div>{r.city}</div>
+                    }
+                  </div>
+                  <div className="city">{r.city}</div>
                 </div>
               </div>
             )

@@ -16,10 +16,10 @@
     end
     json.styles restaurant.styles.map { |style| style.style }
     json.photo url_for(restaurant.photos.first)
-    
+
     json.review do
-      json.extract! restaurant.reviews.first, :content
-      json.author restaurant.reviews.first.user.firstname
+      json.extract! restaurant.reviews.sort_by { |review| review.updated_at }.reverse.first, :content
+      json.author restaurant.reviews.sort_by { |review| review.updated_at }.reverse.first.user.firstname
     end
     json.average_stars restaurant.reviews.average(:num_stars)
     json.total_reviews restaurant.reviews.count
