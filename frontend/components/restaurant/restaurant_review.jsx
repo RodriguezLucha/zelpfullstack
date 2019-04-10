@@ -17,11 +17,13 @@ class RestaurantReview extends React.Component {
   constructor(props) {
     super(props);
     let restaurantId = props.match.params.id;
+
     this.state = {
       starRating: null,
       hoverRating: null,
-      reviewContent: null,
-      restaurantId: restaurantId
+      reviewContent: '',
+      restaurantId: restaurantId,
+      loggedInUserReview: null
     };
 
 
@@ -36,6 +38,14 @@ class RestaurantReview extends React.Component {
     //Only call this when data is not available because it could already be in the state
     //(performance enhancement)
     this.props.fetchSingleRestaurant(this.state.restaurantId);
+  }
+
+  componentDidUpdate(prevProps) {
+    if (this.props.loggedInUserReview !== prevProps.loggedInUserReview) {
+      this.setState({loggedInUserReview: this.props.loggedInUserReview});
+      this.setState({starRating: this.props.loggedInUserReview.numStars});
+      this.setState({reviewContent: this.props.loggedInUserReview.content});
+    }
   }
 
   onStarHover(e) {
@@ -107,7 +117,8 @@ class RestaurantReview extends React.Component {
               <div className="rating_text">{ratingToText[rating]}</div>
             </div>
             <textarea placeholder={`${this.getPlaceHolderText()}`}
-              onChange={this.updateReviewContent}>
+              onChange={this.updateReviewContent}
+              value={this.state.reviewContent}>
             </textarea>
           </div>
           <div className="rr_button">

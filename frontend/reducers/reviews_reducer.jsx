@@ -6,6 +6,7 @@ import merge from 'lodash/merge';
 const reviewReducer = (state = {}, action) => {
   Object.freeze(state);
   let newState = null;
+  let reviewToDelete = null;
   switch (action.type) {
   case RECEIVE_RESTAURANT:
     return merge({}, state, action.payload.reviews);
@@ -13,7 +14,9 @@ const reviewReducer = (state = {}, action) => {
     return merge({}, state, {[action.payload.review.id]: action.payload.review});
   case DELETE_REVIEW:
     newState = merge({}, state);
-    delete newState[action.payload.id];
+    reviewToDelete = action.payload.id;
+    delete newState[reviewToDelete];
+    delete newState[reviewToDelete]; //check why have to do this
     return newState;
   default:
     return state;

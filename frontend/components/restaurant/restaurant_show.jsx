@@ -12,11 +12,38 @@ class RestaurantShow extends React.Component {
   constructor(props) {
     super(props);
     let restaurantId = props.match.params.id;
-    this.state = {restaurantId};
+    this.state = {
+      restaurantId: restaurantId,
+      alreadyReviewed: false
+    };
   }
 
   componentDidMount() {
     this.props.fetchSingleRestaurant(this.state.restaurantId);
+  }
+
+  componentDidUpdate(){
+    const singleRestaurant = this.props.singleRestaurant;
+    if(!singleRestaurant.reviewIds) return;
+    let numOtherUserReviews = 0;
+
+    for(let i = 0; i < singleRestaurant.reviewIds.length; i++){
+      let reviewId = singleRestaurant.reviewIds[i];
+      const review = this.props.reviews[reviewId];
+      const userId = review.userId;
+      const currentUserReview = userId === this.props.loggedInUserId;
+
+      if(currentUserReview && !this.state.alreadyReviewed){
+        this.setState({alreadyReviewed: true});
+      }
+      if(!currentUserReview){
+        numOtherUserReviews++;
+      }
+    }
+
+    if(numOtherUserReviews === singleRestaurant.reviewIds.length && this.state.alreadyReviewed){
+      this.setState({alreadyReviewed: false});
+    }
   }
 
   render() {
@@ -67,7 +94,7 @@ class RestaurantShow extends React.Component {
             <Link to={`/restaurant/${singleRestaurant.id}/review`}>
               <i className="fas fa-star"></i>
               &nbsp;
-              Write a Review
+              {this.state.alreadyReviewed ? 'Update your review' : 'Write a Review'}
             </Link>
           </div>
           <div className="map">
@@ -101,6 +128,7 @@ class RestaurantShow extends React.Component {
                   const user = this.props.users[userId];
                   const currentUserReview = userId === this.props.loggedInUserId;
                   const deleteReview = this.props.deleteReview;
+
 
                   return (<SingleReview key={reviewId}
                     review={review}
