@@ -1,5 +1,5 @@
-require 'faker'
-require 'json'
+require "faker"
+require "json"
 User.delete_all
 Restaurant.delete_all
 Style.delete_all
@@ -8,10 +8,10 @@ Review.delete_all
 
 # Demo user
 demo_user = User.create!(
-  firstname: 'Test',
-  lastname: 'Tester',
-  email: 'test@test.com',
-  password: 'password'
+  firstname: "Test",
+  lastname: "Tester",
+  email: "test@test.com",
+  password: "password",
 )
 
 hundred_users = []
@@ -21,29 +21,28 @@ female_avatars = [16, 24, 37, 38, 49, 55, 58, 64, 80, 85, 87, 89]
   if female_avatars.include?(i)
     firstname = Faker::Name.unique.female_first_name
   end
-  
+
   lastname = Faker::Name.unique.last_name
   email = Faker::Internet.unique.email
-  password = 'password'
+  password = "password"
 
   user = User.create(
     firstname: firstname,
     lastname: lastname,
     email: email,
-    password: password
+    password: password,
   )
   user.photo.attach(io: File.open("./seed/user_images/#{i}.jpg"), filename: "#{i}.jpg")
   hundred_users.push(user)
 end
 
-
 # Styles
-json_from_file = File.read('./seed/seed.json')
+json_from_file = File.read("./seed/seed.json")
 seed_json = JSON.parse(json_from_file)
 businesses = seed_json
 styles = businesses.map do |restaurant|
   categories = []
-  restaurant['categories'].map do |category|
+  restaurant["categories"].map do |category|
     categories.push(category)
   end
   categories
@@ -57,13 +56,13 @@ styles.each do |style|
 end
 
 def convert_price(dollars)
-  if dollars == '$'
+  if dollars == "$"
     return 1
-  elsif dollars == '$$'
+  elsif dollars == "$$"
     return 2
-  elsif dollars == '$$$'
+  elsif dollars == "$$$"
     return 3
-  elsif dollars == '$$$$'
+  elsif dollars == "$$$$"
     return 4
   else
     return 5
@@ -73,7 +72,6 @@ end
 user_counter = (1..Float::INFINITY).to_enum
 
 businesses.each do |restaurant|
-
   restaurant_alias = restaurant["alias"]
   restaurant_sym = restaurant_alias.to_sym
   restaurant_obj = Restaurant.create!(
@@ -93,20 +91,24 @@ businesses.each do |restaurant|
     restaurant_obj.photos.attach(io: File.open("./seed/restaurant_images/#{restaurant_alias}/#{i}.jpg"), filename: "#{restaurant_alias}_#{i}.jpg")
   end
 
-  restaurant['categories'].each do |style|
+  restaurant["categories"].each do |style|
     RestaurantStyle.create!(
-      restaurant_id: restaurant_obj.id, 
-      style_id: style_map[style.to_sym].id
+      restaurant_id: restaurant_obj.id,
+      style_id: style_map[style.to_sym].id,
     )
   end
 
-  restaurant['reviews'].each do |review|
+  restaurant["reviews"].each do |review|
     user_num = (user_counter.next % 100)
+    random_date = Faker::Date.backward(365)
+    puts random_date
     Review.create!(
-      restaurant_id: restaurant_obj.id, 
+      restaurant_id: restaurant_obj.id,
       user_id: hundred_users[user_num].id,
       num_stars: review["rating"],
-      content: review["content"]
+      content: review["content"],
+      created_at: random_date,
+      updated_at: random_date,
     )
   end
 end

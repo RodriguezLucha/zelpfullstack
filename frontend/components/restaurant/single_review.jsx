@@ -22,6 +22,13 @@ export default class SingleReview extends Component {
     const reviewId = this.props.reviewId;
     const deleteReview = this.props.deleteReview;
 
+    const dateObj = new Date(review.updatedAt);
+    const month = dateObj.getMonth() + 1;
+    const day = dateObj.getDate();
+    const year = dateObj.getFullYear();
+
+    const dataString = `${month}/${day}/${year}`;
+
     return (
       <div key={reviewId}
         className="single_review">
@@ -35,6 +42,9 @@ export default class SingleReview extends Component {
         </div>
         <div className="rssr_rating">
           <StarRatings starCount={review.numStars} />
+          <div className="rssr_date">
+            {dataString}
+          </div>
         </div>
         <div className="rssr_review">
           {review.content}

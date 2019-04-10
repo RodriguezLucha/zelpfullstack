@@ -193,11 +193,20 @@
 
 .rssr_rating {
   grid-area: rssr_rating;
+  display: flex;
+  align-items: center;
+}
+
+.rssr_date {
+  padding: 5px;
+  color: #666;
+  font-size: 14px;
 }
 
 .rssr_review {
   grid-area: rssr_review;
   padding: 10px 0px;
+  font-size: 14px;
 }
 
 .rssr_feedback {
