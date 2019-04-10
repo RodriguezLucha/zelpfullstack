@@ -43,9 +43,14 @@
   grid-area: rcr_con_center;
   background-color: white;
   grid-template-areas:
+    "rr_errors"
     "rr_title"
     "rr_pseudo"
     "rr_button";
+}
+
+.rr_errors {
+  
 }
 
 .rr_title {

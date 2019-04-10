@@ -1,22 +1,25 @@
 class Api::ReviewsController < ApplicationController
-
   def show
     @review = Review.find_by(id: params[:id])
     if @review
-       @review
+      @review
     else
-      render json: ['Could not locate review'], status: 400
+      render json: ["Could not locate review"], status: 400
     end
   end
 
   def create
     @review = Review.new(review_params)
 
-    @review.user_id = current_user.id
-    if @review.save
-      render :show
+    if current_user
+      @review.user_id = current_user.id
+      if @review.save
+        render :show
+      else
+        render json: @review.errors.full_messages, status: 422
+      end
     else
-      render json: @review.errors.full_messages, status: 422
+      render json: ["Need to be logged in to leave a review"], status: 401
     end
   end
 
@@ -25,7 +28,7 @@ class Api::ReviewsController < ApplicationController
     if @review && @review.update_attributes(review_params)
       render :show
     elsif !@review
-      render json: ['Could not locate review'], status: 400
+      render json: ["Could not locate review"], status: 400
     else
       render json: @review.errors.full_messages, status: 401
     end
@@ -40,6 +43,4 @@ class Api::ReviewsController < ApplicationController
   def review_params
     params.require(:review).permit(:restaurant_id, :content, :num_stars)
   end
-
-
 end

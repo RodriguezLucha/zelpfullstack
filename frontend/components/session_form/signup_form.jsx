@@ -34,11 +34,13 @@ class SignupForm extends React.Component {
     return(
       <ul className='error_container' >
         {this.props.errors.map((error, i) => (
-          <li className='error_alert' key={`error-${i}`}>
+          <li className='error_alert'
+            key={`error-${i}`}>
             <div className='error_text'>
               {error}
             </div>
-            <button className='error_cancel' onClick={() => this.props.clearSessionErrors()}>×</button>
+            <button className='error_cancel'
+              onClick={() => this.props.clearSessionErrors()}>×</button>
           </li>
         ))}
       </ul>
@@ -53,7 +55,8 @@ class SignupForm extends React.Component {
         </div>
         {this.renderErrors()}
         <div className='login_form_body'>
-          <form onSubmit={this.handleSubmit} className="login_form_box">
+          <form onSubmit={this.handleSubmit}
+            className="login_form_box">
             <h1>
               Sign Up for Zelp
             </h1>
@@ -66,8 +69,7 @@ class SignupForm extends React.Component {
                   value={this.state.firstname}
                   onChange={this.update('firstname')}
                   className="login_input"
-                  placeholder="First Name"
-                />
+                  placeholder="First Name"/>
               </label>
               <br />
               <label>
@@ -75,8 +77,7 @@ class SignupForm extends React.Component {
                   value={this.state.lastname}
                   onChange={this.update('lastname')}
                   className="login_input"
-                  placeholder="Last Name"
-                />
+                  placeholder="Last Name"/>
               </label>
               <br />
               <label>
@@ -84,8 +85,7 @@ class SignupForm extends React.Component {
                   value={this.state.email}
                   onChange={this.update('email')}
                   className="login_input"
-                  placeholder="Email"
-                />
+                  placeholder="Email"/>
               </label>
               <br />
               <label>
@@ -93,11 +93,12 @@ class SignupForm extends React.Component {
                   value={this.state.password}
                   onChange={this.update('password')}
                   className="login_input"
-                  placeholder="Password"
-                />
+                  placeholder="Password"/>
               </label>
               <br />
-              <input className="session_submit" type="submit" value="Sign Up" />
+              <input className="session_submit"
+                type="submit"
+                value="Sign Up" />
               <br/>
               <div className='small'>
                 <small> Already on Zelp? &nbsp;
