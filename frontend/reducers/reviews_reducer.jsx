@@ -3,7 +3,7 @@ import {RECEIVE_REVIEW, DELETE_REVIEW} from '../actions/review_actions';
 
 import merge from 'lodash/merge';
 
-const restaurantReducer = (state = {}, action) => {
+const reviewReducer = (state = {}, action) => {
   Object.freeze(state);
   let newState = null;
   switch (action.type) {
@@ -13,11 +13,11 @@ const restaurantReducer = (state = {}, action) => {
     return merge({}, state, {[action.payload.review.id]: action.payload.review});
   case DELETE_REVIEW:
     newState = merge({}, state);
-    newState.delete[action.payload.review.id];
-    return merge({}, state, {[action.payload.review.id]: action.payload.review});
+    delete newState[action.payload.id];
+    return newState;
   default:
     return state;
   }
 };
 
-export default restaurantReducer;
+export default reviewReducer;

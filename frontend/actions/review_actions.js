@@ -9,7 +9,7 @@ export const receiveReview = payload => ({
   payload
 });
 export const receiveDeleteReview = payload => ({
-  type: RECEIVE_REVIEW,
+  type: DELETE_REVIEW,
   payload
 });
 

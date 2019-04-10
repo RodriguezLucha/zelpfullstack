@@ -11,7 +11,7 @@ class RestaurantShow extends React.Component {
   constructor(props) {
     super(props);
     let restaurantId = props.match.params.id;
-    this.state = {restaurantId};
+    this.state = { restaurantId };
   }
 
   componentDidMount() {
@@ -99,12 +99,15 @@ class RestaurantShow extends React.Component {
                   const userId = review.userId;
                   const user = this.props.users[userId];
                   const currentUserReview = userId === this.props.loggedInUserId;
+                  const deleteReview = this.props.deleteReview;
 
                   return (<SingleReview key={reviewId}
                     review={review}
+                    reviewId={reviewId}
                     userId={userId}
                     user={user}
-                    currentUserReview={currentUserReview}/>);
+                    deleteReview={deleteReview}
+                    currentUserReview={currentUserReview} />);
                 })
               }
             </div>
