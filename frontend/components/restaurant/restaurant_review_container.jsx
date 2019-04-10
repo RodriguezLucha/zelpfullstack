@@ -9,7 +9,7 @@ const mapStateToProps = (state, ownProps) => {
   const reviews = state.entities.reviews;
   const users = state.entities.users;
   const userId = state.session.id;
-  const loggedInUserReview = selectUserReview(userId, reviews);
+  const loggedInUserReview = selectUserReview(userId, singleRestaurant, reviews);
   return ({singleRestaurant, reviews, users, loggedInUserReview});
 };
 

@@ -23,9 +23,9 @@ class RestaurantReview extends React.Component {
       hoverRating: null,
       reviewContent: '',
       restaurantId: restaurantId,
-      loggedInUserReview: null
+      loggedInUserReview: null,
+      editingExistingReview: false
     };
-
 
     this.onStarClick = this.onStarClick.bind(this);
     this.onStarHover = this.onStarHover.bind(this);
@@ -35,8 +35,6 @@ class RestaurantReview extends React.Component {
   }
 
   componentDidMount() {
-    //Only call this when data is not available because it could already be in the state
-    //(performance enhancement)
     this.props.fetchSingleRestaurant(this.state.restaurantId);
   }
 
@@ -45,6 +43,7 @@ class RestaurantReview extends React.Component {
       this.setState({loggedInUserReview: this.props.loggedInUserReview});
       this.setState({starRating: this.props.loggedInUserReview.numStars});
       this.setState({reviewContent: this.props.loggedInUserReview.content});
+      this.setState({editingExistingReview: true});
     }
   }
 
@@ -60,11 +59,19 @@ class RestaurantReview extends React.Component {
     this.setState({starRating: rating});
   }
   onSubmit() {
-    this.props.createReview({
-      restaurant_id: this.state.restaurantId,
-      content: this.state.reviewContent,
-      num_stars: this.state.starRating
-    }).then(() => this.props.history.push(`/restaurant/${this.state.restaurantId}`));
+    if(!this.state.editingExistingReview){
+      this.props.createReview({
+        restaurant_id: this.state.restaurantId,
+        content: this.state.reviewContent,
+        num_stars: this.state.starRating
+      }).then(() => this.props.history.push(`/restaurant/${this.state.restaurantId}`));
+    } else{
+      this.props.editReview(this.state.loggedInUserReview.id, {
+        restaurant_id: this.state.restaurantId,
+        content: this.state.reviewContent,
+        num_stars: this.state.starRating
+      }).then(() => this.props.history.push(`/restaurant/${this.state.restaurantId}`));
+    }
   }
 
   updateReviewContent(e) {

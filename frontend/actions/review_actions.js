@@ -20,7 +20,7 @@ export const createReview = (review) => dispatch => (
   ))
 );
 export const editReview = (reviewId, review) => dispatch => (
-  APIUtil.createReview(reviewId, review).then(review => (
+  APIUtil.updateReview(reviewId, review).then(review => (
     dispatch(receiveReview(review))), err => (
     dispatch(receiveErrors(err.responseJSON))
   ))
