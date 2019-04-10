@@ -150,6 +150,9 @@
 
 .single_restaurant h1 {
   font-size: 36px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .single_restaurant address {
