@@ -101,7 +101,7 @@
   align-items: center;
 }
 
-.single_restaurant .review button {
+.single_restaurant .review a {
   color: #fff;
   background: #d32323;
   border: 1px solid #d32323;
@@ -114,10 +114,10 @@
   font-family: $my-font;
   font-weight: 700;
   font-stretch: 100%;
-  cursor: not-allowed;
+  text-decoration: none;
 }
 
-.single_restaurant .review button:hover {
+.single_restaurant .review a:hover {
   opacity: 0.6;
 }
 

@@ -5,13 +5,14 @@ import SearchBarContainer from './search_bar_container';
 import SingleReview from './single_review';
 import RatingGroup from './rating_group';
 import RestaurantMap from './restaurant_map';
+import {Link} from 'react-router-dom';
 
 
 class RestaurantShow extends React.Component {
   constructor(props) {
     super(props);
     let restaurantId = props.match.params.id;
-    this.state = { restaurantId };
+    this.state = {restaurantId};
   }
 
   componentDidMount() {
@@ -63,11 +64,11 @@ class RestaurantShow extends React.Component {
             </div>
           </div>
           <div className="review">
-            <button>
+            <Link to={`/restaurant/${singleRestaurant.id}/review`}>
               <i className="fas fa-star"></i>
               &nbsp;
               Write a Review
-            </button>
+            </Link>
           </div>
           <div className="map">
             <RestaurantMap restaurants={[singleRestaurant]} />
@@ -94,7 +95,7 @@ class RestaurantShow extends React.Component {
           <div className="reviews">
             <div className="rssr_review_holder">
               {
-                singleRestaurant.reviewIds.slice(0, 2).map(reviewId => {
+                singleRestaurant.reviewIds.map(reviewId => {
                   const review = this.props.reviews[reviewId];
                   const userId = review.userId;
                   const user = this.props.users[userId];
