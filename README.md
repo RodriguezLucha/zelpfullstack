@@ -15,6 +15,7 @@ Clone of [Yelp](https://www.yelp.com/), for demonstration purposes only.
 
 * React & Redux (frontend)
 * Ruby on Rails (backend)
+* Postgres, Memcached, S3 (storage)
 
 ## Key features
 
