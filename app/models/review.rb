@@ -17,4 +17,11 @@ class Review < ApplicationRecord
 
   belongs_to :user
   belongs_to :restaurant
+
+  after_save :clear_cache
+  after_destroy :clear_cache
+
+  def clear_cache
+    Rails.cache.clear
+  end
 end
