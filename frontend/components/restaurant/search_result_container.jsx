@@ -1,7 +1,7 @@
-import { connect } from 'react-redux';
+import {connect} from 'react-redux';
 import SearchResult from './search_result';
-import { selectAllRestaurants } from '../../reducers/selectors';
-import { fetchRestaurants, searchRestaurants } from '../../actions/restaurant_actions';
+import {selectAllRestaurants} from '../../reducers/selectors';
+import {fetchRestaurants, searchRestaurants} from '../../actions/restaurant_actions';
 
 const mapStateToProps = (state) => ({
   restaurants: selectAllRestaurants(state),

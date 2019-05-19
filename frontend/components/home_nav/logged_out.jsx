@@ -4,10 +4,13 @@ import {Link} from 'react-router-dom';
 
 export const LoggedOut = ({props}) => (
   <div className="home_session_links">
-    <Link id="login_button" to="/login">Log In</Link>
+    <Link id="login_button"
+      to="/login">Log In</Link>
     <br></br>
-    <Link id="signup_button" to="/signup">Sign Up</Link>
-    <button id="demo_button" onClick={() => props.loginDemoUser(props.history)}>
+    <Link id="signup_button"
+      to="/signup">Sign Up</Link>
+    <button id="demo_button"
+      onClick={() => props.loginDemoUser(props.history)}>
       Demo User
     </button>
   </div>
