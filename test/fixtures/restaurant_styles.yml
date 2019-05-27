@@ -10,11 +10,3 @@
 #
 
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
-one:
-  restuarant_id: 1
-  style_id: 1
-
-two:
-  restuarant_id: 1
-  style_id: 1

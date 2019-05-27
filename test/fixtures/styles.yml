@@ -10,8 +10,8 @@
 
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  style: MyString
+# one:
+#   style: MyString
 
-two:
-  style: MyString
+# two:
+#   style: MyString

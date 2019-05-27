@@ -14,16 +14,16 @@
 
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  firstname: MyString
-  lastname: MyString
-  email: MyString
-  session_token: MyString
-  password_digest: MyString
+# one:
+#   firstname: MyString
+#   lastname: MyString
+#   email: MyString
+#   session_token: MyString
+#   password_digest: MyString
 
-two:
-  firstname: MyString
-  lastname: MyString
-  email: MyString
-  session_token: MyString
-  password_digest: MyString
+# two:
+#   firstname: MyString
+#   lastname: MyString
+#   email: MyString
+#   session_token: MyString
+#   password_digest: MyString

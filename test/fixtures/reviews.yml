@@ -13,14 +13,14 @@
 
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  restaurant_id: 1
-  user_id: 1
-  num_stars: 1
-  content: MyText
+# one:
+#   restaurant_id: 1
+#   user_id: 1
+#   num_stars: 1
+#   content: MyText
 
-two:
-  restaurant_id: 1
-  user_id: 1
-  num_stars: 1
-  content: MyText
+# two:
+#   restaurant_id: 1
+#   user_id: 1
+#   num_stars: 1
+#   content: MyText

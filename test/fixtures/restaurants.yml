@@ -18,24 +18,24 @@
 
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
-  state: MyString
-  zip: MyString
-  address: MyString
-  city: MyString
-  website: MyString
-  price_range: 1.5
-  lat: 1.5
-  lng: 1.5
+# one:
+#   name: MyString
+#   state: MyString
+#   zip: MyString
+#   address: MyString
+#   city: MyString
+#   website: MyString
+#   price_range: 1.5
+#   lat: 1.5
+#   lng: 1.5
 
-two:
-  name: MyString
-  state: MyString
-  zip: MyString
-  address: MyString
-  city: MyString
-  website: MyString
-  price_range: 1.5
-  lat: 1.5
-  lng: 1.5
+# two:
+#   name: MyString
+#   state: MyString
+#   zip: MyString
+#   address: MyString
+#   city: MyString
+#   website: MyString
+#   price_range: 1.5
+#   lat: 1.5
+#   lng: 1.5
