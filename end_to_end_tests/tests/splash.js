@@ -1,5 +1,5 @@
 module.exports = {
-  'Zelp title present' : function (browser) {
+  'Zelp Title Present' : function (browser) {
     browser
       .url('http://localhost:3000/')
       .waitForElementVisible('body')
@@ -19,7 +19,15 @@ module.exports = {
       .url('http://localhost:3000/')
       .waitForElementVisible('body');
     browser.expect.element('.footer').to.be.present;
-    browser.end();
   },
+  'Zelp Visual' : function (browser) {
+    browser
+      .url('http://localhost:3000/')
+      .waitForElementVisible('body')
+      .assert.screenshotIdenticalToBaseline('body')
+      .assert.screenshotIdenticalToBaseline('.top_restaurants')
+      .assert.screenshotIdenticalToBaseline('.footer')
+      .end();
+  }
 
 };
