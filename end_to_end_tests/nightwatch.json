@@ -1,6 +1,6 @@
 {
   "src_folders": [
-    "tests"
+    "visual_tests"
   ],
   "globals": {
     "visual_regression_settings": {
