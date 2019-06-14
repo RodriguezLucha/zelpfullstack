@@ -26,8 +26,7 @@ module.exports = {
       .waitForElementVisible('body')
       .assert.screenshotIdenticalToBaseline('body')
       .assert.screenshotIdenticalToBaseline('.top_restaurants')
-      .assert.screenshotIdenticalToBaseline('.footer')
-      .end();
+      .assert.screenshotIdenticalToBaseline('.footer');
   }
 
 };
