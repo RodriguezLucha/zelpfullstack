@@ -1,4 +1,5 @@
 const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: './frontend/entry.jsx',
@@ -19,7 +20,44 @@ module.exports = {
           presets: ['@babel/env', '@babel/react']
         }
       },
-    }]
+    },
+    {
+      test: /\.module\.s(a|c)ss$/,
+      loader: [
+        MiniCssExtractPlugin.loader,
+        {
+          loader: 'css-loader',
+          options: {
+            modules: {
+              localIdentName: '[local]_[hash:base64:10]'
+            },
+            localsConvention: 'camelCase'
+          },
+        },
+        {
+          loader: 'sass-loader'
+        }
+      ]
+    },
+    {
+      test: /\.s(a|c)ss$/,
+      exclude: /\.module.(s(a|c)ss)$/,
+      loader: [
+        MiniCssExtractPlugin.loader,
+        'css-loader',
+        {
+          loader: 'sass-loader'
+        }
+      ]
+    }
+    ]
   },
+  plugins: [
+    new MiniCssExtractPlugin(
+      {
+        filename: '../stylesheets/bundle.css'
+      }
+    )
+  ],
   devtool: 'source-map'
 };

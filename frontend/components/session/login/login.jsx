@@ -1,11 +1,13 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import Logo from '../logo';
-
+import Logo from '../../logo';
+import style from '../forms.module.scss';
 
 class LoginForm extends React.Component {
   constructor(props) {
     super(props);
+
+    console.log('style:', style);
 
     this.state = {
       email: '',
@@ -66,15 +68,15 @@ class LoginForm extends React.Component {
     const login_button_class = this.state.loginButtonClass;
 
     return (
-      <div className="login_form_container">
-        <div className="form_header">
+      <div>
+        <header className={style.header}>
           <Logo/>
-        </div>
+        </header>
         {this.renderErrors()}
-        <div className='login_form_body'>
+        <div className={style.sessionBody}>
           <form onSubmit={this.handleSubmit}
             className="login_form_box">
-            <h1>
+            <h1 className={style.sessionFormHeader}>
               Log In to Zelp
             </h1>
             <div>
@@ -96,12 +98,13 @@ class LoginForm extends React.Component {
                   placeholder="Password"/>
               </label>
               <br />
-              <input className={login_button_class}
+              <input className={style.submit}
                 type="submit"
                 value="Log In" />
             </div>
           </form>
-          <img src="https://s3-media4.fl.yelpcdn.com/assets/2/www/img/7922e77f338d/signup/signup_illustration.png"></img>
+          <img className={style.image}
+            src="https://s3-media4.fl.yelpcdn.com/assets/2/www/img/7922e77f338d/signup/signup_illustration.png"></img>
         </div>
       </div>
     );

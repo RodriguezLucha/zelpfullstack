@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import Logo from '../logo';
+import Logo from '../../logo';
+import style from '../forms.module.scss';
 
 class SignupForm extends React.Component {
   constructor(props) {
@@ -49,15 +50,15 @@ class SignupForm extends React.Component {
 
   render() {
     return (
-      <div className="login_form_container">
-        <div className="form_header">
+      <div>
+        <header className={style.header}>
           <Logo/>
-        </div>
+        </header>
         {this.renderErrors()}
-        <div className='login_form_body'>
+        <div className={style.sessionBody}>
           <form onSubmit={this.handleSubmit}
             className="login_form_box">
-            <h1>
+            <h1 className={style.sessionFormHeader}>
               Sign Up for Zelp
             </h1>
             <div>
@@ -96,7 +97,7 @@ class SignupForm extends React.Component {
                   placeholder="Password"/>
               </label>
               <br />
-              <input className="session_submit"
+              <input className={style.submit}
                 type="submit"
                 value="Sign Up" />
               <br/>
@@ -107,7 +108,9 @@ class SignupForm extends React.Component {
               </div>
             </div>
           </form>
-          <img src="https://s3-media4.fl.yelpcdn.com/assets/2/www/img/7922e77f338d/signup/signup_illustration.png"></img>
+          <img
+            className={style.image}
+            src="https://s3-media4.fl.yelpcdn.com/assets/2/www/img/7922e77f338d/signup/signup_illustration.png"></img>
         </div>
       </div>
 

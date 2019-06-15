@@ -1,17 +1,8 @@
-@import 'colors.scss';
-
-.login_form_body {
-  display: flex;
-  justify-content: center;
-}
-
-.login_form_body img {
-  margin: 200px 50px;
-}
+@import "./colors.scss";
 
 .login_form_box {
-  margin: 100px;
   display: flex;
+  margin: 100px;
   flex-direction: column;
   justify-content: center;
   text-align: center;
@@ -23,7 +14,7 @@ input {
   padding: 10px;
 }
 
-input[type=text],
+input[type="text"],
 select {
   width: 299px;
   height: 30px;
@@ -35,7 +26,7 @@ select {
   box-sizing: border-box;
 }
 
-input[type=password],
+input[type="password"],
 select {
   width: 299px;
   height: 30px;
@@ -45,33 +36,10 @@ select {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-}
-
-.login_form_body input[type=submit],
-select {
-  width: 300px;
-  height: 43px;
-  padding: 5px 9px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  color: white;
-  background-color: $my-red;
-  font-size: 16px;
-  line-height: 1.3125em;
-  font-weight: bold;
-}
-
-.login_form_box h1 {
-  color: $my-red;
-  margin-bottom: 6px;
-  font-size: 22px;
 }
 
 .login_form {
-    padding: 30px 0px 20px 0px;
+  padding: 30px 0px 20px 0px;
 }
 
 .login_form_box strong {
@@ -82,16 +50,6 @@ select {
 .login_form_box .small {
   text-align: right;
   color: #999;
-}
-
-
-
-.form_header {
-  background-color: $my-red;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  height: 64px;
 }
 
 .flash_login_button {
@@ -110,7 +68,7 @@ select {
   }
 
   100% {
-    background-color:$my-red;
+    background-color: $my-red;
     box-shadow: 0 0 0px $my-red;
   }
 }
@@ -158,5 +116,4 @@ select {
   top: -3px;
   width: 14px;
   height: 24px;
-
 }

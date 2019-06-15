@@ -1,0 +1,135 @@
+.session-form-header_2KY2zbiSQp {
+  color: #d32323;
+  margin-bottom: 6px;
+  font-size: 22px; }
+
+.header_1zcP6RTMs3 {
+  background-color: #d32323;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 64px; }
+
+.image_1ZsGawl6FE {
+  margin: 200px 50px; }
+
+.session-body_1uwo8XBf4j {
+  display: flex;
+  justify-content: center; }
+
+.submit_201DRr0Cj7 {
+  width: 300px;
+  height: 43px;
+  padding: 5px 9px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: white;
+  background-color: #d32323;
+  font-size: 16px;
+  line-height: 1.3125em;
+  font-weight: bold; }
+
+.login_form_box {
+  display: flex;
+  margin: 100px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center; }
+
+input {
+  font-size: 14px;
+  height: 10px;
+  padding: 10px; }
+
+input[type="text"],
+select {
+  width: 299px;
+  height: 30px;
+  padding: 5px 9px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; }
+
+input[type="password"],
+select {
+  width: 299px;
+  height: 30px;
+  padding: 5px 9px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; }
+
+.login_form {
+  padding: 30px 0px 20px 0px; }
+
+.login_form_box strong {
+  margin: 0;
+  font-size: 14px; }
+
+.login_form_box .small {
+  text-align: right;
+  color: #999; }
+
+.flash_login_button {
+  animation: glowing 1000ms 1; }
+
+@keyframes glowing {
+  0% {
+    background-color: #d32323;
+    box-shadow: 0 0 0px #d32323; }
+  50% {
+    background-color: #d32323;
+    box-shadow: 0 0 30px #d32323; }
+  100% {
+    background-color: #d32323;
+    box-shadow: 0 0 0px #d32323; } }
+
+.error_container {
+  display: flex;
+  justify-content: center; }
+
+.error_subcontainer {
+  display: block; }
+
+.error_alert {
+  background-color: #fcd6d3;
+  width: 918px;
+  display: flex;
+  list-style: none;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 18px 18px 24px;
+  font-size: 16px;
+  border-radius: 3px;
+  margin: 10px; }
+
+.error_text {
+  padding-left: 21px; }
+
+.error_cancel {
+  padding-right: 21px; }
+
+.error_alert button {
+  background: transparent;
+  opacity: 0.5;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+  border-style: none;
+  position: relative;
+  float: right;
+  top: -3px;
+  width: 14px;
+  height: 24px; }
+
+
+
+/*# sourceMappingURL=bundle.css.map*/
