@@ -48,10 +48,15 @@ class RestaurantReview extends React.Component {
     }
   }
 
+  componentWillUnmount() {
+    this.props.clearBackendErrors();
+  }
+
   onStarHover(e) {
     let rating = e.currentTarget.id;
     this.setState({hoverRating: rating});
   }
+
   onStarLeave() {
     this.setState({hoverRating: null});
   }
@@ -95,10 +100,6 @@ class RestaurantReview extends React.Component {
     return text;
   }
 
-
-  componentWillUnmount() {
-    this.props.clearBackendErrors();
-  }
 
   render() {
     const singleRestaurant = this.props.singleRestaurant;
