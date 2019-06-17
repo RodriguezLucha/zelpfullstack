@@ -120,22 +120,25 @@ class RestaurantReview extends React.Component {
         </div>
         <div className="rcr_con_center">
 
-          <Errors errors={this.props.errors}
-            clearErrors={this.props.clearBackendErrors}/>
+          <Errors
+            clearErrors={this.props.clearBackendErrors}
+            errors={this.props.errors}/>
 
           <div className="rr_title">
             <Link to={`/restaurant/${singleRestaurant.id}`} >{singleRestaurant.name}</Link>
           </div>
           <div className="rr_pseudo">
             <div className="rating_holder">
-              <StarRatings starCount={rating}
+              <StarRatings
+                onClick={this.onStarClick}
                 onMouseEnter={this.onStarHover}
                 onMouseLeave={this.onStarLeave}
-                onClick={this.onStarClick} />
+                starCount={rating} />
               <div className="rating_text">{ratingToText[rating]}</div>
             </div>
-            <textarea placeholder={`${this.getPlaceHolderText()}`}
+            <textarea
               onChange={this.updateReviewContent}
+              placeholder={`${this.getPlaceHolderText()}`}
               value={this.state.reviewContent}>
             </textarea>
           </div>

@@ -31,22 +31,26 @@ class SearchResult extends React.Component {
           <div className="s_reviews">
             {
               this.props.restaurants.map(r =>
-                <div className="search_single_restaurant"
+                <div
+                  className="search_single_restaurant"
                   key={r.id}>
                   <div className="ssr_picture" >
-                    <img src={r.photo}
-                      alt="photo" />
+                    <img
+                      alt="photo"
+                      src={r.photo} />
                   </div>
                   <div className="ssr_info">
                     <Link to={`restaurant/${r.id}`}>{r.name}</Link>
                     <div>
-                      <RatingGroup totalReviews={r.totalReviews}
-                        averageStars={r.averageStars} />
+                      <RatingGroup
+                        averageStars={r.averageStars}
+                        totalReviews={r.totalReviews} />
 
                       {r.priceRange}<span className="dot">•</span>
                       {
                         r.styles.map((style, index) => (
-                          <button key={style}
+                          <button
+                            key={style}
                             onClick={() => searchRestaurants(style)}>{style}{index !== r.styles.length - 1 ? ', ' : ''}</button>
                         ))
                       }

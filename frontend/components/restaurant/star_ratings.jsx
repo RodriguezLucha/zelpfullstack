@@ -7,22 +7,25 @@ function StarRatings(props) {
   starCount = Math.floor(starCount);
 
   for (let i = 0; i < starCount; i++) {
-    stars.push(<div id={i + 1}
-      key={i}
+    stars.push(<div
       className={`mystar fa fa-star checked color_${starCount}`}
-      onMouseEnter={props.onMouseEnter}
-      onClick={props.onClick}></div>);
+      id={i + 1}
+      key={i}
+      onClick={props.onClick}
+      onMouseEnter={props.onMouseEnter}></div>);
   }
   for (let i = starCount; i < 5; i++) {
-    stars.push(<div id={i + 1}
-      key={i}
+    stars.push(<div
       className={'mystar fa fa-star'}
-      onMouseEnter={props.onMouseEnter}
-      onClick={props.onClick}></div>);
+      id={i + 1}
+      key={i}
+      onClick={props.onClick}
+      onMouseEnter={props.onMouseEnter}></div>);
   }
 
   return (
-    <div className="star_selector"
+    <div
+      className="star_selector"
       onMouseLeave={props.onMouseLeave}>
       {stars}
     </div>

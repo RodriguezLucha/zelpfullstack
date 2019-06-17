@@ -72,15 +72,17 @@ class RestaurantShow extends React.Component {
         <div className="single_restaurant">
           <div className="info">
             <h1>{singleRestaurant.name}</h1>
-            <RatingGroup totalReviews={singleRestaurant.totalReviews}
-              averageStars={singleRestaurant.averageStars} />
+            <RatingGroup
+              averageStars={singleRestaurant.averageStars}
+              totalReviews={singleRestaurant.totalReviews} />
             <div className="price">
               {singleRestaurant.priceRange}
               <span className="dot">•</span>
               {
                 singleRestaurant.styles.map((style, index) => (
                   <span key={style}>
-                    <button key={style}
+                    <button
+                      key={style}
                       onClick={() => this.props.searchRestaurants(style).then(() => this.props.history.push('/search'))}>
                       {style}
                     </button>
@@ -111,9 +113,10 @@ class RestaurantShow extends React.Component {
           </div>
           <div className="images">
             {singleRestaurant.photoUrl.map(url => (
-              <img src={url}
+              <img
                 alt=""
-                key={url} />
+                key={url}
+                src={url} />
             ))}
           </div>
           <div className="right"></div>
@@ -130,13 +133,14 @@ class RestaurantShow extends React.Component {
                   const deleteReview = this.props.deleteReview;
 
 
-                  return (<SingleReview key={reviewId}
+                  return (<SingleReview
+                    currentUserReview={currentUserReview}
+                    deleteReview={deleteReview}
+                    key={reviewId}
                     review={review}
                     reviewId={reviewId}
-                    userId={userId}
                     user={user}
-                    deleteReview={deleteReview}
-                    currentUserReview={currentUserReview} />);
+                    userId={userId} />);
                 })
               }
             </div>

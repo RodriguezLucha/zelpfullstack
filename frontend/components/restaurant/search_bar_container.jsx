@@ -3,7 +3,7 @@ import SearchBar from './search_bar';
 import {searchRestaurants} from '../../actions/restaurant_actions';
 import {withRouter} from 'react-router-dom';
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = () => ({
 });
 
 const mapDispatchToProps = dispatch => ({

@@ -30,9 +30,11 @@
   border-style: none;
   width: 350px;
   border-radius: 0px;
+  font-size: 14px;
 }
-.search_bar input[type=text] {
-  width: 426px;
+.search_bar input[type="text"] {
+  width: 408px;
+  padding: 0px 9px;
 }
 
 .search_bar input:focus {
@@ -48,12 +50,12 @@
   line-height: 36px;
   padding: 0px;
   width: 50px;
-  
+
   color: white;
   transition: all 0.6s;
   transition-timing-function: ease;
   border-style: none;
 }
 .search_bar button:hover {
-   background-color:rgba(105, 105, 105, 0.3);
+  background-color: rgba(105, 105, 105, 0.3);
 }

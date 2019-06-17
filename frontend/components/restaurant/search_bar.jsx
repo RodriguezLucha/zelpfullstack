@@ -26,9 +26,6 @@ class SearchBar extends React.Component {
       this.props.searchRestaurants(this.state.term).then(() => this.props.history.push('/search'));
   }
 
-  componentDidMount() {
-  }
-
   render() {
     return (
       <div className="search_bar">
@@ -37,10 +34,11 @@ class SearchBar extends React.Component {
             Find
           </div>
           <label>
-            <input type="text"
-              value={this.state.term}
+            <input
               onChange={this.update('term')}
-              placeholder="Bars, Noodle Time">
+              placeholder="Bars, Noodle Time"
+              type="text"
+              value={this.state.term}>
             </input>
           </label>
           <button type="submit">

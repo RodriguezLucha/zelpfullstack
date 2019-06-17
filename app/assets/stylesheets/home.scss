@@ -1,4 +1,4 @@
-@import 'colors.scss';
+@import "colors.scss";
 
 // I googled how to get a white border around a font for this
 /// Stroke font-character
@@ -7,11 +7,11 @@
 /// @return {List}            - text-shadow list
 @function stroke($stroke, $color) {
   $shadow: ();
-  $from: $stroke*-1;
+  $from: $stroke * -1;
 
   @for $i from $from through $stroke {
     @for $j from $from through $stroke {
-      $shadow: append($shadow, $i*1px $j*1px 0 $color, comma);
+      $shadow: append($shadow, $i * 1px $j * 1px 0 $color, comma);
     }
   }
 
@@ -26,9 +26,8 @@
   text-shadow: stroke($stroke, $color);
 }
 
-
 .home {
-  background-image: url('https://s3-media2.fl.yelpcdn.com/assets/srv0/yelp_large_assets/52ed68f0e062/assets/img/home/hero_photos/BKlP1ebtV6kFbKnZU8Ppew.jpg');
+  background-image: url("https://s3-media2.fl.yelpcdn.com/assets/srv0/yelp_large_assets/52ed68f0e062/assets/img/home/hero_photos/BKlP1ebtV6kFbKnZU8Ppew.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -44,7 +43,6 @@
   height: 100px;
   margin: 30px;
 }
-
 
 .nav_container_inner .home_session_links {
   display: flex;
@@ -62,19 +60,15 @@
 }
 
 .home #login_button:hover {
-  border-bottom-color: #FFF;
+  border-bottom-color: #fff;
 }
-
 
 .home #signup_button {
   margin: 15px;
   border: 2px solid white;
   border-radius: 4px;
   transition: all 2s ease-in;
-  transition-property: background-color,
-    background-position,
-    background-size,
-    border-color;
+  transition-property: background-color, background-position, background-size, border-color;
 }
 
 .home #signup_button:hover {
@@ -98,10 +92,7 @@
   border-radius: 4px;
   margin-right: 20px;
   transition: all 2s ease-in;
-  transition-property: background-color,
-    background-position,
-    background-size,
-    border-color;
+  transition-property: background-color, background-position, background-size, border-color;
 }
 
 .home #demo_button:hover {
@@ -135,16 +126,17 @@
 }
 
 .home_banner h1 {
-  font-family: 'Courgette', cursive;
+  font-family: "Courgette", cursive;
   margin: 10px;
   font-size: 5em;
   padding: 10px;
   text-shadow: stroke(4, white);
 }
 
-.home_banner .search_bar input[type=text]{
-  width: 820px;
+.home_banner .search_bar input[type="text"] {
+  width: 802px;
   font-size: 18px;
+  padding: 0px 9px;
 }
 .home_banner .search_bar {
   font-size: 18px;

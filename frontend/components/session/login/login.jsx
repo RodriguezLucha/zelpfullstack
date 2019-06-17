@@ -27,6 +27,10 @@ class LoginForm extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
+  componentWillUnmount() {
+    if(this.props.demoLoginSet) this.props.clearDemoUser();
+  }
+
   update(field) {
     return e => this.setState({
       [field]: e.currentTarget.value
@@ -39,11 +43,6 @@ class LoginForm extends React.Component {
     this.props.processForm(user);
   }
 
-  componentWillUnmount() {
-    if(this.props.demoLoginSet) this.props.clearDemoUser();
-  }
-
-
   render() {
     const loginButtonStyle = this.state.loginButtonClass;
 
@@ -53,12 +52,14 @@ class LoginForm extends React.Component {
           <Logo/>
         </header>
 
-        <Errors errors={this.props.errors}
-          clearErrors={this.props.clearSessionErrors}/>
+        <Errors
+          clearErrors={this.props.clearSessionErrors}
+          errors={this.props.errors}/>
 
         <div className={style.sessionBody}>
-          <form onSubmit={this.handleSubmit}
-            className="login_form_box">
+          <form
+            className="login_form_box"
+            onSubmit={this.handleSubmit}>
             <h1 className={style.sessionFormHeader}>
               Log In to Zelp
             </h1>
@@ -70,27 +71,29 @@ class LoginForm extends React.Component {
               <label>
                 <input
                   className={style.input}
-                  type="text"
-                  value={this.state.email}
                   onChange={this.update('email')}
-                  placeholder="Email"/>
+                  placeholder="Email"
+                  type="text"
+                  value={this.state.email}/>
               </label>
               <br />
               <label>
                 <input
                   className={style.input}
-                  type="password"
-                  value={this.state.password}
                   onChange={this.update('password')}
-                  placeholder="Password"/>
+                  placeholder="Password"
+                  type="password"
+                  value={this.state.password}/>
               </label>
               <br />
-              <input className={loginButtonStyle}
+              <input
+                className={loginButtonStyle}
                 type="submit"
                 value="Log In" />
             </div>
           </form>
-          <img className={style.image}
+          <img
+            className={style.image}
             src="https://s3-media4.fl.yelpcdn.com/assets/2/www/img/7922e77f338d/signup/signup_illustration.png"></img>
         </div>
       </div>

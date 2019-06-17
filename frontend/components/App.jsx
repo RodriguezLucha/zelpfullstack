@@ -14,27 +14,34 @@ import Footer from './footer';
 
 const App = () => (
   <div>
-    <Route exact
-      path="/"
-      component={Home} />
-    <Route exact
-      path="/"
-      component={TopRestaurantsContainer} />
-    <Route exact
-      path="/restaurant/:id"
-      component={RestaurantShowContainer} />
-    <Route exact
-      path="/restaurant/:id/review"
-      component={RestaurantReviewContainer} />
-    <Route exact
-      path="/search"
-      component={SearchResultContainer} />
-    <AuthRoute exact
-      path="/login"
-      component={LoginFormContainer} />
-    <AuthRoute exact
-      path="/signup"
-      component={SignupFormContainer} />
+    <Route
+      component={Home}
+      exact
+      path="/" />
+    <Route
+      component={TopRestaurantsContainer}
+      exact
+      path="/" />
+    <Route
+      component={RestaurantShowContainer}
+      exact
+      path="/restaurant/:id" />
+    <Route
+      component={RestaurantReviewContainer}
+      exact
+      path="/restaurant/:id/review" />
+    <Route
+      component={SearchResultContainer}
+      exact
+      path="/search" />
+    <AuthRoute
+      component={LoginFormContainer}
+      exact
+      path="/login" />
+    <AuthRoute
+      component={SignupFormContainer}
+      exact
+      path="/signup" />
     <Route component={Footer} />
   </div>
 );

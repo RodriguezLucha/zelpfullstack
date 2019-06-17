@@ -35,12 +35,14 @@ class SignupForm extends React.Component {
           <Logo/>
         </header>
 
-        <Errors errors={this.props.errors}
-          clearErrors={this.props.clearSessionErrors}/>
+        <Errors
+          clearErrors={this.props.clearSessionErrors}
+          errors={this.props.errors}/>
 
         <div className={style.sessionBody}>
-          <form onSubmit={this.handleSubmit}
-            className="login_form_box">
+          <form
+            className="login_form_box"
+            onSubmit={this.handleSubmit}>
             <h1 className={style.sessionFormHeader}>
               Sign Up for Zelp
             </h1>
@@ -51,37 +53,37 @@ class SignupForm extends React.Component {
               <label>
                 <input
                   className={style.input}
-                  type="text"
-                  value={this.state.firstname}
                   onChange={this.update('firstname')}
-                  placeholder="First Name"/>
+                  placeholder="First Name"
+                  type="text"
+                  value={this.state.firstname}/>
               </label>
               <br />
               <label>
                 <input
                   className={style.input}
-                  type="text"
-                  value={this.state.lastname}
                   onChange={this.update('lastname')}
-                  placeholder="Last Name"/>
-              </label>
-              <br />
-              <label>
-                <input
-                  className={style.input}
+                  placeholder="Last Name"
                   type="text"
-                  value={this.state.email}
-                  onChange={this.update('email')}
-                  placeholder="Email"/>
+                  value={this.state.lastname}/>
               </label>
               <br />
               <label>
                 <input
                   className={style.input}
-                  type="password"
-                  value={this.state.password}
+                  onChange={this.update('email')}
+                  placeholder="Email"
+                  type="text"
+                  value={this.state.email}/>
+              </label>
+              <br />
+              <label>
+                <input
+                  className={style.input}
                   onChange={this.update('password')}
-                  placeholder="Password"/>
+                  placeholder="Password"
+                  type="password"
+                  value={this.state.password}/>
               </label>
               <br />
               <input
