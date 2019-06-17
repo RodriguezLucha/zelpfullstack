@@ -1,0 +1,23 @@
+@import "../colors.scss";
+
+.login_form_box {
+  display: flex;
+  margin: 100px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.login_form {
+  padding: 30px 0px 20px 0px;
+}
+
+.login_form_box strong {
+  margin: 0;
+  font-size: 14px;
+}
+
+.login_form_box .small {
+  text-align: right;
+  color: #999;
+}

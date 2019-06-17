@@ -3,8 +3,7 @@ import Home from './home';
 
 import LoginFormContainer from './session/login/login_container';
 import SignupFormContainer from './session/signup/signup_container';
-import './session/forms.scss';
-import './session/colors.scss';
+import './session/session.scss';
 import {AuthRoute} from '../util/route_util';
 import {Route} from 'react-router-dom';
 import TopRestaurantsContainer from './top_restaurants/top_restaurant_container';

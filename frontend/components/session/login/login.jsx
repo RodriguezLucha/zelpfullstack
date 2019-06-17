@@ -1,25 +1,26 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import Logo from '../../logo';
-import style from '../forms.module.scss';
+import style from '../session.module.scss';
+import loginStyle from './login.module.scss';
+import {Errors} from '../../errors/errors';
+
 
 class LoginForm extends React.Component {
   constructor(props) {
     super(props);
 
-    console.log('style:', style);
-
     this.state = {
       email: '',
       password: '',
-      loginButtonClass: 'login_button'
+      loginButtonClass: style.submit
     };
 
     if (props.demoLoginSet) {
       this.state = {
         email: 'test@test.com',
         password: 'password',
-        loginButtonClass: 'flash_login_button'
+        loginButtonClass: loginStyle.glowOnce
       };
     }
 
@@ -38,41 +39,23 @@ class LoginForm extends React.Component {
     this.props.processForm(user);
   }
 
-  renderErrors() {
-    return (
-      <ul className='error_container' >
-        <div className='error_subcontainer'>
-          {this.props.errors.map((error, i) => (
-            <li className='error_alert'
-              key={`error-${i}`}>
-              <div className='error_text'>
-                {error}
-              </div>
-              <button className='error_cancel'
-                onClick={() => this.props.clearSessionErrors()}>×</button>
-            </li>
-          ))}
-        </div>
-      </ul>
-    );
+  componentWillUnmount() {
+    if(this.props.demoLoginSet) this.props.clearDemoUser();
   }
 
-  componentWillUnmount(){
-    if(this.props.demoLoginSet){
-      this.props.clearDemoUser();
-    }
-    this.props.clearSessionErrors();
-  }
 
   render() {
-    const login_button_class = this.state.loginButtonClass;
+    const loginButtonStyle = this.state.loginButtonClass;
 
     return (
       <div>
         <header className={style.header}>
           <Logo/>
         </header>
-        {this.renderErrors()}
+
+        <Errors errors={this.props.errors}
+          clearErrors={this.props.clearSessionErrors}/>
+
         <div className={style.sessionBody}>
           <form onSubmit={this.handleSubmit}
             className="login_form_box">
@@ -85,20 +68,24 @@ class LoginForm extends React.Component {
 
             <div>
               <label>
-                <input type="text"
+                <input
+                  className={style.input}
+                  type="text"
                   value={this.state.email}
                   onChange={this.update('email')}
                   placeholder="Email"/>
               </label>
               <br />
               <label>
-                <input type="password"
+                <input
+                  className={style.input}
+                  type="password"
                   value={this.state.password}
                   onChange={this.update('password')}
                   placeholder="Password"/>
               </label>
               <br />
-              <input className={style.submit}
+              <input className={loginButtonStyle}
                 type="submit"
                 value="Log In" />
             </div>

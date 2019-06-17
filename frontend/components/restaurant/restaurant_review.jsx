@@ -3,6 +3,7 @@ import HomeNav from '../home_nav/home_nav_container';
 import Logo from '../logo';
 import {Link} from 'react-router-dom';
 import StarRatings from './star_ratings';
+import {Errors} from '../errors/errors';
 
 const ratingToText = {
   null: 'Select your rating',
@@ -99,23 +100,6 @@ class RestaurantReview extends React.Component {
     this.props.clearBackendErrors();
   }
 
-  renderErrors() {
-    return(
-      <ul className='rr_errors' >
-        {this.props.errors.map((error, i) => (
-          <li className='error_alert'
-            key={`error-${i}`}>
-            <div className='error_text'>
-              {error}
-            </div>
-            <button className='error_cancel'
-              onClick={() => this.props.clearBackendErrors()}>×</button>
-          </li>
-        ))}
-      </ul>
-    );
-  }
-
   render() {
     const singleRestaurant = this.props.singleRestaurant;
     if (!singleRestaurant) return null;
@@ -134,7 +118,10 @@ class RestaurantReview extends React.Component {
         <div className="nav_right">
         </div>
         <div className="rcr_con_center">
-          {this.renderErrors()}
+
+          <Errors errors={this.props.errors}
+            clearErrors={this.props.clearBackendErrors}/>
+
           <div className="rr_title">
             <Link to={`/restaurant/${singleRestaurant.id}`} >{singleRestaurant.name}</Link>
           </div>

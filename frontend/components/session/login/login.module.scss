@@ -1,0 +1,23 @@
+@import "../../colors.scss";
+
+.glow-once {
+  composes: submit from "../session.module.scss";
+  animation: glowing 1000ms 1;
+}
+
+@keyframes glowing {
+  0% {
+    background-color: $my-red;
+    box-shadow: 0 0 0px $my-red;
+  }
+
+  50% {
+    background-color: $my-red;
+    box-shadow: 0 0 30px $my-red;
+  }
+
+  100% {
+    background-color: $my-red;
+    box-shadow: 0 0 0px $my-red;
+  }
+}

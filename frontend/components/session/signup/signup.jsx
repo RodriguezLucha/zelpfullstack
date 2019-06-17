@@ -1,7 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import Logo from '../../logo';
-import style from '../forms.module.scss';
+import style from '../session.module.scss';
+import {Errors} from '../../errors/errors';
 
 class SignupForm extends React.Component {
   constructor(props) {
@@ -27,34 +28,16 @@ class SignupForm extends React.Component {
     this.props.processForm(user);
   }
 
-  componentWillUnmount() {
-    this.props.clearSessionErrors();
-  }
-
-  renderErrors() {
-    return(
-      <ul className='error_container' >
-        {this.props.errors.map((error, i) => (
-          <li className='error_alert'
-            key={`error-${i}`}>
-            <div className='error_text'>
-              {error}
-            </div>
-            <button className='error_cancel'
-              onClick={() => this.props.clearSessionErrors()}>×</button>
-          </li>
-        ))}
-      </ul>
-    );
-  }
-
   render() {
     return (
       <div>
         <header className={style.header}>
           <Logo/>
         </header>
-        {this.renderErrors()}
+
+        <Errors errors={this.props.errors}
+          clearErrors={this.props.clearSessionErrors}/>
+
         <div className={style.sessionBody}>
           <form onSubmit={this.handleSubmit}
             className="login_form_box">
@@ -66,38 +49,43 @@ class SignupForm extends React.Component {
             </div>
             <div className="login_form">
               <label>
-                <input type="text"
+                <input
+                  className={style.input}
+                  type="text"
                   value={this.state.firstname}
                   onChange={this.update('firstname')}
-                  className="login_input"
                   placeholder="First Name"/>
               </label>
               <br />
               <label>
-                <input type="text"
+                <input
+                  className={style.input}
+                  type="text"
                   value={this.state.lastname}
                   onChange={this.update('lastname')}
-                  className="login_input"
                   placeholder="Last Name"/>
               </label>
               <br />
               <label>
-                <input type="text"
+                <input
+                  className={style.input}
+                  type="text"
                   value={this.state.email}
                   onChange={this.update('email')}
-                  className="login_input"
                   placeholder="Email"/>
               </label>
               <br />
               <label>
-                <input type="password"
+                <input
+                  className={style.input}
+                  type="password"
                   value={this.state.password}
                   onChange={this.update('password')}
-                  className="login_input"
                   placeholder="Password"/>
               </label>
               <br />
-              <input className={style.submit}
+              <input
+                className={style.submit}
                 type="submit"
                 value="Sign Up" />
               <br/>

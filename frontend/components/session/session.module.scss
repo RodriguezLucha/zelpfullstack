@@ -1,4 +1,4 @@
-@import "./colors.scss";
+@import "../colors.scss";
 
 .session-form-header {
   color: $my-red;
@@ -37,4 +37,17 @@
   font-size: 16px;
   line-height: 1.3125em;
   font-weight: bold;
+}
+
+.input {
+  font-size: 14px;
+  height: 30px;
+  padding: 10px;
+  width: 299px;
+  padding: 5px 9px;
+  margin: 8px 0;
+  display: inline-block;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }

@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.block {
+  display: block;
+}
+
+.alert {
+  background-color: rgb(252, 214, 211);
+  width: 918px;
+  display: flex;
+  list-style: none;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 18px 18px 24px;
+  font-size: 16px;
+  border-radius: 3px;
+  margin: 10px;
+}
+
+.text {
+  padding-left: 21px;
+}
+
+.cancel {
+  padding-right: 21px;
+  background: transparent;
+  opacity: 0.5;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+  border-style: none;
+  position: relative;
+  float: right;
+  top: -3px;
+  width: 14px;
+  height: 24px;
+}
