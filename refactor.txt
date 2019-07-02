@@ -1,0 +1,7 @@
+-Make VRT more reliable
+-Move all the css into CSS modules
+-Automated tests for Search
+-Automated tests for CRUD reviews
+-Search, Write a Review, and Show share exact same layout / nav bar. (write a review  doesn't have search)
+-Implemeent a modal for selecting a picture
+-Add paging to search results

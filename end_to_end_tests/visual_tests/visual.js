@@ -15,13 +15,13 @@ module.exports = {
   },
   'Single Restaurant' : function (browser) {
     browser
-      .url('http://localhost:3000/#/restaurant/161')
+      .url('http://localhost:3000/#/restaurant/1')
       .waitForElementVisible('.single_restaurant')
       .assert.screenshotIdenticalToBaseline('body', 'single_restaurant');
   },
   'Write a Review' : function (browser) {
     browser
-      .url('http://localhost:3000/#/restaurant/161/review')
+      .url('http://localhost:3000/#/restaurant/1/review')
       .waitForElementVisible('body')
       .assert.screenshotIdenticalToBaseline('body', 'write_a_review');
   },
