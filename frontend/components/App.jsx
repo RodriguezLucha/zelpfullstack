@@ -10,7 +10,7 @@ import TopRestaurantsContainer from './top_restaurants/top_restaurant_container'
 import RestaurantShowContainer from './restaurant/restaurant_show_container';
 import RestaurantReviewContainer from './restaurant/restaurant_review_container';
 import SearchResultContainer from './restaurant/search_result_container';
-import Footer from './footer';
+import Footer from './common/footer/footer';
 
 const App = () => (
   <div>

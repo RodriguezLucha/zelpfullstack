@@ -45,6 +45,12 @@
   border-radius: 4px; }
 
 $my-red: #d32323;
+$my-footer: rgb(245, 245, 245);
+$my-body: white;
+$my-white: white;
+$my-blue: rgb(0, 115, 187);
+$my-gray: rgb(245, 245, 245);
+$my-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 .session-form-header_3KBxsOH-h7 {
   color: $my-red;
@@ -166,6 +172,31 @@ $my-red: #d32323;
 .login_form_box .small {
   text-align: right;
   color: #999; }
+
+.footer_1PztxXOCTR {
+  background-color: whitesmoke;
+  border-top: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center; }
+
+.footer_1PztxXOCTR img {
+  margin: 0 auto; }
+
+.link-container_2M1KLf12bk {
+  margin: 20px; }
+
+.link_3pTwgVHLG9 {
+  font-size: 2em;
+  padding: 20px;
+  text-decoration: none; }
+
+.github_201yG-Hi0j {
+  color: black; }
+
+.linkedin_1uajEiiknC {
+  color: #0077b5; }
 
 
 /*# sourceMappingURL=bundle.css.map*/

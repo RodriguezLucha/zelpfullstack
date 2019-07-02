@@ -1,4 +1,3 @@
--Make VRT more reliable
 -Move all the css into CSS modules
 -Automated tests for Search
 -Automated tests for CRUD reviews

@@ -5,7 +5,7 @@ module.exports = {
       .waitForElementVisible('.top_restaurants')
       .assert.screenshotIdenticalToBaseline('body', 'home')
       .assert.screenshotIdenticalToBaseline('.top_restaurants')
-      .assert.screenshotIdenticalToBaseline('.footer');
+      .assert.screenshotIdenticalToBaseline('[class^="footer_"]', 'footer');
   },
   'Login page' : function (browser) {
     browser
@@ -17,6 +17,7 @@ module.exports = {
     browser
       .url('http://localhost:3000/#/restaurant/1')
       .waitForElementVisible('.single_restaurant')
+      .pause(1000)
       .assert.screenshotIdenticalToBaseline('body', 'single_restaurant');
   },
   'Write a Review' : function (browser) {

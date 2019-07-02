@@ -1,4 +1,4 @@
-@import 'colors.scss';
+@import "../../colors.scss";
 
 .footer {
   background-color: $my-footer;
@@ -13,20 +13,22 @@
   margin: 0 auto;
 }
 
-.my_links {
+.link-container {
   margin: 20px;
 }
 
-.footer .my_links a {
+.link {
   font-size: 2em;
   padding: 20px;
   text-decoration: none;
 }
 
-.footer .github {
+.github {
+  composes: link;
   color: black;
 }
 
-.footer .linkedin {
-  color:#0077B5;
+.linkedin {
+  composes: link;
+  color: #0077b5;
 }
