@@ -1,10 +1,9 @@
 import React from 'react';
-import HomeNav from '../home_nav/home_nav_container';
-import Logo from '../logo';
-import SearchBarContainer from './search_bar_container';
+
 import SingleReview from './single_review';
 import RatingGroup from './rating_group';
 import RestaurantMap from './restaurant_map';
+import SearchNav from '../common/search_nav/search_nav';
 import {Link} from 'react-router-dom';
 
 
@@ -59,16 +58,7 @@ class RestaurantShow extends React.Component {
 
     return (
       <div className="restaurant_show">
-        <div className="header">
-          <div className="nav_center">
-            <Logo />
-            <SearchBarContainer />
-            <HomeNav props={this.props} />
-          </div>
-          <div className="right"></div>
-          <div className="left"></div>
-        </div>
-
+        <SearchNav props={this.props}/>
         <div className="single_restaurant">
           <div className="info">
             <h1>{singleRestaurant.name}</h1>

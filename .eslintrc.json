@@ -1,0 +1,85 @@
+{
+    "parser": "babel-eslint",
+    "env": {
+        "amd": true,
+        "node": true,
+        "browser": true,
+        "jquery": true,
+        "es6": true
+    },
+    "plugins": [
+        "react"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true,
+            "experimentalObjectRestSpread": true
+        }
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
+    "rules": {
+        "indent": [
+            "error",
+            2
+        ],
+        "no-trailing-spaces": "error",
+        "no-var": "error",
+        "no-multiple-empty-lines": "error",
+        "operator-linebreak": [
+            "error",
+            "before"
+        ],
+        "padded-blocks": [
+            "error",
+            "never"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": "error",
+        "quote-props": [
+            "error",
+            "as-needed"
+        ],
+        "react/prop-types": 0,
+        "react/jsx-max-props-per-line": [
+            "error",
+            {
+                "maximum": 1,
+                "when": "always"
+            }
+        ],
+        "react/jsx-closing-bracket-location": [
+            "error",
+            "after-props"
+        ],
+        "react/sort-comp": "error",
+        "react/jsx-sort-props": "error",
+        "react/jsx-first-prop-new-line": [
+            "error",
+            "multiline"
+        ],
+        "arrow-body-style": "error",
+        "prefer-arrow-callback": "error",
+        "prefer-template": "error",
+        "array-bracket-spacing": "error",
+        "comma-spacing": "error",
+        "object-curly-spacing": "error",
+        "semi-spacing": "error",
+        "space-in-parens": "error",
+        "space-infix-ops": "error",
+        "brace-style": [
+            "error",
+            "1tbs",
+            {
+                "allowSingleLine": true
+            }
+        ]
+    }
+}

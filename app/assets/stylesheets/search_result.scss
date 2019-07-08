@@ -2,29 +2,18 @@
 
 .search_result {
   display: grid;
-  grid-template-areas:
-    "nav_left nav_center nav_right"
-    "con_left con_center con_right";
+  grid-template-areas: "con_left con_center con_right";
 
   background-color: $my-red;
   grid-template-columns: 1fr 960px 1fr;
-  grid-template-rows: 68px;
 }
 
-.search_result .nav_left {
-  grid-area: nav_left;
-}
-
-.search_result .nav_right {
-  grid-area: nav_right;
-}
-
-.search_result .con_right {
+.con_right {
   grid-area: con_right;
   background: white;
 }
 
-.search_result .con_center {
+.con_center {
   grid-area: con_center;
   display: grid;
   background: white;
@@ -40,7 +29,7 @@
   grid-area: s_map;
 }
 
-.search_result .con_left {
+.con_left {
   grid-area: con_left;
   background: white;
 }
