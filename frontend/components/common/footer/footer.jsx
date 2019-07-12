@@ -18,14 +18,18 @@ export default class Footer extends Component {
             href="https://github.com/RodriguezLucha/zelpfullstack"
             rel="noopener noreferrer"
             target="_blank">
-            <i className="fab fa-github"></i>
+            <i
+              className="fab fa-github"
+              data-testid='github-icon'></i>
           </a>
           <a
             className={styles.linkedin}
             href="https://www.linkedin.com/in/rudy-rodriguez-11424020/"
             rel="noopener noreferrer"
             target="_blank">
-            <i className="fab fa-linkedin"></i>
+            <i
+              className="fab fa-linkedin"
+              data-testid='linkedin-icon'></i>
           </a>
         </div>
       </div>
