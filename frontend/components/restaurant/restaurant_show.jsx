@@ -3,7 +3,7 @@ import React from 'react';
 import SingleReview from './single_review';
 import RatingGroup from './rating_group';
 import RestaurantMap from './restaurant_map';
-import SearchNav from '../common/search_nav/search_nav';
+import SearchNavContainer from '../common/search_nav/search_nav_container';
 import {Link} from 'react-router-dom';
 
 
@@ -58,7 +58,7 @@ class RestaurantShow extends React.Component {
 
     return (
       <div className="restaurant_show">
-        <SearchNav props={this.props}/>
+        <SearchNavContainer/>
         <div className="single_restaurant">
           <div className="info">
             <h1>{singleRestaurant.name}</h1>

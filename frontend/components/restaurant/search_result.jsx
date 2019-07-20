@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import RatingGroup from './rating_group';
 import RestaurantMapContainer from './restaurant_map_container';
-import SearchNav from '../common/search_nav/search_nav';
+import SearchNavContainer from '../common/search_nav/search_nav_container';
 
 class SearchResult extends React.Component {
   render() {
@@ -10,7 +10,7 @@ class SearchResult extends React.Component {
     const maxRevewLength = 500;
     return (
       <div>
-        <SearchNav props={this.props} />
+        <SearchNavContainer props={this.props} />
 
         <div className="search_result">
           <div className="con_center">
