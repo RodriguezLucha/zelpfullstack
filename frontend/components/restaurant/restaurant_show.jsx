@@ -23,7 +23,7 @@ class RestaurantShow extends React.Component {
 
   componentDidUpdate(){
     const singleRestaurant = this.props.singleRestaurant;
-    if(!singleRestaurant.reviewIds) return;
+    if(!singleRestaurant || !singleRestaurant.reviewIds) return;
     let numOtherUserReviews = 0;
 
     for(let i = 0; i < singleRestaurant.reviewIds.length; i++){
