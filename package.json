@@ -25,7 +25,7 @@
     "ignore-styles": "^5.0.1",
     "jsdom": "^15.1.1",
     "jsdom-global": "^3.0.2",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.19",
     "mini-css-extract-plugin": "^0.7.0",
     "mocha": "^6.1.4",
     "node-sass": "^4.12.0",
