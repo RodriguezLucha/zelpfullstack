@@ -15,7 +15,7 @@
     "cheerio": "^1.0.0-rc.2",
     "faker": "^4.1.0",
     "js-file-download": "^0.4.5",
-    "mocha": "^6.0.2",
+    "mocha": "^10.2.0",
     "mocha-clearscreen-reporter": "^1.0.1",
     "osmosis": "^1.1.10"
   }
